@@ -35,6 +35,7 @@ namespace Xambda {
 			// Yup, it's empty...
 			else {  }
 			//soft.Run( async ( context ) => { await context.Response.WriteAsync( "Hahaha you can't see anything! " ); } );
+			soft.UseDefaultFiles( );  // Apparently important to integrate Angular into an ASP.NET Core project.
 			soft.UseStaticFiles( );
 			soft.UseSession( );
 			soft.UseMvc( );
@@ -42,6 +43,5 @@ namespace Xambda {
 
 	}
 }
-
 
 
