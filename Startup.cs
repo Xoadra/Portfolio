@@ -34,6 +34,14 @@ namespace Xambda {
 			if ( zone.IsDevelopment( ) ) { soft.UseDeveloperExceptionPage( ); }
 			// Yup, it's empty...
 			else {  }
+			// Apis related to Angular errors or something...
+			/* soft.Use( async ( context, next ) => {
+				await next( );
+				if ( context.Response.StatusCode == 404 && !Path.HasExtension( context.Request.Path.Value ) && !context.Request.Path.Value.StartsWith( "/api/" ) ) {
+					context.Request.Path = "/index.html";
+					await next( );
+				}
+			} ); */
 			//soft.Run( async ( context ) => { await context.Response.WriteAsync( "Hahaha you can't see anything! " ); } );
 			soft.UseDefaultFiles( );  // Apparently important to integrate Angular into an ASP.NET Core project.
 			soft.UseStaticFiles( );
