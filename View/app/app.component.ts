@@ -16,7 +16,7 @@ import { Http } from '@angular/http'
 	
 export class AppComponent implements OnInit {
 
-	label: string = 'Ian Peterson\'s Tech Portfolio & Blog'
+	label: string = 'Ian Peterson\'s Tech Platform'
 	welcome: string[ ] = [ ]
 
 	constructor( private _httpService: Http ) {  }
