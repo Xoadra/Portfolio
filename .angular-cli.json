@@ -6,7 +6,7 @@
 	},
 	"apps": [
 		{
-		"root": "Angular",
+		"root": "View",
 		"outDir": "Root",
 		"assets": [
 			"assets",

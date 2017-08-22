@@ -31,9 +31,9 @@ namespace Xambda {
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure( IApplicationBuilder soft, IHostingEnvironment zone ) {
 			// Secrets that only I can see
-			if ( zone.IsDevelopment( ) ) { soft.UseDeveloperExceptionPage( ); }
+			/* if ( zone.IsDevelopment( ) ) { soft.UseDeveloperExceptionPage( ); } */
 			// Yup, it's empty...
-			else {  }
+			/* else {  } */
 			// Apis related to Angular errors or something...
 			/* soft.Use( async ( context, next ) => {
 				await next( );
