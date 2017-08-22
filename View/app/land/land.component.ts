@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http'
 
 
 
@@ -15,9 +16,16 @@ import { Component, OnInit } from '@angular/core';
 	
 export class LandComponent implements OnInit {
 
-	constructor( ) {  }
+	label: string = 'Ian Peterson\'s Tech Platform'
+	welcome: string[ ] = [ ]
 
-	ngOnInit( ) {  }
+	constructor( private _httpService: Http ) {  }
+
+	ngOnInit( ) {
+		this._httpService.get( 'zone' ).subscribe( phrases => {
+			this.welcome = phrases.json( ) as string[ ];
+		} )
+	}
 
 }
 

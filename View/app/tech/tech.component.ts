@@ -15,6 +15,8 @@ import { Component, OnInit } from '@angular/core';
 	
 export class TechComponent implements OnInit {
 
+	label: string = 'Programming Explained'
+
 	constructor( ) {  }
 
 	ngOnInit( ) {  }
