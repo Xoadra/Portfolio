@@ -8,13 +8,13 @@ import { Http } from '@angular/http'
 
 
 @Component( {
-	selector: 'land',
-	templateUrl: './land.component.html',
-	styleUrls: [ './land.component.css' ]
+	selector: 'ian',
+	templateUrl: './ian.component.html',
+	styleUrls: [ './ian.component.css' ]
 } )
 
 	
-export class LandComponent implements OnInit {
+export class IanComponent implements OnInit {
 
 	label: string = 'Ian Peterson\'s Tech Platform'
 	welcome: string[ ] = [ ]

@@ -3,22 +3,22 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { LandComponent } from './land.component';
+import { IanComponent } from './ian.component';
 
 
-describe( 'LandComponent', ( ) => {
-	let component: LandComponent;
-	let fixture: ComponentFixture<LandComponent>;
+describe( 'IanComponent', ( ) => {
+	let component: IanComponent;
+	let fixture: ComponentFixture<IanComponent>;
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ LandComponent ]
+			declarations: [ IanComponent ]
 		} )
 		.compileComponents( );
 	} ) );
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( LandComponent );
+		fixture = TestBed.createComponent( IanComponent );
 		component = fixture.componentInstance;
 		fixture.detectChanges( );
 	} );
