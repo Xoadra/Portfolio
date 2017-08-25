@@ -4,8 +4,42 @@
 
 body {
 	background-color: black;
-	height: 450pt;
-	width: 100%;
+    height: 550pt;
+    width: 100%;
+}
+
+#x {
+	font-size: 175%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 8em;
+	text-decoration-style: none;
+	font-weight: normal;
+	color: white;
+	margin: 0pt 0pt 0pt 0pt;
+}
+
+.caps {
+	font-size: 150%;
+}
+
+h2 {
+	text-align: center;
+	text-decoration-style: none;
+	font-size: 3em;
+	font-weight: normal;
+	font-variant-caps: small-caps;
+	color: white;
+	margin: -40pt 0pt 0pt 0pt;
+}
+
+a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	top: 35%;
 }
 
 

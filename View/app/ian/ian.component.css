@@ -2,10 +2,12 @@
 
 
 
-body {
-	background-color: blue;
-	height: 400pt;
-	width: 100%;
+h4 {
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	margin: 10pt 0pt;
 }
+
 
 

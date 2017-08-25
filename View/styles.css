@@ -4,14 +4,50 @@
 
 body {
 	font-family: Verdana, Arial, sans-serif;
-	text-align: center;
 	background-color: black;
 	color: white;
+	margin: 0pt 0pt 0pt;
+}
+
+h1 {
+	margin: 0pt 0pt 0pt;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin: 0pt 0pt 0pt;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 2em;
+	margin: 0pt 0pt 0pt;
+}
+
+h4 {
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0pt 0pt 0pt;
+}
+
+h5 {
+	display: inline-block;
+	font-size: 1.25em;
+	font-weight: normal;
+	margin: 0pt 0pt 0pt;
+}
+
+h6 {
+	display: inline-block;
+	font-size: 1em;
+	font-weight: normal;
 	margin: 0pt 0pt 0pt;
 }
 
 p {
 	display: inline-block;
 }
+
 
 
