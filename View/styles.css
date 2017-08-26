@@ -24,6 +24,13 @@ h3 {
 	margin: 0pt 0pt 0pt;
 }
 
+#auth {
+	text-align: right;
+    position: absolute;
+    right: 5%;
+    padding: 25pt 0pt 0pt;
+}
+
 h4 {
 	display: inline-block;
 	font-size: 1.5em;
