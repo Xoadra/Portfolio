@@ -3,9 +3,21 @@
 
 
 body {
-	background-color: darkorchid;
-	height: 100pt;
+	background-color: #501275;
+	height: 80pt;
 	width: 100%;
+}
+
+#nav {
+	position: relative;
+	display: inline-block;
+	color: #9069ff;
+    left: 10%;
+    top: 50%;
+}
+
+.page {
+	margin: 0pt 40pt;
 }
 
 

@@ -5,7 +5,8 @@
 body {
 	background-color: black;
     height: 550pt;
-    width: 100%;
+	width: 100%;
+	padding: 10pt 0pt;
 }
 
 #x {
@@ -17,7 +18,7 @@ h1 {
 	font-size: 8em;
 	text-decoration-style: none;
 	font-weight: normal;
-	color: white;
+	color: #e02a38;
 	margin: 0pt 0pt 0pt 0pt;
 }
 
@@ -31,7 +32,7 @@ h2 {
 	font-size: 3em;
 	font-weight: normal;
 	font-variant-caps: small-caps;
-	color: white;
+	color: #50a7e8;
 	margin: -40pt 0pt 0pt 0pt;
 }
 
@@ -41,5 +42,6 @@ a {
 	text-decoration: none;
 	top: 35%;
 }
+
 
 
