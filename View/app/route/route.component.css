@@ -10,14 +10,14 @@ body {
 
 #nav {
 	position: relative;
-	display: inline-block;
+	text-align: center;
 	color: #9069ff;
-    left: 10%;
     top: 50%;
 }
 
 .page {
 	margin: 0pt 40pt;
 }
+
 
 

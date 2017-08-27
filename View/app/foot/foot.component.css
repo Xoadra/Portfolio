@@ -4,8 +4,34 @@
 
 body {
 	background-color: red;
+	color: black;
 	height: 150pt;
 	width: 100%;
+}
+
+.social {
+	position: relative;
+	text-align: center;
+	top: 15%;
+}
+
+.media {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0.8em;
+	background-color: #d00112;
+	border-radius: 15%;
+	height: 40pt;
+	width: 45pt;
+	margin: 0pt 10pt;
+}
+
+.owner {
+	/* position: relative; */
+	display: inline-block;
+	text-align: center;
+    top: 0%;
 }
 
 
