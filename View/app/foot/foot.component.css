@@ -5,6 +5,7 @@
 body {
 	background-color: red;
 	color: black;
+	font-weight: bold;
 	height: 150pt;
 	width: 100%;
 }
@@ -19,19 +20,24 @@ body {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 0.8em;
+	font-size: 0.75em;
+	line-height: 45pt;
 	background-color: #d00112;
 	border-radius: 15%;
-	height: 40pt;
-	width: 45pt;
+	height: 50pt;
+	width: 55pt;
 	margin: 0pt 10pt;
 }
 
-.owner {
-	/* position: relative; */
-	display: inline-block;
+#owner {
+	position: relative;
 	text-align: center;
-    top: 0%;
+    top: 30%;
 }
+
+h5 {
+	margin: 0pt 5pt;
+}
+
 
 
