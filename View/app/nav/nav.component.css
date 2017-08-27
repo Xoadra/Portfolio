@@ -3,9 +3,37 @@
 
 
 body {
-	background-color: hotpink;
-	height: 75pt;
-	width: 100%;
+	text-align: center;
+	/* height: 100%; */
+    width: 100%;
 }
+
+#nav {
+	position: absolute;
+    text-align: center;
+    display: inline;
+    background-color: hotpink;
+    border-top-left-radius: 150%;
+    border-top-right-radius: 150%;
+    border-bottom-left-radius: 25pt;
+    border-bottom-right-radius: 25pt;
+    height: 50pt;
+    width: 300pt;
+    margin: -50pt -150pt 0pt;
+}
+
+h5 {
+	position: relative;
+	text-align: center;
+	margin: 5pt 0pt 0pt;
+}
+
+#sects {
+	position: relative;
+	text-align: center;
+	color: #b9184a;
+    top: 10%;
+}
+
 
 
