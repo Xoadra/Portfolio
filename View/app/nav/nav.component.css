@@ -4,22 +4,20 @@
 
 body {
 	text-align: center;
-	/* height: 100%; */
     width: 100%;
 }
 
 #nav {
 	position: absolute;
-    text-align: center;
     display: inline;
     background-color: hotpink;
-    border-top-left-radius: 150%;
-    border-top-right-radius: 150%;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
     border-bottom-left-radius: 25pt;
     border-bottom-right-radius: 25pt;
     height: 50pt;
-    width: 300pt;
-    margin: -50pt -150pt 0pt;
+    width: 350pt;
+    margin: -50pt 0pt 0pt -175pt;
 }
 
 h5 {
@@ -33,6 +31,18 @@ h5 {
 	text-align: center;
 	color: #b9184a;
     top: 10%;
+}
+
+a {
+	color: #ff0f58;
+}
+
+/* a:visited {
+	color: #A00023;
+} */
+
+.page {
+	margin: 0pt 5pt;
 }
 
 

@@ -15,6 +15,14 @@ body {
     top: 50%;
 }
 
+a {
+	color: #caa6e8;
+}
+
+/* a:visited {
+	color: #A03BE7;
+} */
+
 .page {
 	margin: 0pt 40pt;
 }

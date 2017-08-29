@@ -22,7 +22,7 @@ const routes: Routes = [
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
 	//{ path: '', pathMatch: 'full', component: , children: [ ] },
 	//{ path: '', pathMatch: 'full', component: , children: [ ] }
-	{ path: '**', component: BlogComponent, children: [ ] }
+	{ path: '**', component: IanComponent, children: [ ] }
 ];
 
 
