@@ -8,7 +8,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Routed page components
 import { HackComponent } from '../hack/hack.component';
+
 import { IanComponent } from '../ian/ian.component';
+import { AboutComponent } from '../ian/about/about.component';
+import { SkillComponent } from '../ian/skill/skill.component';
+import { DevComponent } from '../ian/dev/dev.component';
+import { ProjectComponent } from '../ian/project/project.component';
+
 import { BlogComponent } from '../blog/blog.component';
 import { TechComponent } from '../tech/tech.component';
 
@@ -27,7 +33,16 @@ const routes: Routes = [
 
 
 @NgModule( {
-	declarations: [ IanComponent, BlogComponent, HackComponent, TechComponent ],
+	declarations: [
+		IanComponent,
+		BlogComponent,
+		HackComponent,
+		TechComponent,
+		AboutComponent,
+		SkillComponent,
+		DevComponent,
+		ProjectComponent
+	],
 	imports: [ CommonModule, RouterModule.forRoot( routes ) ],
 	exports: [ RouterModule ]
 } )

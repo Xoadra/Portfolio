@@ -4,6 +4,12 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http'
+import { Routes, RouterModule } from '@angular/router';
+
+import { AboutComponent } from '../ian/about/about.component';
+import { SkillComponent } from '../ian/skill/skill.component';
+import { DevComponent } from '../ian/dev/dev.component';
+import { ProjectComponent } from '../ian/project/project.component';
 
 
 

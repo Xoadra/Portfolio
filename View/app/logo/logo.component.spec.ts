@@ -3,25 +3,25 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FootComponent } from './foot.component';
+import { LogoComponent } from './logo.component';
 
 
-describe( 'FootComponent', ( ) => {
-	let component: FootComponent;
-	let fixture: ComponentFixture<FootComponent>;
+describe( 'LogoComponent', ( ) => {
+	let component: LogoComponent;
+	let fixture: ComponentFixture<LogoComponent>;
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ FootComponent ]
+			declarations: [ LogoComponent ]
 		} )
 		.compileComponents( );
 	} ) );
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( FootComponent );
+		fixture = TestBed.createComponent( LogoComponent );
 		component = fixture.componentInstance;
 		fixture.detectChanges( );
-	});
+	} );
 
 	it( 'should be created', ( ) => {
 		expect( component ).toBeTruthy( );
