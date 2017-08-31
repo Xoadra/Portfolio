@@ -6,22 +6,28 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Imported page components and their subcomponents
-import { HackComponent } from '../hack/hack.component';
-	import { ChallengeComponent } from '../hack/challenge/challenge.component';
-	import { HistoryComponent } from '../hack/history/history.component';
-	import { IssueComponent } from '../hack/issue/issue.component';
+// Main page components
 import { IanComponent } from '../ian/ian.component';
-	import { AboutComponent } from '../ian/about/about.component';
+	import { BioComponent } from '../ian/bio/bio.component';
 	import { SkillComponent } from '../ian/skill/skill.component';
 	import { ExpComponent } from '../ian/exp/exp.component';
 	import { DevComponent } from '../ian/dev/dev.component';
 	import { ProjectComponent } from '../ian/project/project.component';
+// Blog page components
 import { BlogComponent } from '../blog/blog.component';
 	import { ThemeComponent } from '../blog/theme/theme.component';
 	import { NewestComponent } from '../blog/newest/newest.component';
 	import { ForumComponent } from '../blog/forum/forum.component';
+// Tech page components
 import { TechComponent } from '../tech/tech.component';
+	import { LibraryComponent } from '../tech/library/library.component';
+	import { GuideComponent } from '../tech/guide/guide.component';
+	import { AskComponent } from '../tech/ask/ask.component';
+// Hack page components
+import { HackComponent } from '../hack/hack.component';
+	import { ChallengeComponent } from '../hack/challenge/challenge.component';
+	import { HistoryComponent } from '../hack/history/history.component';
+	import { IssueComponent } from '../hack/issue/issue.component';
 
 
 
@@ -39,10 +45,10 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		IanComponent, AboutComponent, SkillComponent, ExpComponent, DevComponent, ProjectComponent, 
+		IanComponent, BioComponent, SkillComponent, ExpComponent, DevComponent, ProjectComponent, 
 		BlogComponent, ThemeComponent, NewestComponent, ForumComponent, 
 		HackComponent, ChallengeComponent, HistoryComponent, IssueComponent, 
-		TechComponent,
+		TechComponent, LibraryComponent, GuideComponent, AskComponent
 	],
 	imports: [ CommonModule, RouterModule.forRoot( routes ) ],
 	exports: [ RouterModule ]
