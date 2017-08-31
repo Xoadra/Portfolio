@@ -18,6 +18,9 @@ import { IanComponent } from '../ian/ian.component';
 	import { DevComponent } from '../ian/dev/dev.component';
 	import { ProjectComponent } from '../ian/project/project.component';
 import { BlogComponent } from '../blog/blog.component';
+	import { ThemeComponent } from '../blog/theme/theme.component';
+	import { NewestComponent } from '../blog/newest/newest.component';
+	import { ForumComponent } from '../blog/forum/forum.component';
 import { TechComponent } from '../tech/tech.component';
 
 
@@ -37,7 +40,7 @@ const routes: Routes = [
 @NgModule( {
 	declarations: [
 		IanComponent, AboutComponent, SkillComponent, ExpComponent, DevComponent, ProjectComponent, 
-		BlogComponent,
+		BlogComponent, ThemeComponent, NewestComponent, ForumComponent, 
 		HackComponent, ChallengeComponent, HistoryComponent, IssueComponent, 
 		TechComponent,
 	],
@@ -47,5 +50,6 @@ const routes: Routes = [
 
 	
 export class RouteModule {  }
+
 
 
