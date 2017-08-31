@@ -8,13 +8,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Routed page components
 import { HackComponent } from '../hack/hack.component';
-
+	import { ChallengeComponent } from '../hack/challenge/challenge.component';
+	import { HistoryComponent } from '../hack/history/history.component';
+	import { IssueComponent } from '../hack/issue/issue.component';
 import { IanComponent } from '../ian/ian.component';
 	import { AboutComponent } from '../ian/about/about.component';
 	import { SkillComponent } from '../ian/skill/skill.component';
+	import { ExpComponent } from '../ian/exp/exp.component';
 	import { DevComponent } from '../ian/dev/dev.component';
 	import { ProjectComponent } from '../ian/project/project.component';
-
 import { BlogComponent } from '../blog/blog.component';
 import { TechComponent } from '../tech/tech.component';
 
@@ -34,9 +36,9 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		IanComponent, AboutComponent, SkillComponent, DevComponent, ProjectComponent,
+		IanComponent, AboutComponent, SkillComponent, ExpComponent, DevComponent, ProjectComponent, 
 		BlogComponent,
-		HackComponent,
+		HackComponent, ChallengeComponent, HistoryComponent, IssueComponent, 
 		TechComponent,
 	],
 	imports: [ CommonModule, RouterModule.forRoot( routes ) ],

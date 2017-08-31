@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http'
 import { Routes, RouterModule } from '@angular/router';
 
+// 'IanComponent' page's component sections
 import { AboutComponent } from '../ian/about/about.component';
 import { SkillComponent } from '../ian/skill/skill.component';
 import { DevComponent } from '../ian/dev/dev.component';
@@ -34,6 +35,5 @@ export class IanComponent implements OnInit {
 	}
 
 }
-
 
 

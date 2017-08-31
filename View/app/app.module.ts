@@ -20,6 +20,7 @@ import { FootComponent } from './foot/foot.component';
 
 
 
+
 @NgModule( {
 	declarations: [ AppComponent, LogoComponent, RouteComponent, NavComponent, FootComponent ],
 	imports: [ BrowserModule, FormsModule, HttpModule, RouteModule ],
@@ -30,6 +31,5 @@ import { FootComponent } from './foot/foot.component';
 	
 	
 export class AppModule {  }
-
 
 
