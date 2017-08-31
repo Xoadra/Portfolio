@@ -10,7 +10,7 @@ body {
 #nav {
 	position: absolute;
     display: inline;
-    background-color: #ff93b0;
+    background-color: #ef6ea1;
     border-top-left-radius: 75%;
     border-top-right-radius: 75%;
     border-bottom-left-radius: 25pt;
@@ -29,12 +29,12 @@ h5 {
 #sects {
 	position: relative;
 	text-align: center;
-	color: #b9184a;
+	color: #d84f7a;
     top: 10%;
 }
 
 a {
-	color: #ff0f58;
+	color: #ffa0d3;
 }
 
 /* a:visited {

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Routed page components
+// Imported page components and their subcomponents
 import { HackComponent } from '../hack/hack.component';
 	import { ChallengeComponent } from '../hack/challenge/challenge.component';
 	import { HistoryComponent } from '../hack/history/history.component';

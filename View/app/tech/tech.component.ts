@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component( {
 	selector: 'tech',
-	templateUrl: './tech.component.html',
-	styleUrls: [ './tech.component.css' ]
+	templateUrl: './tech.component.html'
 } )
 
 	
@@ -22,6 +21,5 @@ export class TechComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
-
 
 

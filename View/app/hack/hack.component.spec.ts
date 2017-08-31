@@ -6,6 +6,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HackComponent } from './hack.component';
 
 
+
 describe( 'HackComponent', ( ) => {
 	let component: HackComponent;
 	let fixture: ComponentFixture<HackComponent>;
@@ -27,5 +28,6 @@ describe( 'HackComponent', ( ) => {
 		expect( component ).toBeTruthy( );
 	} );
 } );
+
 
 

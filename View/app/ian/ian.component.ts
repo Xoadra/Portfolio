@@ -6,18 +6,11 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http'
 import { Routes, RouterModule } from '@angular/router';
 
-// 'IanComponent' page's component sections
-import { AboutComponent } from '../ian/about/about.component';
-import { SkillComponent } from '../ian/skill/skill.component';
-import { DevComponent } from '../ian/dev/dev.component';
-import { ProjectComponent } from '../ian/project/project.component';
-
 
 
 @Component( {
 	selector: 'ian',
-	templateUrl: './ian.component.html',
-	styleUrls: [ './ian.component.css' ]
+	templateUrl: './ian.component.html'
 } )
 
 	
@@ -35,5 +28,6 @@ export class IanComponent implements OnInit {
 	}
 
 }
+
 
 

@@ -3,17 +3,16 @@
 
 
 body {
-	background-color: red;
-	color: black;
-	font-weight: bold;
-	height: 150pt;
+	background-color: black;
+	color: #ea3f6d;
+	height: 200pt;
 	width: 100%;
 }
 
 .social {
 	position: relative;
 	text-align: center;
-	top: 15%;
+	top: 20%;
 }
 
 .media {
@@ -21,23 +20,28 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 0.75em;
+	font-weight: bold;
 	line-height: 45pt;
-	background-color: #d00112;
+	background-color: #200709;
 	border-radius: 15%;
 	height: 50pt;
 	width: 55pt;
-	margin: 0pt 10pt;
 }
 
 #owner {
 	position: relative;
 	text-align: center;
-    top: 30%;
+    top: 45%;
 }
 
 h5 {
 	margin: 0pt 5pt;
 }
 
+a {
+	color: #ea3f6d;
+	width: 100%;
+	margin: 0pt 10pt;
+}
 
 

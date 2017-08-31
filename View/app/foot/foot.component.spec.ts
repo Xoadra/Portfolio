@@ -6,6 +6,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FootComponent } from './foot.component';
 
 
+
 describe( 'FootComponent', ( ) => {
 	let component: FootComponent;
 	let fixture: ComponentFixture<FootComponent>;
@@ -27,5 +28,6 @@ describe( 'FootComponent', ( ) => {
 		expect( component ).toBeTruthy( );
 	} );
 } );
+
 
 
