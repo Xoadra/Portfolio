@@ -4,13 +4,13 @@
 
 body {
 	background-color: black;
-    height: 550pt;
+    height: 525pt;
 	width: 100%;
 	padding: 10pt 0pt;
 }
 
 #x {
-	font-size: 175%;
+	font-size: 200%;
 }
 
 h1 {
@@ -19,17 +19,17 @@ h1 {
 	text-decoration-style: none;
 	font-weight: normal;
 	color: #e02a38;
-	margin: 0pt 0pt 0pt 0pt;
+	margin: 0pt 0pt 5pt 0pt;
 }
 
 .caps {
-	font-size: 150%;
+	font-size: 125%;
 }
 
 h2 {
 	text-align: center;
 	text-decoration-style: none;
-	font-size: 3em;
+	font-size: 3.25em;
 	font-weight: normal;
 	font-variant-caps: small-caps;
 	color: #50a7e8;
@@ -40,7 +40,23 @@ a {
 	position: relative;
 	display: block;
 	text-decoration: none;
-	top: 35%;
+	top: 25%;
+}
+
+#sub {
+	position: relative;
+	display: block;
+	text-align: center;
+	top: 40%;
+}
+
+h3 {
+	font-size: 2.5em;
+	color: #60cc60;
+}
+
+.iter {
+	margin: 0pt 60pt;
 }
 
 

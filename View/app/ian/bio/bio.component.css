@@ -9,27 +9,57 @@ body {
 	width: 100%;
 }
 
-h2 {
-	padding: 50pt 0pt 0pt;
+h1 {
+	padding: 75pt 0pt 0pt;
 }
 
 #vision {
-	padding: 25pt 0pt 30pt;
+	padding: 50pt 0pt 0pt;
 }
 
 .trait {
 	display: inline-block;
 	text-align: center;
-	margin: 0pt 40pt;
+	margin: 0pt 6%;
 }
 
 .under {
-	width: 150pt;
-	margin: 10pt 0pt 0pt;
+	display: inline-block;
+	background-color: #40b7ff;
+    height: 3pt;
+    width: 75%;
+    margin: 15pt 0pt 0pt;
+}
+
+#intro {
+	display: inline-block;
+	text-align: left;
+	width: 60%;
+	padding: 40pt 0pt 0pt;
 }
 
 hr {
-	width: 80%;
+    background-color: #3077fd;
+    border: 0pt;
+	border-radius: 50%;
+	height: 4pt;
+	width: 50%;
+	margin: 20pt 25% 0pt;
+}
+
+.column {
+	display: inline-block;
+	text-align: left;
+	width: 25%;
+	margin: 40pt 15pt 0pt;
+}
+
+h6 {
+	text-indent: 25pt;
+}
+
+p {
+	text-indent: 25pt;
 }
 
 
