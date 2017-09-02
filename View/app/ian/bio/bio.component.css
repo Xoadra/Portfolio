@@ -20,13 +20,16 @@ h2 {
 .trait {
 	display: inline-block;
 	text-align: center;
-	padding: 0pt 10pt;
 	margin: 0pt 40pt;
 }
 
-hr {
-	width: 60%;
+.under {
+	width: 150pt;
+	margin: 10pt 0pt 0pt;
 }
 
+hr {
+	width: 80%;
+}
 
 
