@@ -9,5 +9,24 @@ body {
 	width: 100%;
 }
 
+h2 {
+	padding: 50pt 0pt 0pt;
+}
+
+#vision {
+	padding: 25pt 0pt 30pt;
+}
+
+.trait {
+	display: inline-block;
+	text-align: center;
+	padding: 0pt 10pt;
+	margin: 0pt 40pt;
+}
+
+hr {
+	width: 60%;
+}
+
 
 
