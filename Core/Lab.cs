@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Mvc;
 
 
 namespace Xambda.Core {
-	public class Zone : Controller {
+	public class Lab : Controller {
 
 		[ HttpGet ]
-		[ Route( "zone" ) ]
+		[ Route( "lab" ) ]
 		public void Method( ) {
 
 		}

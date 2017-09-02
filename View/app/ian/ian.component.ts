@@ -22,7 +22,7 @@ export class IanComponent implements OnInit {
 	constructor( private _httpService: Http ) {  }
 
 	ngOnInit( ) {
-		this._httpService.get( 'zone' ).subscribe( phrases => {
+		this._httpService.get( 'prime' ).subscribe( phrases => {
 			this.welcome = phrases.json( ) as string[ ];
 		} )
 	}

@@ -26,6 +26,21 @@ h3 {
 	margin: 0pt 0pt 0pt;
 }
 
+.stuff {
+	height: 100%;
+	border-top: 0pt solid silver;
+	border-left: 2pt solid silver;
+	border-right: 2pt solid silver;
+	border-bottom: 0pt solid silver;
+	margin: 0pt 175pt;
+}
+
+/* 
+.stuff:hover {
+	background-color: green;
+}
+ */
+
 h4 {
 	display: inline-block;
 	font-size: 1.5em;
