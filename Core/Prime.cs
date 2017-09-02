@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Xambda.Core {
 	public class Prime : Controller {
 
-		[ HttpGet ]
+		/* [ HttpGet ]
 		[ Route( "prime" ) ]
 		public IEnumerable<string> Welcome( ) {
 			// Testing an api call from Angular to display on the main page
@@ -26,7 +26,7 @@ namespace Xambda.Core {
 				"...and let us learn technology together!"
 			};
 			return Welcome;
-		}
+		} */
 
 		/* [ HttpGet ]
 		[ Route( "" ) ]
