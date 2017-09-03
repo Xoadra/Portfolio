@@ -23,14 +23,13 @@ body {
 h5 {
 	position: relative;
 	text-align: center;
-	margin: 5pt 0pt 0pt;
+	margin: 2.5pt 0pt 0pt;
 }
 
 #sects {
 	position: relative;
 	text-align: center;
 	color: #d84f7a;
-    top: 10%;
 }
 
 a {
@@ -42,7 +41,8 @@ a {
 } */
 
 .page {
-	margin: 0pt 5pt;
+	font-family: Iceland;
+	margin: 0pt 7.5pt;
 }
 
 

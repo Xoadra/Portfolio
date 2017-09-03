@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+	font-variant: small-caps;
 	padding: 75pt 0pt 0pt;
 }
 
@@ -20,6 +21,7 @@ h1 {
 .trait {
 	display: inline-block;
 	text-align: center;
+	font-variant: small-caps;
 	margin: 0pt 6%;
 }
 
@@ -42,6 +44,7 @@ hr {
     background-color: #3077fd;
     border: 0pt;
 	border-radius: 50%;
+	/* box-shadow: 0pt 4pt 4pt 0pt black; */
 	height: 4pt;
 	width: 50%;
 	margin: 20pt 25% 0pt;
@@ -61,5 +64,6 @@ h6 {
 p {
 	text-indent: 25pt;
 }
+
 
 

@@ -19,10 +19,10 @@ body {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 0.75em;
+	font-size: 0.8em;
 	font-weight: bold;
-	line-height: 45pt;
-	background-color: #200709;
+	line-height: 50pt;
+	background-color: #130206;
 	border-radius: 15%;
 	height: 50pt;
 	width: 55pt;
@@ -31,7 +31,7 @@ body {
 #owner {
 	position: relative;
 	text-align: center;
-    top: 50%;
+    top: 45%;
 }
 
 h5 {
