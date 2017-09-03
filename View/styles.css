@@ -29,6 +29,7 @@ h3 {
 }
 
 .stuff {
+	position: relative;
 	text-align: center;
 	border-top: 0pt solid;
 	border-left: 2pt solid rgba(0, 0, 0, 0.1);
@@ -37,10 +38,13 @@ h3 {
 	border-radius: 2%;
 	height: 100%;
 	margin: 0pt 150pt;
+	transition: transform 0.15s;
 }
 
 .stuff:hover {
-	transform: scale(1.1, 1.1);
+	background: inherit;
+	z-index: 10;
+	transform: scale(1.05, 1.05);
 }
 
 h4 {

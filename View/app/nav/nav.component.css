@@ -3,13 +3,15 @@
 
 
 body {
+	position: relative;
 	text-align: center;
     width: 100%;
 }
 
 #nav {
 	position: absolute;
-    display: inline;
+	display: inline;
+	z-index: 5;
     background-color: #ef6ea1;
     border-top-left-radius: 75%;
     border-top-right-radius: 75%;
