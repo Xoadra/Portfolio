@@ -10,20 +10,21 @@ body {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 5em;
+	font-family: Krona One;
 	font-weight: normal;
 	margin: 0pt 0pt 0pt;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 3.75em;
 	font-weight: normal;
 	margin: 0pt 0pt 0pt;
 }
 
 h3 {
 	display: inline-block;
-	font-size: 2em;
+	font-size: 2.5em;
 	font-weight: normal;
 	margin: 0pt 0pt 0pt;
 }
@@ -49,7 +50,7 @@ h3 {
 
 h4 {
 	display: inline-block;
-	font-size: 1.75em;
+	font-size: 2em;
 	font-weight: normal;
 	margin: 0pt 0pt 0pt;
 }
@@ -100,6 +101,5 @@ p {
 	line-height: 15pt;
 	margin: 0pt 0pt 0pt;
 }
-
 
 
