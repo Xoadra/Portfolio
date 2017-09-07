@@ -5,9 +5,9 @@
 body {
 	text-align: center;
 	background-color: #aa00d2;
-    height: 500pt;
+    min-height: 850pt;
+	height: auto;
 	width: 100%;
 }
-
 
 
