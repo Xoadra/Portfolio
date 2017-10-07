@@ -4,8 +4,8 @@
 
 body {
 	text-align: center;
-	background-color: #1d010d;
-    height: 1000pt;
+	background-color: #1d1a18;
+    min-height: 100rem;
 	width: 100%;
 }
 
