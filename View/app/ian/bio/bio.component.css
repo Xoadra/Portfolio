@@ -5,7 +5,7 @@
 body {
 	text-align: center;
 	background-color: #0040a5;
-	min-height: 850pt;
+	min-height: 75rem;
 	height: auto;
 	width: 100%;
 }
@@ -53,7 +53,7 @@ h3 {
 }
 
 h6 {
-	text-indent: 40pt;
+	text-indent: 2.5rem;
 	line-height: 20pt;
 	margin: 0pt 0pt 10pt;
 }
@@ -81,7 +81,7 @@ h5 {
 
 p {
 	text-align: left;
-	text-indent: 25pt;
+	text-indent: 1.5rem;
 	margin: 0pt 0pt 5pt;
 }
 

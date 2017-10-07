@@ -3,35 +3,35 @@
 
 
 body {
-	position: relative;
+	background-color: transparent;
 	text-align: center;
-    width: 100%;
+	margin: -4rem 0rem 0rem;
 }
 
 #nav {
-	position: absolute;
-	display: inline;
-	z-index: 5;
+	position: relative;
+	display: inline-block;
+    z-index: 10;
     background-color: #ef6ea1;
     border-top-left-radius: 75%;
     border-top-right-radius: 75%;
-    border-bottom-left-radius: 25pt;
-    border-bottom-right-radius: 25pt;
-    height: 50pt;
-    width: 350pt;
-    margin: -50pt 0pt 0pt -175pt;
+    border-bottom-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+    height: 4rem;
+    width: 30rem;
 }
 
 h5 {
 	position: relative;
 	text-align: center;
-	margin: 2.5pt 0pt 0pt;
+	margin: 0.4rem 0rem 0rem;
 }
 
 #sects {
 	position: relative;
 	text-align: center;
 	color: #d84f7a;
+	margin: 0.05rem 0rem 0rem;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
 
 .page {
 	font-family: Iceland;
-	margin: 0pt 7.5pt;
+	margin: 0rem 0.75rem;
 }
 
 

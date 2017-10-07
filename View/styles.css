@@ -6,47 +6,47 @@ body {
 	font-family: Exo, Ubuntu, Verdana, Arial, sans-serif;
 	background-color: black;
 	color: white;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 h1 {
 	font-size: 5rem;
 	font-family: Krona One;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 h2 {
 	font-size: 2.5rem;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 h3 {
 	display: inline-block;
 	font-size: 2rem;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 .stuff {
 	position: relative;
 	text-align: center;
-	border-top: 0pt solid;
-	border-left: 2pt solid rgba(0, 0, 0, 0.1);
-	border-right: 2pt solid rgba(0, 0, 0, 0.1);
-	border-bottom: 0pt solid;
-	border-radius: 2%;
+	border-top: 0rem solid;
+	border-left: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-right: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-bottom: 0rem solid;
+	border-radius: 1rem;
 	min-height: inherit;
 	height: inherit;
-	margin: 0pt 150pt;
+	margin: 0rem 15rem;
 	transition: transform 0.15s;
 }
 
 .stuff:hover {
 	background: inherit;
-	z-index: 10;
-	box-shadow: 5pt 10pt 10pt 0pt rgba(0, 0, 0, 0.6);
+	z-index: 5;
+	box-shadow: 0.5rem 1rem 1rem 0rem rgba(0, 0, 0, 0.5);
 	transform: scale(1.05, 1.05);
 }
 
@@ -54,16 +54,16 @@ h4 {
 	display: inline-block;
 	font-size: 1.5rem;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
-	/* Dual settings shared across authentication and user options */
+	/* Dual settings across authentication and user options */
 	.custom {
 		position: absolute;
 		text-align: right;
 		color: #e08fff;
-		right: 4%;
-		padding: 10pt 0pt 0pt;
+		right: 2%;
+		padding: 1.25rem 0rem 0rem;
 	}
 
 	#avatar {
@@ -72,14 +72,14 @@ h4 {
 		vertical-align: top;
 		font-size: 1rem;
 		background-color: #301544;
-		border-radius: 15%;
-		height: 20pt;
-		width: 25pt;
-		margin: -2pt -6pt;
+		border-radius: 0.5rem;
+		height: 1.75rem;
+		width: 2rem;
+		margin: -0.25rem -0.2rem;
 	}
 
 	.user {
-		margin: 0pt 10pt;
+		margin: 0rem 1rem;
 	}
 	/*  */
 
@@ -87,21 +87,21 @@ h5 {
 	display: inline-block;
 	font-size: 1.25rem;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 h6 {
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: normal;
-	margin: 0pt 0pt 0pt;
+	margin: 0rem 0rem 0rem;
 }
 
 p {
 	display: inline-block;
 	font-size: 0.8rem;
-	line-height: 16pt;
-	margin: 0pt 0pt 0pt;
+	line-height: 1.5rem;
+	margin: 0rem 0rem 0rem;
 }
 
 

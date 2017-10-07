@@ -4,47 +4,42 @@
 
 body {
 	background-color: black;
-    height: 525pt;
+    height: 45rem;
 	width: 100%;
-	padding: 10pt 0pt;
-}
-
-#x {
-	font-size: 150%;
-}
-
-h1 {
-	text-align: center;
-	font-family: Iceland;
-	font-size: 16em;
-	font-weight: normal;
-	font-variant: small-caps;
-	color: #e02a38;
-	margin: 0pt 0pt 5pt 0pt;
-}
-
-#cap {
-	display: inline-block;
-	font-size: 175%;
-	transform: translate(0pt, 75pt);
-}
-
-h2 {
-	text-align: center;
-	font-family: Orbitron;
-	font-size: 3.5em;
-	font-weight: bold;
-	font-variant: small-caps;
-	color: #50a7e8;
-	margin: -60pt 0pt 0pt 165pt;
-    transform: scale(0.995, 1.25);
 }
 
 a {
 	position: relative;
 	display: block;
 	text-decoration: none;
-	top: 5%;
+	top: 4%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Iceland;
+	font-size: 16rem;
+	font-weight: normal;
+	font-variant: small-caps;
+	color: #e02a38;
+	margin: 0rem 0rem 0.5rem 0rem;
+}
+
+#x {
+	display: inline-block;
+	font-size: 175%;
+	transform: translate(0rem, 6.5rem);
+}
+
+h2 {
+	text-align: center;
+	font-family: Orbitron;
+	font-size: 3.5rem;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #50a7e8;
+	margin: -5rem 0rem 0rem 13.7rem;
+    transform: scale(0.9925, 1.25);
 }
 
 #sub {
@@ -52,18 +47,18 @@ a {
 	font-family: Iceland;
 	display: block;
 	text-align: center;
-	top: 25%;
+	top: 20%;
 }
 
 h3 {
-	font-size: 4.5em;
+	font-size: 4rem;
 	color: #60cc60;
 }
 
 .iter {
 	display: inline-block;
-	transform: matrix(1.25, 0, 0, 1.25, 0, 15);
-	margin: 0pt 45pt;
+	transform: matrix(1.25, 0, 0, 1.25, 0, 12.5);
+	margin: 0rem 4rem;
 }
 
 

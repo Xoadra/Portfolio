@@ -5,7 +5,7 @@
 body {
 	background-color: black;
 	color: #ea3f6d;
-	height: 200pt;
+	height: 15rem;
 	width: 100%;
 }
 
@@ -19,29 +19,29 @@ body {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	font-weight: bold;
-	line-height: 50pt;
-	background-color: #130206;
+	line-height: 4rem;
+	background-color: #1d0209;
 	border-radius: 15%;
-	height: 50pt;
-	width: 55pt;
+	height: 4rem;
+	width: 4.5rem;
 }
 
 #owner {
 	position: relative;
 	text-align: center;
-    top: 45%;
+    top: 40%;
 }
 
 h5 {
-	margin: 0pt 5pt;
+	margin: 0rem 0.5rem;
 }
 
 a {
 	color: #ea3f6d;
 	width: 100%;
-	margin: 0pt 10pt;
+	margin: 0rem 1rem;
 }
 
 
