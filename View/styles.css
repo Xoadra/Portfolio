@@ -59,11 +59,11 @@ h4 {
 
 	/* Dual settings across authentication and user options */
 	.custom {
-		position: absolute;
+		position: relative;
 		text-align: right;
 		color: #e08fff;
 		right: 2%;
-		padding: 1.25rem 0rem 0rem;
+		padding: 1.25rem 0rem 1rem;
 	}
 
 	#avatar {
@@ -71,7 +71,7 @@ h4 {
 		text-align: center;
 		vertical-align: top;
 		font-size: 1rem;
-		background-color: #301544;
+		background-color: #050408;
 		border-radius: 0.5rem;
 		height: 1.75rem;
 		width: 2rem;

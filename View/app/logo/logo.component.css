@@ -12,15 +12,15 @@ a {
 	position: relative;
 	display: block;
 	text-decoration: none;
-	top: 4%;
+	text-align: center;
+	font-variant: small-caps;
+	height: 92%;
 }
 
 h1 {
-	text-align: center;
 	font-family: Iceland;
 	font-size: 16rem;
 	font-weight: normal;
-	font-variant: small-caps;
 	color: #e02a38;
 	margin: 0rem 0rem 0.5rem 0rem;
 }
@@ -32,11 +32,9 @@ h1 {
 }
 
 h2 {
-	text-align: center;
 	font-family: Orbitron;
 	font-size: 3.5rem;
 	font-weight: bold;
-	font-variant: small-caps;
 	color: #50a7e8;
 	margin: -5rem 0rem 0rem 13.7rem;
     transform: scale(0.9925, 1.25);
@@ -44,10 +42,10 @@ h2 {
 
 #sub {
 	position: relative;
-	font-family: Iceland;
 	display: block;
+	font-family: Iceland;
 	text-align: center;
-	top: 20%;
+	top: 16%;
 }
 
 h3 {
@@ -60,5 +58,6 @@ h3 {
 	transform: matrix(1.25, 0, 0, 1.25, 0, 12.5);
 	margin: 0rem 4rem;
 }
+
 
 
