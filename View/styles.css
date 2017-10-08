@@ -6,40 +6,44 @@ body {
 	font-family: Exo, Ubuntu, Verdana, Arial, sans-serif;
 	background-color: black;
 	color: white;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 5em;
 	font-family: Krona One;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 h3 {
 	display: inline-block;
-	font-size: 2rem;
+	font-size: 2em;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 .stuff {
 	position: relative;
+	display: inline-block;
 	text-align: center;
-	border-top: 0rem solid;
-	border-left: 0.1rem solid rgba(0, 0, 0, 0.1);
-	border-right: 0.1rem solid rgba(0, 0, 0, 0.1);
-	border-bottom: 0rem solid;
-	border-radius: 1rem;
+	box-sizing: border-box;
+	border-top: 0em solid;
+	border-left: 0.1em solid rgba(0, 0, 0, 0.1);
+	border-right: 0.1em solid rgba(0, 0, 0, 0.1);
+	border-bottom: 0em solid;
+	border-radius: 1em;
 	min-height: inherit;
 	height: inherit;
-	margin: 0rem 15rem;
+	max-width: 100%;
+	width: 60em;
+    padding: 3em 0em;
 	transition: transform 0.15s;
 }
 
@@ -52,9 +56,9 @@ h3 {
 
 h4 {
 	display: inline-block;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 	/* Dual settings across authentication and user options */
@@ -63,45 +67,232 @@ h4 {
 		text-align: right;
 		color: #e08fff;
 		right: 2%;
-		padding: 1.25rem 0rem 1rem;
+		padding: 1.25em 0em 1em;
 	}
 
 	#avatar {
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
-		font-size: 1rem;
+		font-size: 1em;
 		background-color: #050408;
-		border-radius: 0.5rem;
-		height: 1.75rem;
-		width: 2rem;
-		margin: -0.25rem -0.2rem;
+		border-radius: 0.5em;
+		height: 1.75em;
+		width: 2em;
+		margin: -0.25em -0.2em;
 	}
 
 	.user {
-		margin: 0rem 1rem;
+		margin: 0em 1%;
 	}
 	/*  */
 
 h5 {
 	display: inline-block;
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 h6 {
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1em;
 	font-weight: normal;
-	margin: 0rem 0rem 0rem;
+	margin: 0em 0em 0em;
 }
 
 p {
 	display: inline-block;
-	font-size: 0.8rem;
-	line-height: 1.25rem;
-	margin: 0rem 0rem 0rem;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin: 0em 0em 0em;
+}
+
+/* Responsive breakpoint settings */
+@media (max-width: 1440px) {
+	h1 {
+		font-size: 4em;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+	
+	h3 {
+		font-size: 1.6em;
+	}
+
+	h4 {
+		font-size: 1.3em;
+	}
+
+	h5 {
+		font-size: 1.15em;
+	}
+
+	.stuff {
+		padding: 2.5em 0em;
+		width: 70%;
+	}
+}
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 3em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.125em;
+	}
+	
+	h5 {
+		font-size: 1em;
+	}
+
+	h6 {
+		font-size: 0.9em;
+	}
+	
+	.stuff {
+		padding: 2em 0em;
+		width: 75%;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 1.25em;
+	}
+	
+	h3 {
+		font-size: 1.125em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+	
+	h5 {
+		font-size: 0.9em;
+	}
+
+	h6 {
+		font-size: 0.8em;
+	}
+
+	p {
+		font-size: 0.75em;
+	}
+
+	.stuff {
+		padding: 1.5em 0em;
+		width: 80%;
+	}
+}
+
+@media (max-width: 580px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 1.25em;
+	}
+	
+	h3 {
+		font-size: 1em;
+	}
+
+	h4 {
+		font-size: 0.95em;
+	}
+	
+	h5 {
+		font-size: 0.9em;
+	}
+
+	h6 {
+		font-size: 0.8em;
+	}
+
+	p {
+		font-size: 0.7em;
+	}
+
+	.stuff {
+		border: 0em;
+		width: 100%;
+	}
+
+	.stuff:hover {
+		box-shadow: 0em 0em;
+		transition: none;
+		transform: none;
+	}
+}
+
+@media (max-width: 425px) {
+	h1 {
+		font-size: 2.25em;
+	}
+	
+	h2 {
+		font-size: 1em;
+	}
+	
+	h3 {
+		font-size: 0.9em;
+	}
+
+	h4 {
+		font-size: 0.85em;
+	}
+	
+	h5 {
+		font-size: 0.8em;
+	}
+
+	h6 {
+		font-size: 0.75em;
+	}
+	
+	.stuff {
+		padding: 0.75em 0em;
+	}
+}
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 2em;
+	}
+	
+	h3 {
+		font-size: 0.75em;
+	}
+
+	h4 {
+		font-size: 0.735em;
+	}
+	
+	h5 {
+		font-size: 0.72em;
+	}
+
+	h6 {
+		font-size: 0.71em;
+	}
 }
 
 

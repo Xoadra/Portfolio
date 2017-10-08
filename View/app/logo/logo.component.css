@@ -4,7 +4,7 @@
 
 body {
 	background-color: black;
-    height: 45rem;
+    height: 45em;
 	width: 100%;
 }
 
@@ -19,25 +19,25 @@ a {
 
 h1 {
 	font-family: Iceland;
-	font-size: 16rem;
+	font-size: 16em;
 	font-weight: normal;
 	color: #e02a38;
-	margin: 0rem 0rem 0.5rem 0rem;
+	margin: 0em 0em 0.5em 0em;
 }
 
 #x {
 	display: inline-block;
 	font-size: 175%;
-	transform: translate(0rem, 6.5rem);
+	transform: translate(0em, 0.225em);
 }
 
 h2 {
 	font-family: Orbitron;
-	font-size: 3.5rem;
+	font-size: 3.5em;
 	font-weight: bold;
 	color: #50a7e8;
-	margin: -5rem 0rem 0rem 13.7rem;
-    transform: scale(0.9925, 1.25);
+	margin: -3.7em 0em 0em 3.91em;
+    transform: scale(0.995, 1.25);
 }
 
 #sub {
@@ -49,14 +49,14 @@ h2 {
 }
 
 h3 {
-	font-size: 4rem;
+	font-size: 4em;
 	color: #60cc60;
 }
 
 .iter {
 	display: inline-block;
 	transform: matrix(1.25, 0, 0, 1.25, 0, 12.5);
-	margin: 0rem 4rem;
+	margin: 0em 1em;
 }
 
 
