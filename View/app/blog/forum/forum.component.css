@@ -5,8 +5,8 @@
 body {
     text-align: center;
 	background-color: #171010;
-	height: 75rem;
-    max-height: 1000rem;
+	min-height: 50em;
+    max-height: 1000em;
     width: 100%;
 }
 

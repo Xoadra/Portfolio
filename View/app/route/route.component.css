@@ -3,8 +3,11 @@
 
 
 body {
+	position: sticky;
 	background-color: #0c0715;
-	height: 8rem;
+	z-index: 25;
+	top: 0;
+	height: 9em;
 	width: 100%;
 }
 
@@ -24,8 +27,7 @@ a {
 } */
 
 .page {
-	margin: 0pt 4rem;
+	margin: 0pt 4%;
 }
-
 
 

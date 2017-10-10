@@ -5,8 +5,6 @@
 body {
 	text-align: center;
 	background-color: #0f1ed0;
-	min-height: 75em;
-	height: auto;
 	width: 100%;
 }
 
@@ -18,23 +16,23 @@ h1 {
 h2 {
 	font-style: italic;
 	letter-spacing: -0.025em;
-    padding: 1em 0em 0em;
+    padding: 1em 0 0;
 }
 
 #vision {
-	padding: 2.5em 0em 0em;
+	padding: 2.5em 0 0;
 }
 
 .trait {
 	display: inline-block;
 	text-align: center;
 	/* font-variant: small-caps; */
-	margin: 0em 4.5%;
+	margin: 0 4.5%;
 }
 
 h3 {
 	letter-spacing: 0.125em;
-	padding: 0em 0em 0em;
+	padding: 0 0 0;
 }
 
 .under {
@@ -42,53 +40,53 @@ h3 {
 	background-color: #40b7ff;
     height: 0.25em;
     width: 75%;
-    margin: 0em 0em 0em;
+    margin: 0 0 0;
 }
 
 #intro {
 	display: inline-block;
 	text-align: left;
 	width: 75%;
-	padding: 2em 0em 0em;
+	padding: 2em 0 0;
 }
 
 h6 {
 	text-indent: 3em;
 	line-height: 1.75em;
-	margin: 0em 0em 1em;
+	margin: 0 0 1em;
 }
 
 hr {
     background-color: #3077fd;
-    border: 0em;
+    border: 0;
 	border-radius: 50%;
 	/* box-shadow: 0pt 4pt 4pt 0pt black; */
 	height: 0.4em;
 	width: 60%;
-	margin: 0.4em 20% 0em;
+	margin: 0.4em 20% 0;
 }
 
 .column {
 	display: inline-block;
 	vertical-align: top;
 	width: 25%;
-	margin: 6em 3% 0em;
+	margin: 6em 3% 0;
 }
 
 h5 {
-	margin: 0em 0em 1em;
+	margin: 0 0 1em;
 }
 
 p {
 	text-align: left;
 	text-indent: 2.5em;
-	margin: 0em 0em 0.75em;
+	margin: 0 0 0.75em;
 }
 
 .fizz {
 	font-style: italic;
 	color: #ffcc00;
-    text-shadow: 0em 0em 0.4em #eae5bf;
+    text-shadow: 0 0 0.4em #eae5bf;
 }
 
 .slash {
