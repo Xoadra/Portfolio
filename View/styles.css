@@ -4,9 +4,26 @@
 
 body {
 	font-family: Exo, Ubuntu, Verdana, Arial, sans-serif;
-	background-color: black;
+	background-color: transparent /* black */;
 	color: white;
 	margin: 0 0 0;
+}
+
+/* #film {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+} */
+
+video {
+	position: absolute;
+	background-color: silver;
+    left: 0;
+    z-index: -20;
+	min-height: auto;
+	height: 100%;
+	min-width: auto;
+	width: 100%;
 }
 
 h1 {
@@ -101,7 +118,7 @@ h5 {
 
 h6 {
 	display: inline-block;
-	font-size: 0.9em;
+	font-size: 0.875em;
 	font-weight: normal;
 	margin: 0 0 0;
 }
@@ -191,5 +208,6 @@ p {
 	h5 { font-size: 0.72em; }
 	h6 { font-size: 0.71em; }
 }
+
 
 

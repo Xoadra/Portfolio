@@ -4,8 +4,12 @@
 
 body {
 	text-align: center;
-	background-color: #0f1ed0;
+	background-color: transparent /* #0f1ed0 */;
 	width: 100%;
+}
+
+video {
+	background-color: #0f1ed0 /* #06b86e */;
 }
 
 h1 {
@@ -92,6 +96,5 @@ p {
 .slash {
 	text-decoration: line-through;
 }
-
 
 
