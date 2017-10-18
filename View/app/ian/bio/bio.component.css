@@ -9,7 +9,9 @@ body {
 }
 
 video {
-	background-color: #0f1ed0 /* #06b86e */;
+	top: -17.5%;
+	background-color: #70b4d3;
+	transform: scale(1, 0.75);
 }
 
 h1 {
@@ -96,5 +98,6 @@ p {
 .slash {
 	text-decoration: line-through;
 }
+
 
 

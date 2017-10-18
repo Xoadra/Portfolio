@@ -4,8 +4,8 @@
 
 body {
 	position: sticky;
-	background-color: #0c0715;
 	z-index: 25;
+	background-color: #0c0715;
 	top: 0;
 	height: 9em;
 	width: 100%;

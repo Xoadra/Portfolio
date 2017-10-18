@@ -2,28 +2,28 @@
 
 
 
+html {
+	background-color: black;
+}
+
 body {
 	font-family: Exo, Ubuntu, Verdana, Arial, sans-serif;
-	background-color: transparent /* black */;
+	background-color: transparent;
 	color: white;
 	margin: 0 0 0;
 }
 
-/* #film {
+#film {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-} */
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
 
 video {
 	position: absolute;
-	background-color: silver;
-    left: 0;
-    z-index: -20;
-	min-height: auto;
-	height: 100%;
-	min-width: auto;
-	width: 100%;
+	z-index: -5;
+	left: 0;
 }
 
 h1 {
@@ -47,12 +47,14 @@ h3 {
 }
 
 .sect {
+	position: relative;
 	height: 50em;
 }
 
 .core {
 	position: relative;
 	display: inline-block;
+	z-index: 10;
 	text-align: center;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -70,8 +72,9 @@ h3 {
 }
 
 .core:hover {
+	z-index: 15;
+	overflow: scroll;
 	background: inherit;
-	z-index: 5;
 	box-shadow: 0.5rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
 	transform: scale(1.05, 1.05);
 }
@@ -208,6 +211,5 @@ p {
 	h5 { font-size: 0.72em; }
 	h6 { font-size: 0.71em; }
 }
-
 
 

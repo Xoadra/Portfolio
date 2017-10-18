@@ -10,6 +10,7 @@
 		"outDir": "Root",
 		"assets": [
 			"assets",
+			"videos",
 			"favicon.ico"
 		],
 		"index": "index.html",
