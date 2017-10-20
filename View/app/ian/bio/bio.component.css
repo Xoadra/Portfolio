@@ -8,12 +8,6 @@ body {
 	width: 100%;
 }
 
-video {
-	top: -17.5%;
-	background-color: #70b4d3;
-	transform: scale(1, 0.75);
-}
-
 h1 {
 	position: relative;
 	font-variant: small-caps;

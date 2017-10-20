@@ -8,21 +8,31 @@ body {
 	height: 50em;
 }
 
+#over {
+	position: absolute;
+	z-index: 5;
+    background-color: rgba(0, 0, 0, 0.9);
+	height: inherit;
+	width: inherit;
+}
+
 a {
 	position: relative;
 	display: block;
+	z-index: 10;
 	text-decoration: none;
 	text-align: center;
 	font-variant: small-caps;
-	height: 92%;
+	height: 93%;
 }
 
 h1 {
 	font-family: Iceland;
 	font-size: 16em;
 	font-weight: normal;
+	box-sizing: content-box;
 	color: #e02a38;
-	margin: 0.15em 0 0.5em 0;
+	padding: 0.15em 0 0.5em;
 }
 
 #x {
@@ -56,7 +66,7 @@ h3 {
 
 .iter {
 	display: inline-block;
-	transform: matrix(1.25, 0, 0, 1.25, 0, 12.5);
+	transform: matrix(1.25, 0, 0, 1.25, 0, 16.5);
 	margin: 0 1em;
 }
 
@@ -71,6 +81,7 @@ h3 {
 		margin: -3.7em 0 0 3.9em;
 	}
 	h3 { font-size: 3.75em; }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 12.5); }
 }
 
 @media (max-width: 1024px) {
@@ -83,7 +94,7 @@ h3 {
 		margin: -3.6em 0 0 3.775em;
 	}
 	h3 { font-size: 3em; }
-	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 9); }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 10.5); }
 }
 
 @media (max-width: 768px) {
@@ -96,7 +107,7 @@ h3 {
 		margin: -3.6em 0 0 3.75em;
 	}
 	h3 { font-size: 2.25em; }
-	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 6.5); }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 8); }
 }
 
 @media (max-width: 580px) {
@@ -109,7 +120,7 @@ h3 {
 		margin: -3.6em 0 0 3.75em;
 	}
 	h3 { font-size: 1.5em; }
-	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 4); }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 5); }
 }
 
 @media (max-width: 425px) {
@@ -122,6 +133,7 @@ h3 {
 		margin: -3.5em 0 0 3.725em;
 	}
 	h3 { font-size: 1.125em; }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 3.5); }
 }
 
 @media (max-width: 320px) {
@@ -134,7 +146,7 @@ h3 {
 		margin: -3.5em 0 0 3.85em;
 	}
 	h3 { font-size: 0.9em; }
-	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 2.5); }
+	.iter { transform: matrix(1.25, 0, 0, 1.25, 0, 3); }
 }
 
 
