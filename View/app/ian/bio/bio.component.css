@@ -4,7 +4,7 @@
 
 body {
 	text-align: center;
-	background-color: transparent /* #0f1ed0 */;
+	background-color: #0f1ed0;
 	width: 100%;
 }
 
@@ -15,14 +15,16 @@ video {
 }
 
 h1 {
+	position: relative;
 	font-variant: small-caps;
 	letter-spacing: 0.25em;
+	padding: 0 0 0 0.275em;
 }
 
 h2 {
 	font-style: italic;
 	letter-spacing: -0.025em;
-    padding: 1em 0 0;
+    padding: 0.5em 0 0;
 }
 
 #vision {

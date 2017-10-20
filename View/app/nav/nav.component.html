@@ -4,18 +4,22 @@
 
 <body>
 	<div id="nav">
-		<h5> SECTION </h5>
+		<div id="sect">
+				<h4> SECTION </h4>
+		</div>
 		<div id="sects">
 			<!-- Placeholder routes until interpage navigation is implemented. -->
-			<a [routerLink]="['']"><h5 class="page"> MID(3) </h5></a>
-			<h6> | </h6>
-			<a [routerLink]="['']"><h5 class="page"> BOT(5) </h5></a>
-			<h6> | </h6>
-			<a [routerLink]="['']"><h5 class="page"> TOP(1) </h5></a>
-			<h6> | </h6>
-			<a [routerLink]="['']"><h5 class="page"> UP(2) </h5></a>
-			<h6> | </h6>
-			<a [routerLink]="['']"><h5 class="page"> LOW(4) </h5></a>
+			<h5>
+				<a [routerLink]="['']"><span class="page"> MID(3) </span></a>
+				<span class="iter"> | </span>
+				<a [routerLink]="['']"><span class="page"> BOT(5) </span></a>
+				<span class="iter"> | </span>
+				<a [routerLink]="['']"><span class="page"> TOP(1) </span></a>
+				<span class="iter"> | </span>
+				<a [routerLink]="['']"><span class="page"> UP(2) </span></a>
+				<span class="iter"> | </span>
+				<a [routerLink]="['']"><span class="page"> LOW(4) </span></a>
+			</h5>
 		</div>
 	</div>
 </body>
