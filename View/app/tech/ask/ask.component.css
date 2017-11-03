@@ -3,11 +3,11 @@
 
 
 body {
+	display: none; /* Temporarily hidden */
 	text-align: center;
 	background-color: #1b0b0b;
     height: 35em;
 	width: 100%;
 }
-
 
 
