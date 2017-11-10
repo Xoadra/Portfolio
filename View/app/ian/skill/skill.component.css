@@ -8,16 +8,21 @@ body {
 	width: 100%;
 }
 
-h2 {
+h3 {
 	padding: 0.75em 0 0;
 }
 
+#intro {
+	width: 90%;
+	padding: 1.5em 0 2em;
+}
+
 .set {
-	margin: -1em 0 2em;
+	margin: -1.5em 0 2em;
 }
 
 .lang {
-	margin: 2.5em 6% 0;
+	margin: 2.5em 7.5% 0;
 }
 
 .frame {
@@ -28,12 +33,49 @@ h2 {
 	margin: 2.5em 5% 0;
 }
 
+.cloud {
+	margin: 2.5em 7.5% 0;
+}
+
+#value {
+	display: inline-block;
+    text-align: center;
+	width: 80%;
+	margin: 0 0 2em;
+	padding: 1.5em 0 0;
+}
+
 .trait {
 	display: inline-block;
 	text-align: center;
-	letter-spacing: 0.125em;
-	/* font-variant: small-caps; */
-	margin: 2.5em 4.5% 0.5em;
+	letter-spacing: 0.25em;
+	font-variant: small-caps;
+	font-weight: bolder;
+	margin: 0.5em 7.5% 0.5em;
+}
+
+#sum {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+}
+
+h5 {
+	text-indent: 3em;
+    line-height: 1.5em;
+    margin: 0 0 1em;
+}
+
+#last {
+	display: inline-block;
+	text-align: center;
+	width: 80%;
+	padding: 1.5em 0;
+}
+
+#quest {
+	display: block;
+	margin: 0 0 1em;
 }
 
 

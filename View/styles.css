@@ -28,7 +28,7 @@ video {
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 4em;
 	font-family: Krona One;
 	font-weight: normal;
 	margin: 0 0 0;
@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.25em;
+	font-size: 2em;
 	font-weight: normal;
 	margin: 0 0 0;
 }
@@ -56,7 +56,7 @@ h3 {
 
 .sect {
 	position: relative;
-	height: 50em;
+	min-height: 50em; /* TEMPORARY */
 }
 
 .core {
