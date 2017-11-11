@@ -41,7 +41,7 @@ h5 {
 	margin: 0.4em 0 0;
 }
 
-#sects {
+#port {
 	position: relative;
     text-align: center;
     color: #d84f7a;
@@ -57,7 +57,7 @@ a {
 	color: #A00023;
 } */
 
-.page {
+.view {
 	display: inline-block;
 	font-family: Iceland;
 	margin: 0 0.75em;

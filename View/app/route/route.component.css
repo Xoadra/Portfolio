@@ -7,7 +7,7 @@ body {
 	z-index: 25;
 	background-color: #0d0b1b;
 	top: 0;
-	height: 9em;
+	height: 10em;
 	width: 100%;
 }
 
@@ -15,10 +15,11 @@ body {
 	position: relative;
 	text-align: center;
 	color: #9069ff;
-    top: 12%;
+    top: 16%;
 }
 
 a {
+	text-decoration: none;
 	color: #caa6e8;
 }
 
@@ -26,8 +27,15 @@ a {
 	color: #A03BE7;
 } */
 
-.page {
-	margin: 0pt 4%;
+#ian {
+	display: block;
+	letter-spacing: 0.5em;
+	margin: 0 0 0.5em;
 }
+
+.page {
+	margin: 0pt 3%;
+}
+
 
 

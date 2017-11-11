@@ -13,8 +13,10 @@ import { IanComponent } from '../ian/ian.component';
 	import { BioComponent } from '../ian/bio/bio.component';
 	import { SkillComponent } from '../ian/skill/skill.component';
 	import { ExpComponent } from '../ian/exp/exp.component';
-	import { DevComponent } from '../ian/dev/dev.component';
-	import { ProjectComponent } from '../ian/project/project.component';
+	import { MethodComponent } from '../ian/method/method.component'
+	import { DevelopComponent } from '../ian/develop/develop.component';
+// Work page components
+import { WorkComponent } from '../work/work.component';
 // Blog page components
 import { BlogComponent } from '../blog/blog.component';
 	import { ThemeComponent } from '../blog/theme/theme.component';
@@ -36,10 +38,10 @@ import { HackComponent } from '../hack/hack.component';
 // Routing directives of each page
 const routes: Routes = [
 	{ path: '', pathMatch: 'full', component: IanComponent, children: [ ] },
+	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
-	//{ path: '', pathMatch: 'full', component: , children: [ ] },
 	//{ path: '', pathMatch: 'full', component: , children: [ ] }
 	{ path: '**', component: IanComponent, children: [ ] }
 ];
@@ -48,7 +50,8 @@ const routes: Routes = [
 @NgModule( {
 	declarations: [
 		IanComponent,
-			QuoteComponent, PeekComponent, BioComponent, SkillComponent, ExpComponent, DevComponent, ProjectComponent, 
+			PeekComponent, QuoteComponent, BioComponent, SkillComponent, ExpComponent, MethodComponent, DevelopComponent,
+		WorkComponent,
 		BlogComponent,
 			ThemeComponent, NewestComponent, ForumComponent, 
 		HackComponent,
@@ -62,6 +65,5 @@ const routes: Routes = [
 
 	
 export class RouteModule {  }
-
 
 

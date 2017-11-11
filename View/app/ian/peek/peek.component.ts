@@ -15,9 +15,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class PeekComponent implements OnInit {
 
-	constructor( ) { }
+	constructor( ) {  }
 
-	ngOnInit( ) { }
+	ngOnInit( ) {  }
 
 }
 
