@@ -67,8 +67,8 @@ h3 {
 	overflow: hidden;
 	box-sizing: border-box;
 	border-top: 0 solid;
-	border-left: 0.1em solid rgba(0, 0, 0, 0.1);
-	border-right: 0.1em solid rgba(0, 0, 0, 0.1);
+	border-left: 0.1em solid rgba( 0, 0, 0, 0.1 );
+	border-right: 0.1em solid rgba( 0, 0, 0, 0.1 );
 	border-bottom: 0 solid;
 	border-radius: 1em;
 	min-height: inherit;
@@ -83,8 +83,13 @@ h3 {
 	z-index: 15;
 	overflow: scroll;
 	background: inherit;
-	box-shadow: 0.5rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
-	transform: scale(1.05, 1.05);
+	box-shadow: 0.5rem 1rem 1rem 0 rgba( 0, 0, 0, 0.5 );
+	transform: scale( 1.05, 1.05 );
+}
+
+.intro {
+	width: 90%;
+	padding: 1.5em 0 2.5em;
 }
 
 h4 {
@@ -140,6 +145,5 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
-
 
 
