@@ -2,7 +2,7 @@
 
 
 
-@media (max-width: 1440px) {
+@media ( max-width: 1440px ) {
 
 	video {
 		width: 125%;
@@ -31,7 +31,7 @@
 
 }
 
-@media (max-width: 1024px) {
+@media ( max-width: 1024px ) {
 
 	video {
 		width: 130%;
@@ -60,7 +60,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media ( max-width: 768px ) {
 
 	video {
 		width: 140%;
@@ -101,7 +101,7 @@
 
 }
 
-@media (max-width: 580px) {
+@media ( max-width: 580px ) {
 
 	video {
 		width: 145%;
@@ -148,7 +148,7 @@
 	
 }
 
-@media (max-width: 425px) {
+@media ( max-width: 425px ) {
 
 	video {
 		width: 160%;
@@ -184,7 +184,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media ( max-width: 320px ) {
 
 	video {
 		min-width: 100vh;

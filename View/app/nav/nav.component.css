@@ -32,7 +32,7 @@ h4 {
     box-sizing: border-box;
     padding: 0.4em 0 0;
     width: 40%;
-    transform: translate(0, -0.8em);
+    transform: translate( 0, -0.8em );
     border-top-left-radius: 25em;
     border-top-right-radius: 25em;
 }
@@ -61,13 +61,13 @@ a {
 	display: inline-block;
 	font-family: Iceland;
 	margin: 0 0.75em;
-	transform: scale(1, 1.25);
+	transform: scale( 1, 1.25 );
 }
 
 .iter {
 	display: inline-block;
 	font-weight: bold;
-	transform: matrix(1.5, 0, 0, 1, 0, 0.5);
+	transform: matrix( 1.5, 0, 0, 1, 0, 0.5 );
 }
 
 

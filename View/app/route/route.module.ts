@@ -40,7 +40,7 @@ const routes: Routes = [
 	{ path: '', pathMatch: 'full', component: IanComponent, children: [ ] },
 	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
-	{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
+	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
 	//{ path: '', pathMatch: 'full', component: , children: [ ] }
 	{ path: '**', component: IanComponent, children: [ ] }

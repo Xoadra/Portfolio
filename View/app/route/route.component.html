@@ -13,23 +13,29 @@
 		<h6> | </h6>
 		<h6 class="user"> LOGOUT </h6>
 	</div>
+	<!-- <a [routerLink]="['']"><h2 id="ian"> IAN </h2></a> -->
+	<!-- <h4> | </h4> -->
+	<!-- <a [routerLink]="['hack']"><button><h3 class="seg"> HACK </h3></button></a> -->
+	<!-- <a [routerLink]="['work']"><button><h3 class="seg"> WORK </h3></button></a> -->
+	<!-- 
 	<div id="nav">
-		<!-- <a [routerLink]="['']"><h2 id="ian"> IAN </h2></a> -->
-		<a [routerLink]="['hack']"><h3 class="page"> HACK </h3></a>
-		<h4> | </h4>
-		<a [routerLink]="['tech']"><h3 class="page"> TECH </h3></a>
-		<h4> | </h4>
-		<a [routerLink]="['']"><h3 class="page"> IAN </h3></a>
-		<h4> | </h4>
-		<!-- 		
-		<a [routerLink]="['work']"><h3 class="page"> WORK </h3></a>
-		<h4> | </h4>
- 		-->
-		<a [routerLink]="['blog']"><h3 class="page"> BLOG </h3></a>
-		<h4> | </h4>
-		<a [routerLink]="['']"><h3 class="page"> MAIL </h3></a>
+		<a [routerLink]="['tech']"><button><h3 class="seg"> TECH </h3></button></a>
+		<a [routerLink]="['']"><button><h3 class="seg"> IAN </h3></button></a>
+		<a [routerLink]="['blog']"><button><h3 class="seg"> BLOG </h3></button></a>
+		<a><button><h3 class="seg"> MAIL </h3></button></a>
+	</div>
+	 -->
+	<div id="nav">
+		<div class="left">
+			<a><button><h3> RESUME </h3></button></a>
+			<a [routerLink]="['tech']"><button><h3> TECH </h3></button></a>
+		</div>
+		<a [routerLink]="['']"><button id="ian"><h3> IAN </h3></button></a>
+		<div class="right">
+			<a [routerLink]="['blog']"><button><h3> BLOG </h3></button></a>
+			<a><button><h3> CONTACT </h3></button></a>
+		</div>
 	</div>
 </body>
-
 
 
