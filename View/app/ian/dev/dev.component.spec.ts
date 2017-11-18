@@ -3,23 +3,23 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { QuoteComponent } from './quote.component';
+import { DevComponent } from './dev.component';
 
 
 
-describe( 'QuoteComponent', ( ) => {
-	let component: QuoteComponent;
-	let fixture: ComponentFixture<QuoteComponent>;
+describe( 'DevComponent', ( ) => {
+	let component: DevComponent;
+	let fixture: ComponentFixture<DevComponent>;
 
 	beforeEach( async( ( ) => {
-		TestBed.configureTestingModule({
-			declarations: [ QuoteComponent ]
+		TestBed.configureTestingModule( {
+			declarations: [ DevComponent ]
 		} )
 		.compileComponents( );
 	} ) );
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( QuoteComponent );
+		fixture = TestBed.createComponent( DevComponent );
 		component = fixture.componentInstance;
 		fixture.detectChanges( );
 	} );

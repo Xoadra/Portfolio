@@ -9,12 +9,11 @@ import { Routes, RouterModule } from '@angular/router';
 // Main page components
 import { IanComponent } from '../ian/ian.component';
 	import { PeekComponent } from '../ian/peek/peek.component';
-	import { QuoteComponent } from '../ian/quote/quote.component';
 	import { BioComponent } from '../ian/bio/bio.component';
 	import { SkillComponent } from '../ian/skill/skill.component';
 	import { ExpComponent } from '../ian/exp/exp.component';
 	import { MethodComponent } from '../ian/method/method.component'
-	import { DevelopComponent } from '../ian/develop/develop.component';
+	import { DevComponent } from '../ian/dev/dev.component';
 // Work page components
 import { WorkComponent } from '../work/work.component';
 // Blog page components
@@ -50,7 +49,7 @@ const routes: Routes = [
 @NgModule( {
 	declarations: [
 		IanComponent,
-			PeekComponent, QuoteComponent, BioComponent, SkillComponent, ExpComponent, MethodComponent, DevelopComponent,
+			PeekComponent, BioComponent, SkillComponent, ExpComponent, MethodComponent, DevComponent,
 		WorkComponent,
 		BlogComponent,
 			ThemeComponent, NewestComponent, ForumComponent, 
@@ -65,5 +64,6 @@ const routes: Routes = [
 
 	
 export class RouteModule {  }
+
 
 
