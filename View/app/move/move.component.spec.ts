@@ -3,23 +3,23 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { NavComponent } from './nav.component';
+import { MoveComponent } from './move.component';
 
 
 
-describe( 'NavComponent', ( ) => {
-	let component: NavComponent;
-	let fixture: ComponentFixture<NavComponent>;
+describe( 'MoveComponent', ( ) => {
+	let component: MoveComponent;
+	let fixture: ComponentFixture<MoveComponent>;
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ NavComponent ]
+			declarations: [ MoveComponent ]
 		} )
 		.compileComponents( );
 	} ) );
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( NavComponent );
+		fixture = TestBed.createComponent( MoveComponent );
 		component = fixture.componentInstance;
 		fixture.detectChanges( );
 	} );

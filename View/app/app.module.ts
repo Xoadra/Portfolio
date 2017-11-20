@@ -15,13 +15,13 @@ import { HttpModule } from '@angular/http';
 // Whole-website components across all pages
 import { LogoComponent } from './logo/logo.component';
 import { RouteComponent } from './route/route.component';
-import { NavComponent } from './nav/nav.component';
+import { MoveComponent } from './move/move.component';
 import { FootComponent } from './foot/foot.component';
 
 
 
 @NgModule( {
-	declarations: [ AppComponent, LogoComponent, RouteComponent, NavComponent, FootComponent ],
+	declarations: [ AppComponent, LogoComponent, RouteComponent, MoveComponent, FootComponent ],
 	imports: [ BrowserModule, FormsModule, HttpModule, RouteModule ],
 	exports: [ ],
 	providers: [ ],
