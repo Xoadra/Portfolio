@@ -34,7 +34,7 @@ h1 {
 	margin: 0 0 0;
 }
 
-.lead {
+.main {
 	position: relative;
 	font-variant: small-caps;
 	letter-spacing: 0.25em;
@@ -54,7 +54,7 @@ h3 {
 	margin: 0 0 0;
 }
 
-.sect {
+.base {
 	position: relative;
 	min-height: 50em; /* TEMPORARY */
 }
@@ -85,11 +85,6 @@ h3 {
 	background: inherit;
 	box-shadow: 0.5rem 1rem 1rem 0 rgba( 0, 0, 0, 0.5 );
 	transform: scale( 1.05, 1.05 );
-}
-
-.intro {
-	width: 90%;
-	padding: 1.5em 0 2.5em;
 }
 
 h4 {
@@ -145,5 +140,6 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
+
 
 

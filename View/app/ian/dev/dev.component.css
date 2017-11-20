@@ -2,10 +2,38 @@
 
 
 
-body {
+section {
 	text-align: center;
 	background-color: #330282;
 	width: 100%;
 }
+
+#intro {
+	text-align: left;
+	text-indent: 3em;
+	line-height: 1.75em;
+	width: 80%;
+	padding: 2em 0 0;
+}
+
+hr {
+	background-color: #3f20a0;
+	border: 0;
+    border-radius: 50%;
+    height: 0.75em;
+	width: 75%;
+	margin: 1.5em 12.5% 0;
+}
+
+.view {
+	display: inline-block;
+	text-align: center;
+	background-color: #2b096f;
+	border-radius: 1em;
+	height: 20em;
+	width: 90%;
+	margin: 4em 0 0;
+}
+
 
 

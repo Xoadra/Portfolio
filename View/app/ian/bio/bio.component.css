@@ -2,7 +2,7 @@
 
 
 
-body {
+section {
 	text-align: center;
 	background-color: #0c1e9e;
 	width: 100%;
@@ -38,7 +38,7 @@ h3 {
     margin: 0 0 0;
 }
 
-#intro {
+#about {
 	display: inline-block;
 	text-align: left;
 	width: 75%;
@@ -82,10 +82,6 @@ p {
 	font-style: italic;
 	color: #ffcc00;
     text-shadow: 0 0 0.4em #eae5bf;
-}
-
-.slash {
-	text-decoration: line-through;
 }
 
 

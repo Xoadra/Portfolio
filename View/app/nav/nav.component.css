@@ -2,13 +2,13 @@
 
 
 
-body {
+section {
 	background-color: transparent;
 	text-align: center;
 	margin: -3em 0 0;
 }
 
-#nav {
+#bar {
 	position: relative;
     display: inline-block;
     z-index: 10;
@@ -22,10 +22,6 @@ body {
 }
 
 h4 {
-	margin: 0 0 0;
-}
-
-#sect {
 	display: inline-block;
     background-color: inherit;
     height: 80%;
@@ -34,14 +30,14 @@ h4 {
     width: 40%;
     transform: translate( 0, -0.8em );
     border-top-left-radius: 25em;
-    border-top-right-radius: 25em;
+	border-top-right-radius: 25em;
 }
 
 h5 {
 	margin: 0.4em 0 0;
 }
 
-#port {
+nav {
 	position: relative;
     text-align: center;
     color: #d84f7a;
@@ -57,7 +53,7 @@ a {
 	color: #A00023;
 } */
 
-.view {
+.warp {
 	display: inline-block;
 	font-family: Iceland;
 	margin: 0 0.75em;

@@ -2,7 +2,7 @@
 
 
 
-body {
+section {
 	position: sticky;
 	z-index: 25;
 	background-color: #0d0b1b;
@@ -11,14 +11,14 @@ body {
 	width: 100%;
 }
 
-/* #nav {
+/* #route {
 	position: relative;
 	text-align: center;
 	color: #9069ff;
     top: 2%;
 } */
 
-#nav {
+#route {
 	position: relative;
 	text-align: center;
 	top: 10%;

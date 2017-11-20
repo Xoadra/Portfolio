@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component( {
-	selector: 'nav',
+	selector: 'navig',
 	templateUrl: './nav.component.html',
 	styleUrls: [ './nav.component.css' ]
 } )
