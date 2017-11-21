@@ -3,217 +3,83 @@
 
 
 @media ( max-width: 1440px ) {
-
-	video {
-		width: 125%;
-	}
-
-	h1 {
-		font-size: 3.5em;
-	}
-
-	h2 {
-		font-size: 1.75em;
-	}
-
-	h3 {
-		font-size: 1.5em;
-	}
-
-	h4 {
-		font-size: 1.25em;
-	}
-
+	video { width: 125%; }
+	h1 { font-size: 3.5em; }
+	h2 { font-size: 1.75em; }
+	h3 { font-size: 1.5em; }
+	h4 { font-size: 1.25em; }
 	.core {
 		padding: 1.5em 0;
 		width: 70%;
 	}
-
 }
 
 @media ( max-width: 1024px ) {
-
-	video {
-		width: 130%;
-	}
-
-	h1 {
-		font-size: 3.25em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.25em;
-	}
-
-	h4 {
-		font-size: 1.125em;
-	}
-
+	video { width: 130%; }
+	h1 { font-size: 3.25em; }
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.25em; }
+	h4 { font-size: 1.125em; }
 	.core {
 		padding: 1em 0;
 		width: 75%;
 	}
-
 }
 
 @media ( max-width: 768px ) {
-
-	video {
-		width: 140%;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.125em;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	h5 {
-		font-size: 0.9em;
-	}
-
-	h6 {
-		font-size: 0.8em;
-	}
-
-	p {
-		font-size: 0.75em;
-	}
-
+	video { width: 140%; }
+	h1 { font-size: 3em; }
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.125em; }
+	h4 { font-size: 1em; }
+	h5 { font-size: 0.9em; }
+	h6 { font-size: 0.8em; }
+	p { font-size: 0.75em; }
 	.core {
 		padding: 0.75em 0;
 		width: 80%;
 	}
-
 }
 
 @media ( max-width: 580px ) {
-
-	video {
-		width: 145%;
-	}
-
-	h1 {
-		font-size: 2.5em;
-	}
-
-	h2 {
-		font-size: 1.25em;
-	}
-
-	h3 {
-		font-size: 1em;
-	}
-
-	h4 {
-		font-size: 0.95em;
-	}
-
-	h5 {
-		font-size: 0.9em;
-	}
-
-	h6 {
-		font-size: 0.75em;
-	}
-
-	p {
-		font-size: 0.7em;
-	}
-
+	video { width: 145%; }
+	h1 { font-size: 2.5em; }
+	h2 { font-size: 1.25em; }
+	h3 { font-size: 1em; }
+	h4 { font-size: 0.95em; }
+	h5 { font-size: 0.9em; }
+	h6 { font-size: 0.75em; }
+	p { font-size: 0.7em; }
 	.core {
 		border: 0;
 		width: 100%;
 	}
-
 	.core:hover {
 		box-shadow: 0 0;
 		transition: none;
 		transform: none;
 	}
-	
 }
 
 @media ( max-width: 425px ) {
-
-	video {
-		width: 160%;
-	}
-
-	h1 {
-		font-size: 2.25em;
-	}
-
-	h2 {
-		font-size: 1.15em;
-	}
-
-	h3 {
-		font-size: 0.9em;
-	}
-
-	h4 {
-		font-size: 0.85em;
-	}
-
-	h5 {
-		font-size: 0.8em;
-	}
-
-	h6 {
-		font-size: 0.75em;
-	}
-
-	.core {
-		padding: 0.5em 0;
-	}
-
+	video { width: 160%; }
+	h1 { font-size: 2.25em; }
+	h2 { font-size: 1.15em; }
+	h3 { font-size: 0.9em; }
+	h4 { font-size: 0.85em; }
+	h5 { font-size: 0.8em; }
+	h6 { font-size: 0.75em; }
+	.core { padding: 0.5em 0; }
 }
 
 @media ( max-width: 320px ) {
-
-	video {
-		min-width: 100vh;
-	}
-
-	h1 {
-		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1em;
-	}
-
-	h3 {
-		font-size: 0.75em;
-	}
-
-	h4 {
-		font-size: 0.735em;
-	}
-
-	h5 {
-		font-size: 0.72em;
-	}
-
-	h6 {
-		font-size: 0.71em;
-	}
-
+	video { min-width: 100vh; }
+	h1 { font-size: 2em; }
+	h2 { font-size: 1em; }
+	h3 { font-size: 0.75em; }
+	h4 { font-size: 0.735em; }
+	h5 { font-size: 0.72em; }
+	h6 { font-size: 0.71em; }
 }
 
 

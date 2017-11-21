@@ -74,8 +74,8 @@ h3 {
 	min-height: inherit;
 	height: inherit;
 	max-width: 100%;
-	width: 60%;
-    padding: 2em 0;
+	width: 67%;
+    padding: 2em 0 3em;
 	transition: transform 0.15s;
 }
 
@@ -83,7 +83,7 @@ h3 {
 	z-index: 15;
 	overflow: scroll;
 	background: inherit;
-	box-shadow: 0.5rem 1rem 1rem 0 rgba( 0, 0, 0, 0.5 );
+	box-shadow: 0.5em 1em 1em 0 rgba( 0, 0, 0, 0.5 );
 	transform: scale( 1.05, 1.05 );
 }
 

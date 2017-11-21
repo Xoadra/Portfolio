@@ -5,7 +5,7 @@
 footer {
 	background-color: black;
 	color: #ea3f6d;
-	height: 16em;
+	height: 18em;
 	width: 100%;
 }
 
@@ -13,7 +13,7 @@ address {
 	position: relative;
 	text-align: center;
 	font-style: normal;
-	top: 15%;
+	top: 16%;
 }
 
 .media {

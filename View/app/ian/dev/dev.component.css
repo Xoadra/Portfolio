@@ -8,7 +8,11 @@ section {
 	width: 100%;
 }
 
-h5 {
+.core {
+	padding: 2em 0 4em;
+}
+
+h4 {
 	text-align: left;
 	text-indent: 3.5em;
 	line-height: 1.75em;
@@ -22,18 +26,48 @@ hr {
     border-radius: 50%;
     height: 0.75em;
 	width: 75%;
-	margin: 1.5em 12.5% 0;
+	margin: 1em 12.5% 4em;
+}
+
+h2 {
+	display: block;
 }
 
 .view {
 	display: inline-block;
-	text-align: center;
 	background-color: #2b096f;
 	border-radius: 1em;
-	height: 20em;
 	width: 90%;
-	margin: 4em 0 0;
+	padding: 0.5% 0;
+	margin: 1em 0 0;
 }
 
+.scroll {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	background-color: transparent;
+	padding: 0.5em 0;
+	margin: 0 0;
+}
+
+img {
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+    line-height: 10em;
+	background-color: rgba( 255, 255, 255, 0.5 );
+	color: #7c30ef;
+    border-radius: 0.5em;
+    height: 12em;
+    width: 10em;
+    margin: 0.5em 2%;
+}
+
+
+/* Responsive Breakpoint Settings */
+@media ( max-width: 580px ) {
+	.view { width: 80%; };
+}
 
 
