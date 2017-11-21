@@ -3,15 +3,29 @@
 
 
 section {
+	position: relative;
 	background-color: transparent;
 	text-align: center;
-	margin: -3em 0 0;
+	margin: -4em 0 0;
+}
+
+#pop {
+	position: relative;
+	z-index: 20;
+	opacity: 0;
+	height: 140%;
+	width: 100%;
+	padding: 1em 0 0;
+}
+
+#pop:hover {
+	z-index: 25;
+	opacity: 1;
 }
 
 #bar {
 	position: relative;
     display: inline-block;
-    z-index: 10;
     background-color: #ef6ea1;
     border-top-left-radius: 175%;
     border-top-right-radius: 175%;
@@ -38,9 +52,10 @@ h5 {
 }
 
 nav {
-	position: relative;
+	position: absolute;
     text-align: center;
-    color: #d84f7a;
+	color: #d84f7a;
+	width: 100%;
     margin: -1.5em 0 0;
 }
 
@@ -65,5 +80,6 @@ a {
 	font-weight: bold;
 	transform: matrix( 1.5, 0, 0, 1, 0, 0.5 );
 }
+
 
 

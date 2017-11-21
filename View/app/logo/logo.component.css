@@ -66,8 +66,8 @@ h3 {
 
 .iter {
 	display: inline-block;
-	transform: matrix( 1.25, 0, 0, 1.25, 0, 16.5 );
 	margin: 0 1em;
+	transform: matrix( 1.25, 0, 0, 1.25, 0, 16.5 );
 }
 
 
