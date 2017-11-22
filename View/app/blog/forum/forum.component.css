@@ -5,9 +5,11 @@
 section {
     text-align: center;
 	background-color: #1f010a;
-	min-height: 100em;
-    width: 100%;
+	width: 100%;
 }
 
+.core {
+	padding: 0 0 3em;
+}
 
 

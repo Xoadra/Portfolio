@@ -15,6 +15,8 @@ import { Component, OnInit } from '@angular/core';
 	
 export class ForumComponent implements OnInit {
 
+	section: string = 'Forum'
+
 	constructor( ) {  }
 
 	ngOnInit( ) {  }
