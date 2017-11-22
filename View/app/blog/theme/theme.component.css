@@ -5,8 +5,38 @@
 section {
 	text-align: center;
 	background-color: #d20a2e;
-    height: 20em;
+    height: 18em;
 	width: 100%;
+}
+
+h1 {
+	font-variant: small-caps;
+	padding: 0.25em 0 0;
+}
+
+nav {
+	width: 80%;
+}
+
+#upper {
+	margin: 2.5em 10% 0;
+}
+
+#lower {
+	margin: 1.5em 10% 0;
+}
+
+h2 {
+	display: inline-block;
+}
+
+.iter {
+	padding: 0 0 0;
+	margin: 0 6%;
+}
+
+br {
+	margin: 2em 0 0;
 }
 
 
