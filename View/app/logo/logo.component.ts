@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { RouteComponent } from '../route/route.component';
 
 
 
@@ -12,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './logo.component.css' ]
 } )
 
-	
+
 export class LogoComponent implements OnInit {
 
 	constructor( ) {  }
@@ -20,6 +21,5 @@ export class LogoComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
-
 
 

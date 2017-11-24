@@ -11,6 +11,10 @@ section {
 	width: 100%;
 }
 
+.auth a {
+	color: #e08fff;
+}
+
 /* #route {
 	position: relative;
 	text-align: center;

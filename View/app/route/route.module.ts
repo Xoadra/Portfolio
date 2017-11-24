@@ -34,6 +34,11 @@ import { HackComponent } from '../hack/hack.component';
 	import { HistoryComponent } from '../hack/history/history.component';
 	import { IssueComponent } from '../hack/issue/issue.component';
 
+// Partial popup components
+import { RegisterComponent } from '../register/register.component';
+import { ProfileComponent } from '../profile/profile.component';
+import { AuthComponent } from '../auth/auth.component';
+
 
 
 // Routing directives of each page
@@ -43,13 +48,16 @@ const routes: Routes = [
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
-	//{ path: '', pathMatch: 'full', component: , children: [ ] }
+	{ path: '*auth', component: AuthComponent, children: [ ] },
+	{ path: '*register', component: RegisterComponent, children: [ ] },
+	{ path: '*profile', component: ProfileComponent, children: [ ] },
 	{ path: '**', component: IanComponent, children: [ ] }
 ];
 
 
 @NgModule( {
 	declarations: [
+		RegisterComponent, ProfileComponent, AuthComponent,
 		IanComponent,
 			/* PeekComponent, ExpComponent, MethodComponent,  */
 			BioComponent, SkillComponent, DevComponent, ProjectComponent,

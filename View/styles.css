@@ -75,8 +75,8 @@ h3 {
 	height: inherit;
 	max-width: 100%;
 	width: 67%;
-    padding: 2em 0 3em;
-	transition: transform 0.15s;
+	padding: 2em 0 3em;
+	transition: transform 0.25s;
 }
 
 .core:hover {

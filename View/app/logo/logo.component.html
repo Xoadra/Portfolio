@@ -2,6 +2,9 @@
 
 
 
+<!-- Login and register links will need work to display over any current page. -->
+
+
 <header>
 	<div id="film">
 		<div id="over"></div>
@@ -12,9 +15,9 @@
 		</video> -->
 	</div>
 	<div class="auth">
-		<h6 class="user"> LOGIN </h6>
+		<a class="user" [routerLink]="['auth']"><h6> LOGIN </h6></a>
 		<h6> | </h6>
-		<h6 class="user"> REGISTER </h6>
+		<a class="user" [routerLink]="['register']"><h6> REGISTER </h6></a>
 	</div>
 	<a [routerLink]="['']">
 		<h1> <span id="x">X</span>ambda.io </h1>
@@ -30,6 +33,5 @@
 		</div>
 	</a>
 </header>
-
 
 
