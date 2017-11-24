@@ -4,10 +4,12 @@
 
 article {
 	display: inline-block;
-	background-color: rgba( 75, 10, 25, 0.25 );
+	box-sizing: border-box;
+	background-color: rgba( 20, 25, 18, 0.1 );
 	border-radius: 1em;
-	min-height: 40em;
+	min-height: 60em;
 	width: 80%;
+	padding: 0 0 3em;
 	margin: 3em 0 0;
 	transition: transform 0.25s;
 }
@@ -20,6 +22,14 @@ article:hover {
 
 h2 {
 	margin: 1em 0 0;
+}
+
+p {
+	display: inline-block;
+	text-align: left;
+	text-indent: 4em;
+	width: 90%;
+	margin: 0.5em 0 0;
 }
 
 

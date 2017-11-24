@@ -27,6 +27,8 @@ import { BlogComponent } from '../blog/blog.component';
 import { TechComponent } from '../tech/tech.component';
 	import { LibraryComponent } from '../tech/library/library.component';
 	import { GuideComponent } from '../tech/guide/guide.component';
+		import { LessonComponent } from '../tech/guide/lesson/lesson.component';
+			import { CodeComponent } from '../tech/guide/lesson/code/code.component';
 	import { AskComponent } from '../tech/ask/ask.component';
 // Hack page components
 import { HackComponent } from '../hack/hack.component';
@@ -35,7 +37,7 @@ import { HackComponent } from '../hack/hack.component';
 	import { IssueComponent } from '../hack/issue/issue.component';
 
 // Partial popup components
-import { RegisterComponent } from '../register/register.component';
+import { SignupComponent } from '../signup/signup.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { AuthComponent } from '../auth/auth.component';
 
@@ -49,7 +51,7 @@ const routes: Routes = [
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
 	{ path: '*auth', component: AuthComponent, children: [ ] },
-	{ path: '*register', component: RegisterComponent, children: [ ] },
+	{ path: '*signup', component: SignupComponent, children: [ ] },
 	{ path: '*profile', component: ProfileComponent, children: [ ] },
 	{ path: '**', component: IanComponent, children: [ ] }
 ];
@@ -57,7 +59,7 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		RegisterComponent, ProfileComponent, AuthComponent,
+		SignupComponent, ProfileComponent, AuthComponent,
 		IanComponent,
 			/* PeekComponent, ExpComponent, MethodComponent,  */
 			BioComponent, SkillComponent, DevComponent, ProjectComponent,
@@ -67,7 +69,7 @@ const routes: Routes = [
 		HackComponent,
 			ChallengeComponent, HistoryComponent, IssueComponent, 
 		TechComponent,
-			LibraryComponent, GuideComponent, AskComponent
+			LibraryComponent, AskComponent, GuideComponent, LessonComponent, CodeComponent
 	],
 	imports: [ CommonModule, RouterModule.forRoot( routes ) ],
 	exports: [ RouterModule ]

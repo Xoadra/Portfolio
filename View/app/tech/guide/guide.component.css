@@ -4,10 +4,12 @@
 
 section {
 	text-align: center;
-	background-color: #080806;
-    min-height: 100em;
+	background-color: #030402;
 	width: 100%;
 }
 
+.core {
+	padding: 0 0 3em;
+}
 
 
