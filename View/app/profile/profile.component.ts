@@ -15,11 +15,15 @@ import { Component, OnInit } from '@angular/core';
 	
 export class ProfileComponent implements OnInit {
 
+	label: string = 'Profile'
+	account: boolean = false
+
+
 	constructor( ) {  }
+
 
 	ngOnInit( ) {  }
 
 }
-
 
 

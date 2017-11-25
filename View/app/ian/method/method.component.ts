@@ -17,9 +17,9 @@ export class MethodComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

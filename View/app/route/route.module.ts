@@ -59,23 +59,45 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		SignupComponent, ProfileComponent, AuthComponent,
+		//SignupComponent,
+		//ProfileComponent,
+		//AuthComponent,
 		IanComponent,
-			/* PeekComponent, ExpComponent, MethodComponent,  */
-			BioComponent, SkillComponent, DevComponent, ProjectComponent,
-		WorkComponent,
+			//PeekComponent,
+			//ExpComponent,
+			//MethodComponent, 
+			BioComponent,
+			SkillComponent,
+			DevComponent,
+				ProjectComponent,
 		BlogComponent,
-			ThemeComponent, NewestComponent, ForumComponent, PostComponent,
-		HackComponent,
-			ChallengeComponent, HistoryComponent, IssueComponent, 
+			ThemeComponent,
+			NewestComponent,
+			ForumComponent,
+			PostComponent,
 		TechComponent,
-			LibraryComponent, AskComponent, GuideComponent, LessonComponent, CodeComponent
+			LibraryComponent,
+			AskComponent,
+			GuideComponent,
+				LessonComponent,
+					CodeComponent,
+		//WorkComponent,
+		//HackComponent,
+			//ChallengeComponent,
+			//HistoryComponent,
+			//IssueComponent
 	],
-	imports: [ CommonModule, RouterModule.forRoot( routes ) ],
-	exports: [ RouterModule ]
+	imports: [
+		CommonModule,
+		RouterModule.forRoot( routes )
+	],
+	exports: [
+		RouterModule
+	]
 } )
 
 
 export class RouteModule {  }
+
 
 

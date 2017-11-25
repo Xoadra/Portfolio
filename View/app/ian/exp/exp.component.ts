@@ -17,9 +17,9 @@ export class ExpComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

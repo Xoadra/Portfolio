@@ -17,9 +17,9 @@ export class RouteComponent implements OnInit {
 
 	constructor( ) {  }
 
+	
 	ngOnInit( ) {  }
 
 }
-
 
 

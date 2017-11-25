@@ -17,9 +17,9 @@ export class LessonComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

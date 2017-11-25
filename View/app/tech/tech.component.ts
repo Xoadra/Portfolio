@@ -16,10 +16,13 @@ export class TechComponent implements OnInit {
 
 	label: string = 'Programming Explained'
 
+
 	constructor( ) {  }
+
 
 	ngOnInit( ) {  }
 
 }
+
 
 

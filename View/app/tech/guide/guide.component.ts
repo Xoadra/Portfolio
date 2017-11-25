@@ -17,9 +17,9 @@ export class GuideComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

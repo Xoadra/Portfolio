@@ -15,11 +15,15 @@ import { Component, OnInit } from '@angular/core';
 	
 export class SignupComponent implements OnInit {
 
+	label: string = 'Register'
+	register: boolean = false
+
+
 	constructor( ) {  }
+
 
 	ngOnInit( ) {  }
 
 }
-
 
 

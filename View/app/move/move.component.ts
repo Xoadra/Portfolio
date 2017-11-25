@@ -17,9 +17,9 @@ export class MoveComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

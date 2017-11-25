@@ -16,8 +16,10 @@ export class BlogComponent implements OnInit {
 
 	label: string = 'Technology: Now & Ahead'
 
+
 	constructor( ) {  }
 
+	
 	ngOnInit( ) {  }
 
 }

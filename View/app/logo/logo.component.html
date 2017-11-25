@@ -15,7 +15,7 @@
 		</video> -->
 	</div>
 	<div class="auth">
-		<a class="user" [routerLink]="['auth']"><h6> LOGIN </h6></a>
+		<a class="user" (click)="login($event)" [routerLink]="['auth']"><h6> LOGIN </h6></a>
 		<h6> | </h6>
 		<a class="user" [routerLink]="['signup']"><h6> REGISTER </h6></a>
 	</div>

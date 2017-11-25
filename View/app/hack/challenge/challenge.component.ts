@@ -17,9 +17,9 @@ export class ChallengeComponent implements OnInit {
 
 	constructor( ) {  }
 
+
 	ngOnInit( ) {  }
 
 }
-
 
 

@@ -2,8 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
-import { RouteComponent } from '../route/route.component';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 
@@ -16,10 +15,21 @@ import { RouteComponent } from '../route/route.component';
 
 export class LogoComponent implements OnInit {
 
+	@Output( ) pop = new EventEmitter( )
+	
+
+
 	constructor( ) {  }
+	
+
+	login( ) {
+		this.pop.emit( true )
+	}
+
 
 	ngOnInit( ) {  }
 
 }
+
 
 

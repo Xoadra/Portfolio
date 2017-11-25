@@ -18,18 +18,38 @@ import { RouteComponent } from './route/route.component';
 import { MoveComponent } from './move/move.component';
 import { FootComponent } from './foot/foot.component';
 
+// Partial popup components accessible from anywhere
+import { AuthComponent } from './auth/auth.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 
 @NgModule( {
-	declarations: [ AppComponent, LogoComponent, RouteComponent, MoveComponent, FootComponent ],
-	imports: [ BrowserModule, FormsModule, HttpModule, RouteModule ],
+	declarations: [
+		AppComponent,
+		AuthComponent,
+		ProfileComponent,
+		SignupComponent,
+		LogoComponent,
+		RouteComponent,
+		MoveComponent,
+		FootComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		RouteModule
+	],
 	exports: [ ],
 	providers: [ ],
-	bootstrap: [ AppComponent ]
+	bootstrap: [
+		AppComponent
+	]
 } )
 	
 	
 export class AppModule {  }
-
 
 

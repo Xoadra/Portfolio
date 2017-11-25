@@ -18,8 +18,10 @@ export class HackComponent implements OnInit {
 
 	label: string = 'Up Your Hackery'
 
+
 	constructor( ) {  }
 
+	
 	ngOnInit( ) {  }
 
 }

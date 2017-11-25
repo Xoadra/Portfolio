@@ -16,8 +16,10 @@ export class WorkComponent implements OnInit {
 
 	label: string = 'Software Portfolio'
 
+
 	constructor( ) {  }
 
+	
 	ngOnInit( ) {  }
 
 }
