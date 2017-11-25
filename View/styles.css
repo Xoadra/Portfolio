@@ -76,7 +76,8 @@ h3 {
 	max-width: 100%;
 	width: 67%;
 	padding: 2em 0 3em;
-	transition: transform 0.25s;
+	transform: translate3d( 0, 0, 0 );
+	transition: transform 0.5s;
 }
 
 .core:hover {
@@ -85,6 +86,8 @@ h3 {
 	background: inherit;
 	box-shadow: 0.5em 1em 1em 0 rgba( 0, 0, 0, 0.5 );
 	transform: scale( 1.05, 1.05 );
+	/* transform: scale3d( 1.05, 1.05, 1 ); */
+	/* transform: matrix( 1.05, 0, 0, 1.05, 0, 0 ); */
 }
 
 h4 {
@@ -140,6 +143,5 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
-
 
 

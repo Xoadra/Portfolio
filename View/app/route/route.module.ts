@@ -50,9 +50,9 @@ const routes: Routes = [
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
-	{ path: '*auth', component: AuthComponent, children: [ ] },
-	{ path: '*signup', component: SignupComponent, children: [ ] },
-	{ path: '*profile', component: ProfileComponent, children: [ ] },
+	{ path: 'auth', component: AuthComponent, children: [ ] },
+	{ path: 'signup', component: SignupComponent, children: [ ] },
+	{ path: 'profile', component: ProfileComponent, children: [ ] },
 	{ path: '**', component: IanComponent, children: [ ] }
 ];
 

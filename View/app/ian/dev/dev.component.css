@@ -51,17 +51,42 @@ h2 {
 	margin: 0 0;
 }
 
-img {
+.zoom {
+	position: relative;
 	display: inline-block;
+	z-index: 10;
+	overflow: hidden;
+	border-radius: 0.5em;
+	height: 18em;
+	width: 15em;
+	margin: 0.5em 2%;
+}
+
+img {
+	position: absolute;
+	display: inline-block;
+	z-index: 5;
 	font-size: 1.5em;
 	font-weight: bold;
-    line-height: 10em;
+	line-height: 10em;
+	/* -webkit-font-smoothing: antialiased; */
+	-webkit-font-smoothing: subpixel-antialiased;
+	image-rendering: crisp-edges;
 	background-color: rgba( 255, 255, 255, 0.5 );
 	color: #7c30ef;
-    border-radius: 0.5em;
-    height: 12em;
-    width: 10em;
-    margin: 0.5em 2%;
+	min-height: 100%;
+	max-height: 150%;
+	min-width: 100%;
+	top: 0;
+	left: 0;
+	/* margin: 0 0 0 -75%; */
+	transition: transform 0.5s;
+}
+
+img:hover {
+	transform: scale( 1.25, 1.25 );
+	/* transform: scale3d( 1.25, 1.25, 1 ); */
+	/* transform: matrix( 1.25, 0, 0, 1.25, 0, 0 ); */
 }
 
 
@@ -69,5 +94,6 @@ img {
 @media ( max-width: 580px ) {
 	.view { width: 80%; };
 }
+
 
 
