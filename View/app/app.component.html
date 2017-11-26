@@ -5,17 +5,13 @@
 <logo (pop)="openLogin($event)"></logo>
 <route></route>
 
+<!-- <auth *ngIf="login" (close)="closeLogin($event)"></auth> -->
+<!-- <profile></profile> -->
+<!-- <signup></signup> -->
 
-<auth *ngIf="login" (close)="closeLogin($event)"></auth>
-<profile></profile>
-<signup></signup>
-
-
-<router-outlet>
-</router-outlet>
+<router-outlet></router-outlet>
 
 <move></move>
 <foot></foot>
-
 
 

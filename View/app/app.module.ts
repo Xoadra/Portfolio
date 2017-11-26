@@ -28,9 +28,9 @@ import { SignupComponent } from './signup/signup.component';
 @NgModule( {
 	declarations: [
 		AppComponent,
-		AuthComponent,
-		ProfileComponent,
-		SignupComponent,
+		//AuthComponent,
+		//ProfileComponent,
+		//SignupComponent,
 		LogoComponent,
 		RouteComponent,
 		MoveComponent,

@@ -58,6 +58,7 @@ button {
 	background-color: transparent;
 	color: #caa6e8;
 	outline: none;
+	cursor: pointer;
 	border: 0 solid;
 	border-radius: 0;
 	font-size: 1em;
@@ -87,5 +88,6 @@ h4 {
 	button { padding: 1.5% 4%; }
 	#ian { padding: 0.6% 1.6%; }
 }
+
 
 

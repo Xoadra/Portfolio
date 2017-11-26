@@ -5,6 +5,12 @@
 <head><title> Xambda | {{ label }} </title></head>
 
 
+
+<auth *ngIf="login" (close)="closeLogin($event)"></auth>
+<profile></profile>
+<signup></signup>
+
+
 <library></library>
 <guide></guide>
 <ask></ask>

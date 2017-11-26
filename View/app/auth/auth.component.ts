@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -24,12 +25,13 @@ export class AuthComponent implements OnInit {
 	open: boolean = true
 
 
-	constructor( ) {  }
+	constructor( private back: Router ) {  }
 	
 
 	exit( ) {
 		this.open = false
-		this.close.emit( this.open ) // Placeholder For Non-Routed Closure
+		this.close.emit(open) // Placeholder For Non-Routed Closure
+		this.back.navigate( [ '' ] ) // Will Need Previous Route Params Inserted
 	}
 	
 

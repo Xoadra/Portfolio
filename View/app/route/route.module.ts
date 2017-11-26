@@ -59,9 +59,9 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		//SignupComponent,
-		//ProfileComponent,
-		//AuthComponent,
+		SignupComponent,
+		ProfileComponent,
+		AuthComponent,
 		IanComponent,
 			//PeekComponent,
 			//ExpComponent,

@@ -3,14 +3,22 @@
 
 
 <!-- Current routing redirect closure refreshes the site as opposed to swapping components. -->
+<!-- Requires completed '*ngIF' statements that display the previously visited page to be implemented. -->
 
 
 <head><title> Xambda | {{ label }} </title></head>
 
 
+
+<ian></ian> <!-- *ngIf='' -->
+<tech *ngIf=''></tech>
+<blog *ngIf=''></blog>
+<!-- <hack></hack> -->
+<!-- <work></work> -->
+
 <section *ngIf="open">
 	<h2> Login </h2>
-	<a [routerLink]="['']"><button (click)="exit($event)"><h3> Close </h3></button></a>
+	<button (click)="exit($event)"><h3> Close </h3></button>
 </section>
 
 
