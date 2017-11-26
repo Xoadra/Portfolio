@@ -3,19 +3,21 @@
 
 
 section {
-	position: relative;
-	background-color: transparent;
+	position: sticky;
+    z-index: 25;
+    background-color: transparent;
 	text-align: center;
-	margin: -4em 0 0;
+	bottom: 0;
+	width: 100%;
+    margin: -4em 0 0;
 }
 
 #pop {
 	position: relative;
-	z-index: 20;
-	opacity: 0;
-	height: 140%;
-	width: 100%;
-	padding: 1em 0 0;
+    opacity: 0;
+    height: 140%;
+    width: 100%;
+    padding: 1em 0 0;
 }
 
 #pop:hover {
@@ -32,7 +34,7 @@ section {
     border-bottom-left-radius: 5em;
     border-bottom-right-radius: 5em;
     height: 3em;
-    width: 30%;
+	width: 30%;
 }
 
 h4 {

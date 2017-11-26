@@ -13,18 +13,21 @@ body {
 	margin: 0 0 0;
 }
 
-#film {
-	position: absolute;
-    width: inherit;
-    height: inherit;
-    overflow: hidden;
+#fade {
+	position: fixed;
+    z-index: 30;
+    background-color: rgba( 0, 0, 0, 0.75 );
+	top: 0;
+	height: 100%;
+    width: 100%;
 }
 
-video {
-	position: relative;
-	z-index: 0;
-	background-color: #70b4d3;
-	width: 100%;
+#top {
+	background-color: transparent;
+    border: 0 solid transparent;
+    width: 100%;
+    padding: 50em 0 0;
+    margin: 0 0 0;
 }
 
 h1 {
@@ -97,32 +100,6 @@ h4 {
 	margin: 0 0 0;
 }
 
-	/* Dual settings across authentication and user options */
-	.auth {
-		position: relative;
-		z-index: 10;
-		text-align: right;
-		color: #e08fff;
-		padding: 1em 2% 1em 0;
-	}
-
-	#avatar {
-		display: inline-block;
-		text-align: center;
-		vertical-align: top;
-		font-size: 1em;
-		background-color: #090413;
-		border-radius: 0.5em;
-		height: 1.75em;
-		width: 2em;
-		margin: -0.25em -0.2em;
-	}
-
-	.user {
-		margin: 0 1%;
-	}
-	/*  */
-
 h5 {
 	display: inline-block;
 	font-size: 1em;
@@ -143,5 +120,6 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
+
 
 

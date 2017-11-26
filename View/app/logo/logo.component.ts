@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -15,21 +15,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 export class LogoComponent implements OnInit {
 
-	@Output( ) pop = new EventEmitter( )
-	
-
-
 	constructor( ) {  }
-	
-
-	login( ) {
-		this.pop.emit( true )
-	}
 
 
 	ngOnInit( ) {  }
 
 }
-
 
 

@@ -2,10 +2,16 @@
 
 
 
+<!-- Login and register links will need work to display over any current page. -->
 <!-- Profile link will need work to display over any current page. -->
 
 
 <section>
+	<nav *ngIf="" class="auth">
+		<a class="user" (click)="login($event)" [routerLink]="['auth']"><h6> LOGIN </h6></a>
+		<h6> | </h6>
+		<a class="user" [routerLink]="['signup']"><h6> REGISTER </h6></a>
+	</nav>
 	<nav class="auth">
 		<a [routerLink]="['profile']">
 			<img id="avatar" src="" alt="">
@@ -29,7 +35,7 @@
 		<a [routerLink]="['blog']"><button><h3 class="seg"> BLOG </h3></button></a>
 		<a><button><h3 class="seg"> MAIL </h3></button></a>
 	</nav>
-	 -->
+	-->
 	<nav id="route">
 		<div class="left">
 			<a><button><h3> RESUME </h3></button></a>

@@ -3,7 +3,9 @@
 
 
 @media ( max-width: 1440px ) {
-	video { width: 125%; }
+	/* #top { padding: 45em 0 0; } */
+	#top { padding: 35em 0 0; }
+	/* video { width: 125%; } */
 	h1 { font-size: 3.5em; }
 	h2 { font-size: 1.75em; }
 	h3 { font-size: 1.5em; }
@@ -15,7 +17,9 @@
 }
 
 @media ( max-width: 1024px ) {
-	video { width: 130%; }
+	/* #top { padding: 35em 0 0; } */
+	#top { padding: 25em 0 0; }
+	/* video { width: 130%; } */
 	h1 { font-size: 3.25em; }
 	h2 { font-size: 1.5em; }
 	h3 { font-size: 1.25em; }
@@ -27,7 +31,9 @@
 }
 
 @media ( max-width: 768px ) {
-	video { width: 140%; }
+	/* #top { padding: 27.5em 0 0; } */
+	#top { padding: 17.5em 0 0; }
+	/* video { width: 140%; } */
 	h1 { font-size: 3em; }
 	h2 { font-size: 1.5em; }
 	h3 { font-size: 1.125em; }
@@ -42,7 +48,9 @@
 }
 
 @media ( max-width: 580px ) {
-	video { width: 145%; }
+	/* #top { padding: 21em 0 0; } */
+	#top { padding: 11em 0 0; }
+	/* video { width: 145%; } */
 	h1 { font-size: 2.5em; }
 	h2 { font-size: 1.25em; }
 	h3 { font-size: 1em; }
@@ -62,7 +70,9 @@
 }
 
 @media ( max-width: 425px ) {
-	video { width: 160%; }
+	/* #top { padding: 17em 0 0; } */
+	#top { padding: 7em 0 0; }
+	/* video { width: 160%; } */
 	h1 { font-size: 2.25em; }
 	h2 { font-size: 1.15em; }
 	h3 { font-size: 0.9em; }
@@ -73,7 +83,9 @@
 }
 
 @media ( max-width: 320px ) {
-	video { min-width: 100vh; }
+	/* #top { padding: 13.9em 0 0; } */
+	#top { padding: 3.9em 0 0; }
+	/* video { min-width: 100vh; } */
 	h1 { font-size: 2em; }
 	h2 { font-size: 1em; }
 	h3 { font-size: 0.75em; }
