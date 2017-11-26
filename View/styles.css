@@ -22,6 +22,11 @@ body {
     width: 100%;
 }
 
+button {
+	outline: none;
+	cursor: pointer;
+}
+
 #top {
 	background-color: transparent;
     border: 0 solid transparent;
@@ -120,6 +125,5 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
-
 
 

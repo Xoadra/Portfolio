@@ -15,7 +15,7 @@ section {
 	position: relative;
 	z-index: 10;
 	text-align: right;
-	color: #e08fff;
+	color: #d062fb;
 	padding: 1em 2% 1em 0;
 }
 
@@ -32,12 +32,10 @@ section {
 }
 
 .user {
+	cursor: pointer;
+	color: #d076de;
 	margin: 0 1%;
 }
-
-/* .auth a {
-	color: #e08fff;
-} */
 
 /* #route {
 	position: relative;
@@ -81,8 +79,6 @@ a {
 button {
 	background-color: transparent;
 	color: #caa6e8;
-	outline: none;
-	cursor: pointer;
 	border: 0 solid;
 	border-radius: 0;
 	font-size: 1em;

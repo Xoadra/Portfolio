@@ -14,17 +14,17 @@ import { Component } from '@angular/core'
 	
 export class AppComponent {
 
-	login: boolean = false
+	//login: boolean = false
 
 
 	// Placeholder Methods for Non-Routed Modals
-	openLogin( login ) {
+	/* openLogin( login ) {
 		this.login = login
-	}
+	} */
 
-	closeLogin( close ) {
+	/* closeLogin( close ) {
 		this.login = close
-	}
+	} */
 
 }
 

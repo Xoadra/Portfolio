@@ -2,18 +2,17 @@
 
 
 
-<!-- Login and register links will need work to display over any current page. -->
-<!-- Profile link will need work to display over any current page. -->
+<!-- Login, register, and profile links will need work to display over any current page. -->
 
 
 <section>
-	<nav *ngIf="" class="auth">
-		<a class="user" (click)="login($event)" [routerLink]="['auth']"><h6> LOGIN </h6></a>
+	<nav *ngIf="!friend" class="auth">
+		<a class="user" (click)="login( )" [routerLink]="[ 'auth' ]"><h6> LOGIN </h6></a>
 		<h6> | </h6>
-		<a class="user" [routerLink]="['signup']"><h6> REGISTER </h6></a>
+		<a class="user" [routerLink]="[ 'signup' ]"><h6> REGISTER </h6></a>
 	</nav>
-	<nav class="auth">
-		<a [routerLink]="['profile']">
+	<nav *ngIf="friend" class="auth">
+		<a [routerLink]="[ 'profile' ]">
 			<img id="avatar" src="" alt="">
 			<h6 class="user"> PROFILE </h6>
 		</a>
@@ -22,32 +21,31 @@
 		<h6> | </h6>
 		<h6 class="user"> MEDIA </h6>
 		<h6> | </h6>
-		<h6 class="user"> LOGOUT </h6>
+		<h6 class="user" (click)="logout( )"> LOGOUT </h6>
 	</nav>
-	<!-- <a [routerLink]="['']"><h2 id="ian"> IAN </h2></a> -->
+	<!-- <a [routerLink]="[ '' ]"><h2 id="ian"> IAN </h2></a> -->
 	<!-- <h4> | </h4> -->
-	<!-- <a [routerLink]="['hack']"><button><h3 class="seg"> HACK </h3></button></a> -->
-	<!-- <a [routerLink]="['work']"><button><h3 class="seg"> WORK </h3></button></a> -->
+	<!-- <a [routerLink]="[ 'hack' ]"><button><h3 class="seg"> HACK </h3></button></a> -->
+	<!-- <a [routerLink]="[ 'work' ]"><button><h3 class="seg"> WORK </h3></button></a> -->
 	<!-- 
 	<nav>
-		<a [routerLink]="['tech']"><button><h3 class="seg"> TECH </h3></button></a>
-		<a [routerLink]="['']"><button><h3 class="seg"> IAN </h3></button></a>
-		<a [routerLink]="['blog']"><button><h3 class="seg"> BLOG </h3></button></a>
+		<a [routerLink]="[ 'tech' ]"><button><h3 class="seg"> TECH </h3></button></a>
+		<a [routerLink]="[ '' ]"><button><h3 class="seg"> IAN </h3></button></a>
+		<a [routerLink]="[ 'blog' ]"><button><h3 class="seg"> BLOG </h3></button></a>
 		<a><button><h3 class="seg"> MAIL </h3></button></a>
 	</nav>
 	-->
 	<nav id="route">
 		<div class="left">
 			<a><button><h3> RESUME </h3></button></a>
-			<a [routerLink]="['tech']"><button><h3> TECH </h3></button></a>
+			<a [routerLink]="[ 'tech' ]"><button><h3> TECH </h3></button></a>
 		</div>
-		<a [routerLink]="['']"><button id="ian"><h3> IAN </h3></button></a>
+		<a [routerLink]="[ '' ]"><button id="ian"><h3> IAN </h3></button></a>
 		<div class="right">
-			<a [routerLink]="['blog']"><button><h3> BLOG </h3></button></a>
+			<a [routerLink]="[ 'blog' ]"><button><h3> BLOG </h3></button></a>
 			<a><button><h3> CONTACT </h3></button></a>
 		</div>
 	</nav>
 </section>
-
 
 

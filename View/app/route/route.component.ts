@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, /* Output, */ EventEmitter } from '@angular/core';
 
 
 
@@ -15,15 +15,23 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 export class RouteComponent implements OnInit {
 
-	@Output( ) pop = new EventEmitter( )
+	//@Output( ) pop = new EventEmitter( )
 	
+
+
+	friend: boolean = false
 	
-	
+
 	constructor( ) {  }
 	
 
 	login( ) {
-		this.pop.emit( true )
+		this.friend = true // Temporary Switch Between Guest and User Panels
+		//this.pop.emit( true )
+	}
+
+	logout( ) {
+		this.friend = false // Temporary Switch Between Guest and User Panels
 	}
 
 	
