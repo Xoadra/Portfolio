@@ -3,7 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http'
+import { HttpClient } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 
 
@@ -20,7 +20,7 @@ export class IanComponent implements OnInit {
 	welcome: string[ ] = [ ]
 
 
-	constructor( private _httpService: Http ) {  }
+	constructor( private _httpService: HttpClient ) {  }
 
 	
 	ngOnInit( ) {

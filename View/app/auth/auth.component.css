@@ -9,7 +9,7 @@ section {
     text-align: center;
     background-color: #14a04a;
     top: 20%;
-    height: 45%;
+    height: 25em;
     width: 40vw;
     min-width: 20em;
     margin: 0 30% 0;
@@ -27,7 +27,7 @@ button {
     color: black;
     height: 3em;
     width: 9em;
-    margin: 50% 0% 0;
+    margin: 25em 0 0;
 }
 
 

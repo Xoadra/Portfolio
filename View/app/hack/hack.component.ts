@@ -3,8 +3,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http'
-import { Routes, RouterModule } from '@angular/router';
 
 
 

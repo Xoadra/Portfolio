@@ -9,7 +9,7 @@ import { RouteModule } from './route/route.module';
 
 // Modules added per guide being followed
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 // Whole-website components across all pages
@@ -39,7 +39,7 @@ import { SignupComponent } from './signup/signup.component';
 	imports: [
 		BrowserModule,
 		FormsModule,
-		HttpModule,
+		HttpClientModule,
 		RouteModule
 	],
 	exports: [ ],
