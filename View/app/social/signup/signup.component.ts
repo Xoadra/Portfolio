@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class SignupComponent implements OnInit {
 
-	label: string = 'Register'
+	private title: string = 'Register'
 	register: boolean = false
 
 

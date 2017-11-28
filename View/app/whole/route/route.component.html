@@ -6,12 +6,12 @@
 
 
 <section>
-	<nav *ngIf="!friend" class="auth">
+	<nav class="auth" *ngIf="!friend">
 		<a class="user" (click)="login( )" [routerLink]="[ 'auth' ]"><h6> LOGIN </h6></a>
 		<h6> | </h6>
 		<a class="user" [routerLink]="[ 'signup' ]"><h6> REGISTER </h6></a>
 	</nav>
-	<nav *ngIf="friend" class="auth">
+	<nav class="auth" *ngIf="friend">
 		<a [routerLink]="[ 'profile' ]">
 			<img id="avatar" src="" alt="">
 			<h6 class="user"> PROFILE </h6>

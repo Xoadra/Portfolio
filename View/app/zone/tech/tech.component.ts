@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class TechComponent implements OnInit {
 
-	label: string = 'Programming Explained'
+	private title: string = 'Programming Explained'
 
 
 	constructor( ) {  }
@@ -23,6 +23,5 @@ export class TechComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
-
 
 

@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit, Input, /* Output, */ EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -16,20 +16,17 @@ import { Router } from '@angular/router';
 	
 export class AuthComponent implements OnInit {
 
-	@Input( ) login
 	//@Output( ) close = new EventEmitter( ) // Placeholder For Non-Routed Closure
 	
 	
 
-	label: string = 'Login Here!'
-	open: boolean = true
+	private title: string = 'Login Here!'
 
 
 	constructor( private back: Router ) {  }
 	
 
 	exit( ) {
-		this.open = false
 		//this.close.emit( open ) // Placeholder For Non-Routed Closure
 		this.back.navigate( [ '' ] ) // Will Need Previous Route Params Inserted
 	}
@@ -38,6 +35,5 @@ export class AuthComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
-
 
 

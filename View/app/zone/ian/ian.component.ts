@@ -4,7 +4,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Routes, RouterModule } from '@angular/router';
 
 
 
@@ -16,8 +15,8 @@ import { Routes, RouterModule } from '@angular/router';
 	
 export class IanComponent implements OnInit {
 
-	label: string = 'Ian Peterson\'s Tech Platform'
-	welcome: string[ ] = [ ]
+	private title: string = 'Ian Peterson\'s Tech Platform'
+	quotes: string[ ] = [ ]
 
 
 	constructor( private _httpService: HttpClient ) {  }
@@ -25,11 +24,10 @@ export class IanComponent implements OnInit {
 	
 	ngOnInit( ) {
 		/* this._httpService.get( 'prime' ).subscribe( phrases => {
-			this.welcome = phrases.json( ) as string[ ];
+			this.quotes = phrases.json( ) as string[ ];
 		} ) */
 	}
 
 }
-
 
 

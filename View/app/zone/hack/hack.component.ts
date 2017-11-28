@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class HackComponent implements OnInit {
 
-	label: string = 'Up Your Hackery'
+	private title: string = 'Up Your Hackery'
 
 
 	constructor( ) {  }

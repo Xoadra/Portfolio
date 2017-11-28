@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class ProfileComponent implements OnInit {
 
-	label: string = 'Profile'
+	private title: string = 'Profile'
 	account: boolean = false
 
 
