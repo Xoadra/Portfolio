@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class TechComponent implements OnInit {
 
-	private title: string = 'Programming Explained'
+	title: string = 'Programming Explained'
 
 
 	constructor( ) {  }

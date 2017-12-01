@@ -3,7 +3,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+
+import { UrlService } from '../../transit/url.service'
 
 
 
@@ -16,23 +19,20 @@ import { Router } from '@angular/router';
 	
 export class AuthComponent implements OnInit {
 
-	//@Output( ) close = new EventEmitter( ) // Placeholder For Non-Routed Closure
-	
-	
-
-	private title: string = 'Login Here!'
+	title: string = 'Login Here!'
 
 
-	constructor( private back: Router ) {  }
+	constructor( private back: Router, private _url: UrlService ) {  }
 	
 
 	exit( ) {
-		//this.close.emit( open ) // Placeholder For Non-Routed Closure
 		this.back.navigate( [ '' ] ) // Will Need Previous Route Params Inserted
 	}
 	
 
-	ngOnInit( ) {  }
+	ngOnInit( ) {
+		console.log( 'TO AUTH: ' + this._url.priorUrl )
+	}
 
 }
 

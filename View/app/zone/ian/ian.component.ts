@@ -12,10 +12,10 @@ import { HttpClient } from '@angular/common/http';
 	templateUrl: './ian.component.html'
 } )
 
-	
+
 export class IanComponent implements OnInit {
 
-	private title: string = 'Ian Peterson\'s Tech Platform'
+	title: string = 'Ian Peterson\'s Tech Platform'
 	quotes: string[ ] = [ ]
 
 

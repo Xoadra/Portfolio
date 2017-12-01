@@ -3,7 +3,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+
+import { UrlService } from '../../transit/url.service'
 
 
 
@@ -16,17 +19,16 @@ import { Router } from '@angular/router';
 
 export class RouteComponent implements OnInit {
 
-	location: string
 	friend: boolean = false
 	
 
-	constructor( private route: Router ) {  }
+	constructor( private route: Router, private _url: UrlService ) {  }
 	
 
 	login( ) {
-		this.location = this.route.url
+		this._url.priorUrl = this.route.url
 		this.friend = true // Temporary Switch Between Guest and User Panels
-		console.log( this.location )
+		console.log( 'FROM ROUTE: ' + this._url.priorUrl )
 	}
 
 	logout( ) {

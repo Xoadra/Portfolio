@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class BlogComponent implements OnInit {
 
-	private title: string = 'Technology: Now & Ahead'
+	title: string = 'Technology: Now & Ahead'
 
 
 	constructor( ) {  }

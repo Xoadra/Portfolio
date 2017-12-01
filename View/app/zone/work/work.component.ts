@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 	
 export class WorkComponent implements OnInit {
 
-	private title: string = 'Software Portfolio'
+	title: string = 'Software Portfolio'
 
 
 	constructor( ) {  }
