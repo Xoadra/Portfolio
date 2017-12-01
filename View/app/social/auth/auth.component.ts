@@ -2,9 +2,9 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
+import { Router } from '@angular/router'
 
 import { UrlService } from '../../transit/url.service'
 
@@ -20,20 +20,20 @@ import { UrlService } from '../../transit/url.service'
 export class AuthComponent implements OnInit {
 
 	title: string = 'Login Here!'
+	prior: string
 
 
-	constructor( private back: Router, private _url: UrlService ) {  }
-	
-
-	exit( ) {
-		this.back.navigate( [ '' ] ) // Will Need Previous Route Params Inserted
+	constructor( private back: Router, private _url: UrlService ) {
+		this.prior = this._url.priorUrl
 	}
 	
 
-	ngOnInit( ) {
-		console.log( 'TO AUTH: ' + this._url.priorUrl )
-	}
+	exit( ) { this.back.navigate( [ this.prior ] ) }
+	
+
+	ngOnInit( ) {  }
 
 }
+
 
 

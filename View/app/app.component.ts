@@ -12,20 +12,6 @@ import { Component } from '@angular/core'
 } )
 
 	
-export class AppComponent {
-
-	//login: boolean = false
-
-
-	// Placeholder Methods for Non-Routed Modals
-	/* openLogin( login ) {
-		this.login = login
-	} */
-
-	/* closeLogin( close ) {
-		this.login = close
-	} */
-
-}
+export class AppComponent {  }
 
 

@@ -9,11 +9,13 @@
 
 
 
-<ian></ian> <!-- *ngIf='' -->
-<tech *ngIf=''></tech>
-<blog *ngIf=''></blog>
-<!-- <hack></hack> -->
-<!-- <work></work> -->
+<div [ngSwitch]="prior">
+	<ian *ngSwitchDefault></ian>
+	<tech *ngSwitchCase="'/tech'"></tech>
+	<blog *ngSwitchCase="'/blog'"></blog>
+	<!-- <hack></hack> -->
+	<!-- <work></work> -->
+</div>
 
 
 <div id="fade">

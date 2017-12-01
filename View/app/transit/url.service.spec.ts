@@ -2,8 +2,8 @@
 
 
 
-import { TestBed, inject } from '@angular/core/testing';
-import { UrlService } from './url.service';
+import { TestBed, inject } from '@angular/core/testing'
+import { UrlService } from './url.service'
 
 
 

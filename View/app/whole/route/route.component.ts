@@ -2,9 +2,9 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
+import { Router } from '@angular/router'
 
 import { UrlService } from '../../transit/url.service'
 
@@ -19,16 +19,15 @@ import { UrlService } from '../../transit/url.service'
 
 export class RouteComponent implements OnInit {
 
-	friend: boolean = false
+	friend: boolean = false // Temporary Switch Between Guest and User Panels
 	
 
 	constructor( private route: Router, private _url: UrlService ) {  }
 	
 
 	login( ) {
-		this._url.priorUrl = this.route.url
 		this.friend = true // Temporary Switch Between Guest and User Panels
-		console.log( 'FROM ROUTE: ' + this._url.priorUrl )
+		this._url.priorUrl = this.route.url
 	}
 
 	logout( ) {
@@ -39,5 +38,6 @@ export class RouteComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
+
 
 
