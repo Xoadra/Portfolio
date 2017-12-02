@@ -19,25 +19,27 @@ import { UrlService } from '../../transit/url.service'
 
 export class RouteComponent implements OnInit {
 
-	friend: boolean = false // Temporary Switch Between Guest and User Panels
+	online: boolean = false // Temporary Switch Between Guest and User Panels
 	
 
 	constructor( private route: Router, private _url: UrlService ) {  }
 	
 
-	login( ) {
-		this.friend = true // Temporary Switch Between Guest and User Panels
+	status( ) {
 		this._url.priorUrl = this.route.url
+		if ( this.online === false ) {
+			this.online = true // Temporary Switch Between Guest and User Panels
+		}
+		else {
+			this.online = false // Temporary Switch Between Guest and User Panels
+		}
 	}
-
-	logout( ) {
-		this.friend = false // Temporary Switch Between Guest and User Panels
-	}
-
 	
+	profile( ) {  }
+	
+
 	ngOnInit( ) {  }
 
 }
-
 
 

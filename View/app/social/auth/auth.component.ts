@@ -28,12 +28,18 @@ export class AuthComponent implements OnInit {
 	}
 	
 
-	exit( ) { this.back.navigate( [ this.prior ] ) }
+	exit( ) {
+		if ( this.prior != undefined ) {
+			this.back.navigate( [ this.prior ] )
+		}
+		else {
+			this.back.navigate( [ '/' ] )
+		}
+	}
 	
 
 	ngOnInit( ) {  }
 
 }
-
 
 

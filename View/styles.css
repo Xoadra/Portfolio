@@ -15,11 +15,12 @@ body {
 
 #fade {
 	position: fixed;
-    z-index: 30;
-    background-color: rgba( 0, 0, 0, 0.75 );
+	z-index: 30;
+	overflow: hidden;
+	background-color: rgba( 0, 0, 0, 0.75 );
 	top: 0;
 	height: 100%;
-    width: 100%;
+	width: 100%;
 }
 
 button {
@@ -125,5 +126,6 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
+
 
 
