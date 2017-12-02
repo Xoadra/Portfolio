@@ -20,14 +20,18 @@ h2 {
 }
 
 button {
-    display: inline-block;
+	position: absolute;
+    display: block;
     font-weight: bolder;
-    background-color: red;
+    background-color: #1dc0ff;
     border: 0 solid transparent;
-    color: black;
+	color: black;
     height: 3em;
     width: 9em;
-    margin: 25em 0 0;
+	left: 0;
+    right: 0;
+    bottom: 4%;
+    margin: auto;
 }
 
 
