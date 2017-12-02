@@ -3,6 +3,9 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
+
+import { UrlService } from '../../transit/url.service'
 
 
 
@@ -15,15 +18,28 @@ import { Component, OnInit } from '@angular/core'
 	
 export class ProfileComponent implements OnInit {
 
-	title: string = 'Profile'
-	account: boolean = false
+	title: string = 'Your Profile'
+	prior: string
 
 
-	constructor( ) {  }
+	constructor( private _back: Router, private _url: UrlService ) {
+		this.prior = this._url.priorUrl
+	}
+	
+
+	exit( ) {
+		if ( this.prior != undefined ) {
+			this._back.navigate( [ this.prior ] )
+		}
+		else {
+			this._back.navigate( [ '/' ] )
+		}
+	}
 
 
 	ngOnInit( ) {  }
 
 }
+
 
 

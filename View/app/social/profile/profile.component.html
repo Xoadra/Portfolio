@@ -2,22 +2,24 @@
 
 
 
-<!-- <head><title> Xambda | {{ title }} </title></head> -->
+<head><title> Xambda | {{ title }} </title></head>
 
 
 
-<!-- <ian></ian> --> <!-- *ngIf='' -->
-<!-- <tech *ngIf=''></tech> -->
-<!-- <blog *ngIf=''></blog> -->
-<!-- <hack></hack> -->
-<!-- <work></work> -->
-
-
-<div id="fade" *ngIf="">
-	<section *ngIf="account">
-		<h2> Profile </h2>
-	</section>
+<div [ngSwitch]="prior">
+	<ian *ngSwitchDefault></ian>
+	<tech *ngSwitchCase="'/tech'"></tech>
+	<blog *ngSwitchCase="'/blog'"></blog>
+	<!-- <hack *ngSwitchCase="'/hack'"></hack> -->
+	<!-- <work *ngSwitchCase="'/work'"></work> -->
 </div>
+
+
+<div id="fade" (click)="exit( )"></div>
+<section>
+	<h2> Profile </h2>
+	<!-- <button (click)="exit( )"><h3> Close </h3></button> -->
+</section>
 
 
 

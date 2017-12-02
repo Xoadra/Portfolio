@@ -2,9 +2,6 @@
 
 
 
-<!-- Requires completed '*ngIF' statements that display the previously visited page to be implemented. -->
-
-
 <head><title> Xambda | {{ title }} </title></head>
 
 
@@ -13,8 +10,8 @@
 	<ian *ngSwitchDefault></ian>
 	<tech *ngSwitchCase="'/tech'"></tech>
 	<blog *ngSwitchCase="'/blog'"></blog>
-	<!-- <hack></hack> -->
-	<!-- <work></work> -->
+	<!-- <hack *ngSwitchCase="'/hack'"></hack> -->
+	<!-- <work *ngSwitchCase="'/work'"></work> -->
 </div>
 
 
@@ -23,5 +20,6 @@
 	<h2> Login </h2>
 	<button (click)="exit( )"><h3> Close </h3></button>
 </section>
+
 
 

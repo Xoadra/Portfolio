@@ -3,7 +3,6 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
 import { Router } from '@angular/router'
 
 import { UrlService } from '../../transit/url.service'
@@ -23,17 +22,17 @@ export class AuthComponent implements OnInit {
 	prior: string
 
 
-	constructor( private back: Router, private _url: UrlService ) {
+	constructor( private _back: Router, private _url: UrlService ) {
 		this.prior = this._url.priorUrl
 	}
 	
 
 	exit( ) {
 		if ( this.prior != undefined ) {
-			this.back.navigate( [ this.prior ] )
+			this._back.navigate( [ this.prior ] )
 		}
 		else {
-			this.back.navigate( [ '/' ] )
+			this._back.navigate( [ '/' ] )
 		}
 	}
 	
@@ -41,5 +40,6 @@ export class AuthComponent implements OnInit {
 	ngOnInit( ) {  }
 
 }
+
 
 

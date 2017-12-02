@@ -3,7 +3,6 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
 import { Router } from '@angular/router'
 
 import { UrlService } from '../../transit/url.service'
@@ -22,11 +21,11 @@ export class RouteComponent implements OnInit {
 	online: boolean = false // Temporary Switch Between Guest and User Panels
 	
 
-	constructor( private route: Router, private _url: UrlService ) {  }
+	constructor( private _route: Router, private _url: UrlService ) {  }
 	
 
 	status( ) {
-		this._url.priorUrl = this.route.url
+		this._url.priorUrl = this._route.url
 		if ( this.online === false ) {
 			this.online = true // Temporary Switch Between Guest and User Panels
 		}
@@ -35,11 +34,14 @@ export class RouteComponent implements OnInit {
 		}
 	}
 	
-	profile( ) {  }
+	profile( ) {
+		this._url.priorUrl = this._route.url
+	}
 	
 
 	ngOnInit( ) {  }
 
 }
+
 
 
