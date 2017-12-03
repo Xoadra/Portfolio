@@ -24,8 +24,8 @@ export class RouteComponent implements OnInit {
 	constructor( private _route: Router, private _url: UrlService ) {  }
 	
 
-	status( ) {
-		this._url.priorUrl = this._route.url
+	swapStatus( ) {
+		this.getPriorRoute( )
 		if ( this.online === false ) {
 			this.online = true // Temporary Switch Between Guest and User Panels
 		}
@@ -34,7 +34,7 @@ export class RouteComponent implements OnInit {
 		}
 	}
 	
-	profile( ) {
+	getPriorRoute( ) {
 		this._url.priorUrl = this._route.url
 	}
 	

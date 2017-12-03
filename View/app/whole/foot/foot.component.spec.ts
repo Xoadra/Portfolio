@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FootComponent } from './foot.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { FootComponent } from './foot.component'
 
 
 
 describe( 'FootComponent', ( ) => {
-	let component: FootComponent;
-	let fixture: ComponentFixture<FootComponent>;
+	let component: FootComponent
+	let fixture: ComponentFixture<FootComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ FootComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( FootComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	});
+		fixture = TestBed.createComponent( FootComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

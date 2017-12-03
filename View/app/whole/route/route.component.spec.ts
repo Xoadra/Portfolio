@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouteComponent } from './route.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { RouteComponent } from './route.component'
 
 
 
 describe( 'RouteComponent', ( ) => {
-	let component: RouteComponent;
-	let fixture: ComponentFixture<RouteComponent>;
+	let component: RouteComponent
+	let fixture: ComponentFixture<RouteComponent>
 
 	beforeEach( async( ( ) => {
-		TestBed.configureTestingModule({
+		TestBed.configureTestingModule( {
 			declarations: [ RouteComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
 		fixture = TestBed.createComponent( RouteComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

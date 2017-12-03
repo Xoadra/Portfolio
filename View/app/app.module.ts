@@ -20,7 +20,7 @@ import { FootComponent } from './whole/foot/foot.component'
 
 
 // Services used
-import { UrlService } from './transit/url.service'
+import { UrlService } from './transit/url.service';
 
 
 

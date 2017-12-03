@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MoveComponent } from './move.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { MoveComponent } from './move.component'
 
 
 
 describe( 'MoveComponent', ( ) => {
-	let component: MoveComponent;
-	let fixture: ComponentFixture<MoveComponent>;
+	let component: MoveComponent
+	let fixture: ComponentFixture<MoveComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ MoveComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( MoveComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( MoveComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

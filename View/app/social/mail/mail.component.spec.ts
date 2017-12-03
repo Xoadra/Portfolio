@@ -3,28 +3,28 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { IanComponent } from './ian.component'
+import { MailComponent } from './mail.component'
 
 
 
-describe( 'IanComponent', ( ) => {
-	let component: IanComponent
-	let fixture: ComponentFixture<IanComponent>
+describe( 'MailComponent', ( ) => {
+	let component: MailComponent
+	let fixture: ComponentFixture<MailComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ IanComponent ]
+			declarations: [ MailComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( IanComponent )
+		fixture = TestBed.createComponent( MailComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
-	it( 'should be created', ( ) => {
+	it( 'should create', ( ) => {
 		expect( component ).toBeTruthy( )
 	} )
 } )

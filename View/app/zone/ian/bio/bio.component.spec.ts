@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { BioComponent } from './bio.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { BioComponent } from './bio.component'
 
 
 
 describe( 'BioComponent', ( ) => {
-	let component: BioComponent;
-	let fixture: ComponentFixture<BioComponent>;
+	let component: BioComponent
+	let fixture: ComponentFixture<BioComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ BioComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( BioComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( BioComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

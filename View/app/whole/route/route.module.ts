@@ -40,6 +40,8 @@ import { HackComponent } from '../../zone/hack/hack.component'
 import { SignupComponent } from '../../social/signup/signup.component'
 import { ProfileComponent } from '../../social/profile/profile.component'
 import { AuthComponent } from '../../social/auth/auth.component'
+import { MailComponent } from '../../social/mail/mail.component';
+import { ResumeComponent } from '../../social/resume/resume.component'
 
 
 
@@ -50,6 +52,8 @@ const routes: Routes = [
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
+	{ path: 'mail', component: MailComponent, children: [ ] },
+	{ path: 'resume', component: ResumeComponent, children: [ ] },
 	{ path: 'auth', component: AuthComponent, children: [ ] },
 	{ path: 'signup', component: SignupComponent, children: [ ] },
 	{ path: 'profile', component: ProfileComponent, children: [ ] },
@@ -62,6 +66,8 @@ const routes: Routes = [
 		SignupComponent,
 		ProfileComponent,
 		AuthComponent,
+		MailComponent,
+		ResumeComponent,
 		IanComponent,
 			//PeekComponent,
 			//ExpComponent,

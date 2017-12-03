@@ -3,28 +3,28 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { IanComponent } from './ian.component'
+import { ResumeComponent } from './resume.component'
 
 
 
-describe( 'IanComponent', ( ) => {
-	let component: IanComponent
-	let fixture: ComponentFixture<IanComponent>
+describe( 'ResumeComponent', ( ) => {
+	let component: ResumeComponent
+	let fixture: ComponentFixture<ResumeComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ IanComponent ]
+			declarations: [ ResumeComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( IanComponent )
+		fixture = TestBed.createComponent( ResumeComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
-	it( 'should be created', ( ) => {
+	it( 'should create', ( ) => {
 		expect( component ).toBeTruthy( )
 	} )
 } )

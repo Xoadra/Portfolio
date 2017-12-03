@@ -1,0 +1,25 @@
+
+
+
+
+<head><title> Xambda | {{ title }} </title></head>
+
+
+
+<div [ngSwitch]="prior">
+	<ian *ngSwitchDefault></ian>
+	<tech *ngSwitchCase="'/tech'"></tech>
+	<blog *ngSwitchCase="'/blog'"></blog>
+	<!-- <hack *ngSwitchCase="'/hack'"></hack> -->
+	<!-- <work *ngSwitchCase="'/work'"></work> -->
+</div>
+
+
+<div id="fade" (click)="exit( )"></div>
+<section>
+	<h2> Resume </h2>
+	<button (click)="exit( )"><h3> Close </h3></button>
+</section>
+
+
+
