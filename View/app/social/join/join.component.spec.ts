@@ -3,23 +3,23 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { SignupComponent } from './signup.component'
+import { JoinComponent } from './join.component'
 
 
 
-describe( 'SignupComponent', ( ) => {
-	let component: SignupComponent
-	let fixture: ComponentFixture<SignupComponent>
+describe( 'JoinComponent', ( ) => {
+	let component: JoinComponent
+	let fixture: ComponentFixture<JoinComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ SignupComponent ]
+			declarations: [ JoinComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( SignupComponent )
+		fixture = TestBed.createComponent( JoinComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )

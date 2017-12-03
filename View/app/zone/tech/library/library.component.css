@@ -17,7 +17,7 @@ h1 {
 nav {
 	display: inline-block;
 	width: 80%;
-	margin: 2em 0 0;
+	margin: 0.5em 0 0;
 }
 
 .column	{
@@ -26,7 +26,7 @@ nav {
 	margin: 0 -0.5%;
 }
 
-a {
+.subject {
 	display: inline-block;
 	background-color: transparent;
 	width: 90%;
@@ -34,7 +34,7 @@ a {
 	transition: transform 0.25s;
 }
 
-a:hover {
+.subject:hover {
 	transform: scale( 1.05, 1.05 );
 }
 
@@ -48,7 +48,7 @@ h2 {
 	border-radius: 1em;
 	height: 6em;
 	width: 100%;
-	margin: 0.25em 0 0;
+	margin: 0 0 0;
 }
 
 .iter {
@@ -57,5 +57,15 @@ h2 {
 	transform: matrix( 1, 0, 0, 10, 0, 140 );
 }
 
+button {
+	letter-spacing: 0.25em;
+	background-color: #50bf3b;
+	color: #064016;
+	border: 0 solid transparent;
+	border-radius: 50%;
+	height: 4em;
+	width: 50em;
+	margin: 1em 0 0;
+}
 
 

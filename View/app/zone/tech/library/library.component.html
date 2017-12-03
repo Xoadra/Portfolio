@@ -2,42 +2,48 @@
 
 
 
+<router-outlet></router-outlet>
+
+
+
 <section>
 	<h1 class="main"> Tech Subjects </h1>
+	<a [routerLink]="[ 'ask' ]"><button><h2> Ask About A Subject </h2></button></a>
 	<nav>
 		<div class="column">
-			<a>
+			<a class="subject">
 				<h2> PROGRAMMING </h2>
 				<div class="info"></div>
 			</a>
-			<a>
+			<a class="subject">
 				<h2> INTERNET </h2>
 				<div class="info"></div>
 			</a>
 		</div>
 		<h2 class="iter"> | </h2>
 		<div class="column">
-			<a>
+			<a class="subject">
 				<h2> LANGUAGES </h2>
 				<div class="info"></div>
 			</a>
-			<a>
+			<a class="subject">
 				<h2> DATABASES </h2>
 				<div class="info"></div>
 			</a>
 		</div>
 		<h2 class="iter"> | </h2>
 		<div class="column">
-			<a>
+			<a class="subject">
 				<h2> ALGORITHMS </h2>
 				<div class="info"></div>
 			</a>
-			<a>
+			<a class="subject">
 				<h2> FRAMEWORKS </h2>
 				<div class="info"></div>
 			</a>
 		</div>
 	</nav>
 </section>
+
 
 

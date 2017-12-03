@@ -16,7 +16,7 @@ import { Router } from '@angular/router'
 	
 export class ProjectComponent implements OnInit {
 	
-	title: string = 'A Software App!'
+	title: string = 'A Software App!' // Overriden By Parent Page's Title
 
 
 	constructor( private _back: Router ) {  }

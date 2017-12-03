@@ -1,0 +1,39 @@
+
+
+
+
+section {
+	position: fixed;
+	display: inline-block;
+    z-index: 40;
+    text-align: center;
+	/* background-color: #14a04a; */
+	background-color: #0e0a0b;
+    top: 20%;
+    height: 25em;
+    width: 40vw;
+    min-width: 20em;
+	margin: 0 30% 0;
+}
+
+h2 {
+	margin: 0.5em 0 0;
+}
+
+button {
+	position: absolute;
+    display: block;
+    font-weight: bolder;
+	/* background-color: #2ad04e; */
+	background-color: #191214;
+    border: 0 solid transparent;
+    color: black;
+    height: 3em;
+    width: 9em;
+	left: 0;
+    right: 0;
+    bottom: 8%;
+    margin: auto;
+}
+
+

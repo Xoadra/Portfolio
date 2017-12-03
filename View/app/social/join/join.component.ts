@@ -10,13 +10,13 @@ import { UrlService } from '../../transit/url.service'
 
 
 @Component( {
-	selector: 'signup',
-	templateUrl: './signup.component.html',
-	styleUrls: [ './signup.component.css' ]
+	selector: 'join',
+	templateUrl: './join.component.html',
+	styleUrls: [ './join.component.css' ]
 } )
 
 	
-export class SignupComponent implements OnInit {
+export class JoinComponent implements OnInit {
 
 	title: string = 'Join Us...'
 	prior: string

@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 
 
 
@@ -15,11 +16,20 @@ import { Component, OnInit } from '@angular/core'
 	
 export class AskComponent implements OnInit {
 
-	constructor( ) {  }
+	title: string = 'What Do You Want To Learn?' // Overriden By Parent Page's Title
+
+
+	constructor( private _back: Router ) {  }
+	
+	
+	back( ) {
+		this._back.navigate( [ '/tech' ] )
+	}
 
 
 	ngOnInit( ) {  }
 
 }
+
 
 

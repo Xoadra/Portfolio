@@ -26,10 +26,10 @@ import { BlogComponent } from '../../zone/blog/blog.component'
 // Tech page components
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
+		import { AskComponent } from '../../zone/tech/library/ask/ask.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
 		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
 			import { CodeComponent } from '../../zone/tech/guide/lesson/code/code.component'
-	import { AskComponent } from '../../zone/tech/ask/ask.component'
 // Hack page components
 import { HackComponent } from '../../zone/hack/hack.component'
 	import { ChallengeComponent } from '../../zone/hack/challenge/challenge.component'
@@ -37,9 +37,9 @@ import { HackComponent } from '../../zone/hack/hack.component'
 	import { IssueComponent } from '../../zone/hack/issue/issue.component'
 
 // Partial popup components
-import { SignupComponent } from '../../social/signup/signup.component'
+import { JoinComponent } from '../../social/join/join.component'
 import { ProfileComponent } from '../../social/profile/profile.component'
-import { AuthComponent } from '../../social/auth/auth.component'
+import { LoginComponent } from '../../social/login/login.component'
 import { MailComponent } from '../../social/mail/mail.component';
 import { ResumeComponent } from '../../social/resume/resume.component'
 
@@ -54,11 +54,13 @@ const routes: Routes = [
 	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
-	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
+	{ path: 'tech', component: TechComponent, children: [
+		{ path: 'ask', component: AskComponent }
+	] },
 	{ path: 'mail', component: MailComponent },
 	{ path: 'resume', component: ResumeComponent },
-	{ path: 'auth', component: AuthComponent },
-	{ path: 'signup', component: SignupComponent },
+	{ path: 'login', component: LoginComponent },
+	{ path: 'join', component: JoinComponent },
 	{ path: 'profile', component: ProfileComponent },
 	{ path: '**', component: IanComponent }
 ]
@@ -66,9 +68,9 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
-		SignupComponent,
+		LoginComponent,
+		JoinComponent,
 		ProfileComponent,
-		AuthComponent,
 		MailComponent,
 		ResumeComponent,
 		IanComponent,

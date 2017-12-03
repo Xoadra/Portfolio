@@ -4,9 +4,9 @@
 
 <section>
 	<nav class="auth" *ngIf="!online">
-		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'auth' ]"><h6> LOGIN </h6></a>
+		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'login' ]"><h6> LOGIN </h6></a>
 		<h6> | </h6>
-		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'signup' ]"><h6> REGISTER </h6></a>
+		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'join' ]"><h6> REGISTER </h6></a>
 	</nav>
 	<nav class="auth" *ngIf="online">
 		<a class="user" (click)="getPriorRoute( )" [routerLink]="[ 'profile' ]">

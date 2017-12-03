@@ -4,15 +4,16 @@
 
 section {
 	position: fixed;
-	display: inline-block;
+    display: inline-block;
     z-index: 40;
-    text-align: center;
-    background-color: #14a04a;
-    top: 20%;
-    height: 25em;
-    width: 40vw;
+	text-align: center;
+	/* background-color: #1b0b0b; */
+	background-color: #0f8e30;
+    top: 15%;
+    height: 40em;
+    width: 60vw;
     min-width: 20em;
-	margin: 0 30% 0;
+    margin: 0 20%;
 }
 
 h2 {
@@ -23,15 +24,16 @@ button {
 	position: absolute;
     display: block;
     font-weight: bolder;
-    background-color: #2ad04e;
+    background-color: #0fb34a;
     border: 0 solid transparent;
-    color: black;
+	color: black;
     height: 3em;
     width: 9em;
 	left: 0;
     right: 0;
-    bottom: 8%;
+    bottom: 5%;
     margin: auto;
 }
+
 
 
