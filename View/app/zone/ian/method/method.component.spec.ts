@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MethodComponent } from './method.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { MethodComponent } from './method.component'
 
 
 
 describe( 'MethodComponent', ( ) => {
-	let component: MethodComponent;
-	let fixture: ComponentFixture<MethodComponent>;
+	let component: MethodComponent
+	let fixture: ComponentFixture<MethodComponent>
 
 	beforeEach( async( ( ) => {
-		TestBed.configureTestingModule({
+		TestBed.configureTestingModule( {
 			declarations: [ MethodComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( MethodComponent) ;
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( MethodComponent)
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

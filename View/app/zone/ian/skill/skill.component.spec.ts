@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { SkillComponent } from './skill.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { SkillComponent } from './skill.component'
 
 
 
 describe( 'SkillComponent', ( ) => {
-	let component: SkillComponent;
-	let fixture: ComponentFixture<SkillComponent>;
+	let component: SkillComponent
+	let fixture: ComponentFixture<SkillComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ SkillComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent(SkillComponent);
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( SkillComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

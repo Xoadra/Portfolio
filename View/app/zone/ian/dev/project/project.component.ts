@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 
 
 
@@ -14,12 +15,21 @@ import { Component, OnInit } from '@angular/core'
 
 	
 export class ProjectComponent implements OnInit {
+	
+	title: string = 'A Software App!'
 
-	constructor( ) {  }
+
+	constructor( private _back: Router ) {  }
+	
+	
+	back( ) {
+		this._back.navigate( [ '/' ] )
+	}
 
 
 	ngOnInit( ) {  }
 
 }
+
 
 

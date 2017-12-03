@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { PeekComponent } from './peek.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { PeekComponent } from './peek.component'
 
 
 
 describe( 'PeekComponent', ( ) => {
-	let component: PeekComponent;
-	let fixture: ComponentFixture<PeekComponent>;
+	let component: PeekComponent
+	let fixture: ComponentFixture<PeekComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ PeekComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( PeekComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( PeekComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 

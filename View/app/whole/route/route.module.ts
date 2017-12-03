@@ -47,17 +47,20 @@ import { ResumeComponent } from '../../social/resume/resume.component'
 
 // Routing directives of each page
 const routes: Routes = [
-	{ path: '', pathMatch: 'full', component: IanComponent, children: [ ] },
+	{ path: '', component: IanComponent, children: [
+		{ path: 'project', component: ProjectComponent }, // Temporary Route Url
+		//{ path: ':id', component: ProjectComponent }
+	] },
 	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', pathMatch: 'full', component: TechComponent, children: [ ] },
-	{ path: 'mail', component: MailComponent, children: [ ] },
-	{ path: 'resume', component: ResumeComponent, children: [ ] },
-	{ path: 'auth', component: AuthComponent, children: [ ] },
-	{ path: 'signup', component: SignupComponent, children: [ ] },
-	{ path: 'profile', component: ProfileComponent, children: [ ] },
-	{ path: '**', component: IanComponent, children: [ ] }
+	{ path: 'mail', component: MailComponent },
+	{ path: 'resume', component: ResumeComponent },
+	{ path: 'auth', component: AuthComponent },
+	{ path: 'signup', component: SignupComponent },
+	{ path: 'profile', component: ProfileComponent },
+	{ path: '**', component: IanComponent }
 ]
 
 
@@ -104,6 +107,5 @@ const routes: Routes = [
 
 
 export class RouteModule {  }
-
 
 

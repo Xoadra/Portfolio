@@ -2,32 +2,32 @@
 
 
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { CodeComponent } from './code.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { CodeComponent } from './code.component'
 
 
 
 describe( 'CodeComponent', ( ) => {
-	let component: CodeComponent;
-	let fixture: ComponentFixture<CodeComponent>;
+	let component: CodeComponent
+	let fixture: ComponentFixture<CodeComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
 			declarations: [ CodeComponent ]
 		} )
-		.compileComponents( );
-	} ) );
+		.compileComponents( )
+	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( CodeComponent );
-		component = fixture.componentInstance;
-		fixture.detectChanges( );
-	} );
+		fixture = TestBed.createComponent( CodeComponent )
+		component = fixture.componentInstance
+		fixture.detectChanges( )
+	} )
 
 	it( 'should be created', ( ) => {
-		expect( component ).toBeTruthy( );
-	} );
-} );
+		expect( component ).toBeTruthy( )
+	} )
+} )
 
 
 
