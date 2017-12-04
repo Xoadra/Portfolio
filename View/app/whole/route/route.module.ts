@@ -20,6 +20,7 @@ import { WorkComponent } from '../../zone/work/work.component'
 // Blog page components
 import { BlogComponent } from '../../zone/blog/blog.component'
 	import { ThemeComponent } from '../../zone/blog/theme/theme.component'
+		import { ReadComponent } from '../../zone/blog/theme/read/read.component'
 	import { NewestComponent } from '../../zone/blog/newest/newest.component'
 	import { ForumComponent } from '../../zone/blog/forum/forum.component'
 	import { PostComponent } from '../../zone/blog/post/post.component'
@@ -27,6 +28,7 @@ import { BlogComponent } from '../../zone/blog/blog.component'
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
 		import { AskComponent } from '../../zone/tech/library/ask/ask.component'
+		import { KnowComponent } from '../../zone/tech/library/know/know.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
 		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
 			import { CodeComponent } from '../../zone/tech/guide/lesson/code/code.component'
@@ -83,12 +85,14 @@ const routes: Routes = [
 				ProjectComponent,
 		BlogComponent,
 			ThemeComponent,
+				ReadComponent,
 			NewestComponent,
 			ForumComponent,
 			PostComponent,
 		TechComponent,
 			LibraryComponent,
-			AskComponent,
+				AskComponent,
+				KnowComponent,
 			GuideComponent,
 				LessonComponent,
 					CodeComponent,
