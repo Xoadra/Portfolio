@@ -20,21 +20,21 @@ import { WorkComponent } from '../../zone/work/work.component'
 // Blog page components
 import { BlogComponent } from '../../zone/blog/blog.component'
 	import { ThemeComponent } from '../../zone/blog/theme/theme.component'
-		import { SortComponent } from '../../zone/blog/theme/sort/sort.component'
+		import { SubjectComponent } from '../../zone/blog/theme/subject/subject.component'
 	import { NewComponent } from '../../zone/blog/new/new.component'
 	import { ForumComponent } from '../../zone/blog/forum/forum.component'
 	import { PostComponent } from '../../zone/blog/post/post.component'
-		// StreamComponent
-		// CommentComponent
-			// UserComponent
+		import { StreamComponent } from '../../zone/blog/post/stream/stream.component'
+			import { IdentityComponent } from '../../zone/blog/post/stream/identity/identity.component'
+			import { CommentComponent } from '../../zone/blog/post/stream/comment/comment.component'
 // Tech page components
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
 		import { QuestComponent } from '../../zone/tech/library/quest/quest.component'
 		import { VolumeComponent } from '../../zone/tech/library/volume/volume.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
-		import { KnowComponent } from '../../zone/tech/guide/know/know.component'
-			import { CodeComponent } from '../../zone/tech/guide/know/code/code.component'
+		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
+			import { CodeComponent } from '../../zone/tech/guide/lesson/code/code.component'
 // Hack page components
 import { HackComponent } from '../../zone/hack/hack.component'
 	import { ChallengeComponent } from '../../zone/hack/challenge/challenge.component'
@@ -47,6 +47,7 @@ import { ProfileComponent } from '../../social/profile/profile.component'
 import { LoginComponent } from '../../social/login/login.component'
 import { MailComponent } from '../../social/mail/mail.component'
 import { ResumeComponent } from '../../social/resume/resume.component'
+// UserComponent
 
 
 
@@ -88,16 +89,19 @@ const routes: Routes = [
 				ProjectComponent,
 		BlogComponent,
 			ThemeComponent,
-				SortComponent,
+				SubjectComponent,
 			NewComponent,
 			ForumComponent,
 			PostComponent,
+				StreamComponent,
+					IdentityComponent,
+					CommentComponent,
 		TechComponent,
 			LibraryComponent,
 				QuestComponent,
 				VolumeComponent,
 			GuideComponent,
-				KnowComponent,
+				LessonComponent,
 					CodeComponent,
 		//WorkComponent,
 		//HackComponent,

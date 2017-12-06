@@ -3,28 +3,28 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { KnowComponent } from './know.component'
+import { CommentComponent } from './comment.component'
 
 
 
-describe( 'KnowComponent', ( ) => {
-	let component: KnowComponent
-	let fixture: ComponentFixture<KnowComponent>
+describe( 'CommentComponent', ( ) => {
+	let component: CommentComponent
+	let fixture: ComponentFixture<CommentComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ KnowComponent ]
+			declarations: [ CommentComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( KnowComponent )
+		fixture = TestBed.createComponent( CommentComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
-	it( 'should be created', ( ) => {
+	it( 'should create', ( ) => {
 		expect( component ).toBeTruthy( )
 	} )
 } )

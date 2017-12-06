@@ -3,28 +3,28 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { SortComponent } from './sort.component'
+import { LessonComponent } from './lesson.component'
 
 
 
-describe( 'SortComponent', ( ) => {
-	let component: SortComponent
-	let fixture: ComponentFixture<SortComponent>
+describe( 'LessonComponent', ( ) => {
+	let component: LessonComponent
+	let fixture: ComponentFixture<LessonComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ SortComponent ]
+			declarations: [ LessonComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( SortComponent )
+		fixture = TestBed.createComponent( LessonComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
-	it( 'should create', ( ) => {
+	it( 'should be created', ( ) => {
 		expect( component ).toBeTruthy( )
 	} )
 } )
