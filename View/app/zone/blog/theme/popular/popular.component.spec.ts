@@ -3,23 +3,23 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { ReadComponent } from './read.component'
+import { PopularComponent } from './popular.component'
 
 
 
-describe( 'ReadComponent', ( ) => {
-	let component: ReadComponent
-	let fixture: ComponentFixture<ReadComponent>
+describe( 'PopularComponent', ( ) => {
+	let component: PopularComponent
+	let fixture: ComponentFixture<PopularComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ ReadComponent ]
+			declarations: [ PopularComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( ReadComponent )
+		fixture = TestBed.createComponent( PopularComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )

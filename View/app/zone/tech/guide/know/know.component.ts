@@ -12,12 +12,12 @@ import { Component, OnInit } from '@angular/core'
 	styleUrls: [ './know.component.css' ]
 } )
 
-
+	
 export class KnowComponent implements OnInit {
 
 	constructor( ) {  }
 
-	
+
 	ngOnInit( ) {  }
 
 }

@@ -3,28 +3,28 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { NewestComponent } from './newest.component'
+import { VolumeComponent } from './volume.component'
 
 
 
-describe( 'NewestComponent', ( ) => {
-	let component: NewestComponent
-	let fixture: ComponentFixture<NewestComponent>
+describe( 'VolumeComponent', ( ) => {
+	let component: VolumeComponent
+	let fixture: ComponentFixture<VolumeComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ NewestComponent ]
+			declarations: [ VolumeComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( NewestComponent )
+		fixture = TestBed.createComponent( VolumeComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
-	it( 'should be created', ( ) => {
+	it( 'should create', ( ) => {
 		expect( component ).toBeTruthy( )
 	} )
 } )

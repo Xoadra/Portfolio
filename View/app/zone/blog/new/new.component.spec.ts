@@ -3,23 +3,23 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { LessonComponent } from './lesson.component'
+import { NewComponent } from './new.component'
 
 
 
-describe( 'LessonComponent', ( ) => {
-	let component: LessonComponent
-	let fixture: ComponentFixture<LessonComponent>
+describe( 'NewComponent', ( ) => {
+	let component: NewComponent
+	let fixture: ComponentFixture<NewComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ LessonComponent ]
+			declarations: [ NewComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( LessonComponent )
+		fixture = TestBed.createComponent( NewComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )

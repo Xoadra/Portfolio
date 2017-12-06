@@ -3,29 +3,29 @@
 
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { AskComponent } from './ask.component'
+import { ArchiveComponent } from './archive.component'
 
 
 
-describe( 'AskComponent', ( ) => {
-	let component: AskComponent
-	let fixture: ComponentFixture<AskComponent>
+describe( 'ArchiveComponent', ( ) => {
+	let component: ArchiveComponent
+	let fixture: ComponentFixture<ArchiveComponent>
 
 	beforeEach( async( ( ) => {
 		TestBed.configureTestingModule( {
-			declarations: [ AskComponent ]
+			declarations: [ ArchiveComponent ]
 		} )
 		.compileComponents( )
 	} ) )
 
 	beforeEach( ( ) => {
-		fixture = TestBed.createComponent( AskComponent )
+		fixture = TestBed.createComponent( ArchiveComponent )
 		component = fixture.componentInstance
 		fixture.detectChanges( )
 	} )
 
 	it( 'should be created', ( ) => {
-		expect(component).toBeTruthy( )
+		expect( component ).toBeTruthy( )
 	} )
 } )
 

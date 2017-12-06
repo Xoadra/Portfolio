@@ -20,29 +20,32 @@ import { WorkComponent } from '../../zone/work/work.component'
 // Blog page components
 import { BlogComponent } from '../../zone/blog/blog.component'
 	import { ThemeComponent } from '../../zone/blog/theme/theme.component'
-		import { ReadComponent } from '../../zone/blog/theme/read/read.component'
-	import { NewestComponent } from '../../zone/blog/newest/newest.component'
+		import { PopularComponent } from '../../zone/blog/theme/popular/popular.component' // *
+	import { NewComponent } from '../../zone/blog/new/new.component'
 	import { ForumComponent } from '../../zone/blog/forum/forum.component'
 	import { PostComponent } from '../../zone/blog/post/post.component'
+		// StreamComponent
+		// CommentComponent
+			// UserComponent
 // Tech page components
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
-		import { AskComponent } from '../../zone/tech/library/ask/ask.component'
-		import { KnowComponent } from '../../zone/tech/library/know/know.component'
+		import { QuestComponent } from '../../zone/tech/library/quest/quest.component'
+		import { VolumeComponent } from '../../zone/tech/library/volume/volume.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
-		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
-			import { CodeComponent } from '../../zone/tech/guide/lesson/code/code.component'
+		import { KnowComponent } from '../../zone/tech/guide/know/know.component'
+			import { CodeComponent } from '../../zone/tech/guide/know/code/code.component'
 // Hack page components
 import { HackComponent } from '../../zone/hack/hack.component'
 	import { ChallengeComponent } from '../../zone/hack/challenge/challenge.component'
-	import { HistoryComponent } from '../../zone/hack/history/history.component'
+	import { ArchiveComponent } from '../../zone/hack/archive/archive.component'
 	import { IssueComponent } from '../../zone/hack/issue/issue.component'
 
 // Partial popup components
 import { JoinComponent } from '../../social/join/join.component'
 import { ProfileComponent } from '../../social/profile/profile.component'
 import { LoginComponent } from '../../social/login/login.component'
-import { MailComponent } from '../../social/mail/mail.component';
+import { MailComponent } from '../../social/mail/mail.component'
 import { ResumeComponent } from '../../social/resume/resume.component'
 
 
@@ -50,15 +53,15 @@ import { ResumeComponent } from '../../social/resume/resume.component'
 // Routing directives of each page
 const routes: Routes = [
 	{ path: '', component: IanComponent, children: [
-		{ path: 'project', component: ProjectComponent }, // Temporary Route Url
+		{ path: 'project', component: ProjectComponent } // Temporary Route Url
 		//{ path: ':id', component: ProjectComponent }
 	] },
-	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
-	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'tech', component: TechComponent, children: [
-		{ path: 'ask', component: AskComponent }
+		{ path: 'question', component: QuestComponent }
 	] },
+	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
+	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
 	{ path: 'mail', component: MailComponent },
 	{ path: 'resume', component: ResumeComponent },
 	{ path: 'login', component: LoginComponent },
@@ -85,21 +88,21 @@ const routes: Routes = [
 				ProjectComponent,
 		BlogComponent,
 			ThemeComponent,
-				ReadComponent,
-			NewestComponent,
+				PopularComponent,
+			NewComponent,
 			ForumComponent,
 			PostComponent,
 		TechComponent,
 			LibraryComponent,
-				AskComponent,
-				KnowComponent,
+				QuestComponent,
+				VolumeComponent,
 			GuideComponent,
-				LessonComponent,
+				KnowComponent,
 					CodeComponent,
 		//WorkComponent,
 		//HackComponent,
 			//ChallengeComponent,
-			//HistoryComponent,
+			//ArchiveComponent,
 			//IssueComponent
 	],
 	imports: [
@@ -113,5 +116,6 @@ const routes: Routes = [
 
 
 export class RouteModule {  }
+
 
 

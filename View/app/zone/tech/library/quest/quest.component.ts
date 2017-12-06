@@ -8,13 +8,13 @@ import { Router } from '@angular/router'
 
 
 @Component( {
-	selector: 'ask',
-	templateUrl: './ask.component.html',
-	styleUrls: [ './ask.component.css' ]
+	selector: 'quest',
+	templateUrl: './quest.component.html',
+	styleUrls: [ './quest.component.css' ]
 } )
 
 	
-export class AskComponent implements OnInit {
+export class QuestComponent implements OnInit {
 
 	title: string = 'What Do You Want To Learn?' // Overriden By Parent Page's Title
 
