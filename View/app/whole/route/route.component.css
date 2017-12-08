@@ -10,7 +10,7 @@ section {
 	top: 0vh;
 	height: 10em;
 	width: 100%;
-	/* transition: opacity 0.25s; */
+	/* transition: opacity 0.5s; */
 }
 
 section:hover {
