@@ -23,7 +23,7 @@ export class JoinComponent implements OnInit {
 
 
 	constructor( private _back: Router, private _url: UrlService ) {
-		this.prior = this._url.priorUrl
+		this.prior = _url.priorUrl
 	}
 	
 

@@ -3,6 +3,8 @@
 
 
 import { Injectable } from '@angular/core'
+import { Router } from '@angular/router';
+//import { filter } from 'rxjs/operators'
 
 
 
@@ -14,10 +16,12 @@ export class UrlService {
 	priorUrl: string
 	
 
-	constructor( ) {  }
+	constructor( private _route: Router ) {
+		//.pipe( filter( o => o instanceof NavigationStart ) )
+		_route.events.subscribe( n => this.priorUrl = _route.url )
+	}
 
 }
-
 
 
 
