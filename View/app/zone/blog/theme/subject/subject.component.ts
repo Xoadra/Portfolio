@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 
 
@@ -14,8 +14,18 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class SubjectComponent implements OnInit {
+	
+	subject: string
+	
 
-	constructor( ) {  }
+	constructor( ) {
+		if ( this.subject === undefined ) {
+			this.subject = 'Subject'
+		}
+		else {
+			
+		}
+	}
 
 	
 	ngOnInit( ) {  }

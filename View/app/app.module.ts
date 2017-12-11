@@ -2,17 +2,19 @@
 
 
 
-import { BrowserModule } from '@angular/platform-browser'
+// Main native modules
 import { NgModule } from '@angular/core'
-import { AppComponent } from './app.component'
+import { BrowserModule } from '@angular/platform-browser'
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+// Page routing module
 import { RouteModule } from './whole/route/route.module'
 
-// Modules added per guide being followed
-import { FormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
 
-
-// Whole-website components across all pages
+// Whole-website components
+import { AppComponent } from './app.component'
 import { LogoComponent } from './whole/logo/logo.component'
 import { RouteComponent } from './whole/route/route.component'
 import { MoveComponent } from './whole/move/move.component'
@@ -20,7 +22,7 @@ import { FootComponent } from './whole/foot/foot.component'
 
 
 // Services used
-import { UrlService } from './transit/url.service';
+import { UrlService } from './transit/url.service'
 
 
 
@@ -34,8 +36,9 @@ import { UrlService } from './transit/url.service';
 	],
 	imports: [
 		BrowserModule,
-		FormsModule,
 		HttpClientModule,
+		FormsModule,
+		BrowserAnimationsModule,
 		RouteModule
 	],
 	exports: [ ],
@@ -49,5 +52,6 @@ import { UrlService } from './transit/url.service';
 	
 	
 export class AppModule {  }
+
 
 

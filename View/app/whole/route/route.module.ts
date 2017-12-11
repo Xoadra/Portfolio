@@ -2,8 +2,9 @@
 
 
 
-import { CommonModule } from '@angular/common'
+// General built-in modules
 import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 import { Routes, RouterModule } from '@angular/router'
 
 // Main page components
@@ -120,6 +121,5 @@ const routes: Routes = [
 
 
 export class RouteModule {  }
-
 
 
