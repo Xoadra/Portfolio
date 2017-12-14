@@ -4,30 +4,24 @@
 
 <section>
 	<h1 class="main"> Blog Topics </h1>
+	<subject *ngIf="view" [subject]="subject" (delete)="changeState( $event )" [@viewSeries]="open"></subject>
 	<nav id="upper">
-		<!-- *ngIf="industry" (click)="triggerSubject( )" -->
-		<subject *ngIf="subject" (click)="changeState( )" [@viewSeries]="view"></subject> 
-		<h2 (click)="changeState( )"> INDUSTRY </h2> <!-- (click)="triggerSubject( )" -->
+		<h2 (click)="selectSubject( 'Industry' )"> INDUSTRY </h2>
 		<h2 class="iter"> | </h2>
-		<subject *ngIf="coding"></subject>
-		<h2> CODING </h2>
+		<h2 (click)="selectSubject( 'Coding' )"> CODING </h2>
 		<h2 class="iter"> | </h2>
-		<subject *ngIf="events"></subject>
-		<h2> EVENTS </h2>
+		<h2 (click)="selectSubject( 'Events' )"> EVENTS </h2>
 		<h2 class="iter"> | </h2>
-		<subject *ngIf="startup"></subject>
-		<h2> STARTUP </h2>
+		<h2 (click)="selectSubject( 'Startup' )"> STARTUP </h2>
 	</nav>
 	<nav id="lower">
-		<subject *ngIf="hiring"></subject>
-		<h2> HIRING </h2>
+		<h2 (click)="selectSubject( 'Hiring' )"> HIRING </h2>
 		<h2 class="iter"> | </h2>
-		<subject *ngIf="production"></subject>
-		<h2> PRODUCTION </h2>
+		<h2 (click)="selectSubject( 'Production' )"> PRODUCTION </h2>
 		<h2 class="iter"> | </h2>
-		<subject *ngIf="future"></subject>
-		<h2> FUTURE </h2>
+		<h2 (click)="selectSubject( 'Future' )"> FUTURE </h2>
 	</nav>
 </section>
+
 
 

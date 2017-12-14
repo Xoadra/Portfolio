@@ -2,7 +2,7 @@
 
 
 
-import { Component } from '@angular/core'
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 
 
 
@@ -15,19 +15,17 @@ import { Component } from '@angular/core'
 
 export class SubjectComponent {
 	
-	private subject: string
+	@Input( ) subject: string
+	@Output( ) delete = new EventEmitter( )
 	
-
-	constructor( ) {
-		if ( this.subject === undefined ) {
-			this.subject = 'Subject'
-		}
-		else {
-			// Will test subject clicked identification here
-		}
+	
+	constructor( ) {  }
+	
+	
+	goBack( ) {
+		this.delete.emit( )
 	}
 
 }
-
 
 

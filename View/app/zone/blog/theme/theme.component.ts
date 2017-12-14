@@ -13,7 +13,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 	styleUrls: [ './theme.component.css' ],
 	animations: [
 		trigger( 'viewSeries', [
-			state( 'view', style( {  } ) ),
+			state( 'open', style( {  } ) ),
 			/* state( '', style( {  } ) ), */
 			/* transition( 'void => *', [ animate( '200ms ease-out' ) ] ), */
 			/* transition( '* => void', [ animate( '200ms ease-out' ) ] ), */
@@ -22,10 +22,10 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 			/* transition( 'one <=> void', [ animate( 200 ) ] ), */
 			transition( ':enter', [
 				style( { opacity: '0' } ),
-				animate( 250 )
+				animate( 200 )
 			] ),
 			transition( ':leave', [
-				animate( 250, style( { opacity: '0' } ) ) 
+				animate( 150, style( { opacity: '0' } ) ) 
 			] ),
 		] )
 	]
@@ -34,38 +34,24 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 export class ThemeComponent {
 	
-	private view: string = 'void'
-	private subject: boolean = false
-	
-	// Placeholder component activation triggers
-	/* industry: boolean = false
-	coding: boolean = false
-	events: boolean = false
-	startup: boolean = false
-	hiring: boolean = false
-	production: boolean = false
-	future: boolean = false */
+	private open: string = 'void'
+	private view: boolean = false
+	private subject: string
 
 
 	constructor( ) {  }
 	
 	
-	changeState( ) {
-		this.subject = this.subject === true ? false : true
-		this.view = this.view === 'view' ? 'void' : 'view'
+	selectSubject( subject: string ) {
+		this.subject = subject
+		this.changeState( )
 	}
 	
-	// Temporary component state changer
-	/* triggerSubject( subject: boolean ) {
-		if ( this.industry === false ) {
-			this.industry = true
-		}
-		else {
-			this.industry = false
-		}
-	} */
+	changeState( ) {
+		this.open = this.open === 'view' ? 'void' : 'view'
+		this.view = this.view === true ? false : true
+	}
 
 }
-
 
 
