@@ -3,7 +3,8 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
+import { Title } from '@angular/platform-browser'
+import { Router } from '@angular/router'
 
 
 
@@ -15,17 +16,16 @@ import { HttpClient } from '@angular/common/http'
 
 export class IanComponent implements OnInit {
 
-	title: string = 'Ian Peterson\'s Tech Platform'
-	quotes: string[ ] = [ ]
+	private title: string = 'Ian Peterson\'s Tech Platform'
 
 
-	constructor( private _httpService: HttpClient ) {  }
+	constructor( private _title: Title, private _route: Router ) {  }
 
 	
 	ngOnInit( ) {
-		/* this._httpService.get( 'prime' ).subscribe( phrases => {
-			this.quotes = phrases.json( ) as string[ ];
-		} ) */
+		if ( this._route.url === '/' ) {
+			this._title.setTitle( 'Xambda | ' + this.title )
+		}
 	}
 
 }

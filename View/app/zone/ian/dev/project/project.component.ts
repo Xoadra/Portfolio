@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
 
@@ -16,20 +17,23 @@ import { Router } from '@angular/router'
 	
 export class ProjectComponent implements OnInit {
 	
-	title: string = 'A Software App!' // Overriden By Parent Page's Title
+	private title: string = 'A Software App!'
+	private before: string
 
 
-	constructor( private _back: Router ) {  }
-	
+	constructor( private _title: Title, private _back: Router ) {  }
+
+
+	ngOnInit( ) {
+		this.before = this._title.getTitle( )
+		this._title.setTitle( 'Xambda | ' + this.title )
+	}
 	
 	back( ) {
 		this._back.navigate( [ '/' ] )
+		this._title.setTitle( this.before )
 	}
 
-
-	ngOnInit( ) {  }
-
 }
-
 
 

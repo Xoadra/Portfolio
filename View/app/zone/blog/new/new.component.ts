@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 
 
@@ -13,13 +13,9 @@ import { Component, OnInit } from '@angular/core';
 } )
 
 	
-export class NewComponent implements OnInit {
+export class NewComponent {
 
-	section: string = 'New'
-
-	constructor( ) {  }
-
-	ngOnInit( ) {  }
+	private section: string = 'New'
 
 }
 

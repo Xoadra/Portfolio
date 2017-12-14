@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 
 
@@ -13,13 +13,7 @@ import { Component, OnInit } from '@angular/core';
 } )
 
 	
-export class ChallengeComponent implements OnInit {
+export class ChallengeComponent {  }
 
-	constructor( ) {  }
-
-
-	ngOnInit( ) {  }
-
-}
 
 

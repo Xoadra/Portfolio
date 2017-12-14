@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
 
@@ -13,23 +14,26 @@ import { Router } from '@angular/router'
 	styleUrls: [ './quest.component.css' ]
 } )
 
-	
+
 export class QuestComponent implements OnInit {
 
-	title: string = 'What Do You Want To Learn?' // Overriden By Parent Page's Title
+	private title: string = 'What Do You Want To Learn?'
+	private before: string
 
 
-	constructor( private _back: Router ) {  }
-	
+	constructor( private _title: Title, private _back: Router ) {  }
+
+
+	ngOnInit( ) {
+		this.before = this._title.getTitle( )
+		this._title.setTitle( 'Xambda | ' + this.title )
+	}
 	
 	back( ) {
 		this._back.navigate( [ '/tech' ] )
+		this._title.setTitle( this.before )
 	}
 
-
-	ngOnInit( ) {  }
-
 }
-
 
 

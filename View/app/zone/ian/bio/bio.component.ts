@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
 
 
 
@@ -14,11 +15,18 @@ import { Component, OnInit } from '@angular/core'
 
 	
 export class BioComponent implements OnInit {
+	
+	private quotes: string[ ] = [ ]
+	
+	
+	constructor( private _httpService: HttpClient ) {  }
 
-	constructor( ) {  }
 
-
-	ngOnInit( ) {  }
+	ngOnInit( ) {
+		/* this._httpService.get( 'prime' ).subscribe( phrases => {
+			this.quotes = phrases.json( ) as string[ ]
+		} ) */
+	}
 
 }
 

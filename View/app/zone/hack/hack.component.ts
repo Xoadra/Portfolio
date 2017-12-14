@@ -2,7 +2,9 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
+import { Router } from '@angular/router'
 
 
 
@@ -14,13 +16,17 @@ import { Component, OnInit } from '@angular/core';
 	
 export class HackComponent implements OnInit {
 
-	title: string = 'Up Your Hackery'
+	private title: string = 'Up Your Hackery'
 
 
-	constructor( ) {  }
+	constructor( private _title: Title, private _route: Router ) {  }
 
 	
-	ngOnInit( ) {  }
+	ngOnInit( ) {
+		if ( this._route.url === '/hack' ) {
+			this._title.setTitle( 'Xambda | ' + this.title )
+		}
+	}
 
 }
 

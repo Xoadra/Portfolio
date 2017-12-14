@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 
 
@@ -12,14 +12,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './archive.component.css' ]
 } )
 
-	
-export class ArchiveComponent implements OnInit {
 
-	constructor( ) {  }
+export class ArchiveComponent {  }
 
-
-	ngOnInit( ) {  }
-
-}
 
 

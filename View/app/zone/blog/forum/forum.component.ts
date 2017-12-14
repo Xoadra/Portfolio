@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 
 
@@ -13,13 +13,9 @@ import { Component, OnInit } from '@angular/core';
 } )
 
 	
-export class ForumComponent implements OnInit {
+export class ForumComponent {
 
-	section: string = 'Forum'
-
-	constructor( ) {  }
-
-	ngOnInit( ) {  }
+	private section: string = 'Forum'
 
 }
 

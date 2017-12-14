@@ -2,7 +2,8 @@
 
 
 
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 
 
 
@@ -12,6 +13,19 @@ import { Component } from '@angular/core'
 } )
 
 	
-export class AppComponent {  }
+export class AppComponent implements OnInit {
+	
+	private title: string = 'Xambda'
+	
+	
+	constructor( private _title: Title ) {  }
+	
+	
+	ngOnInit( ) {
+		this._title.setTitle( this.title )
+	}
+	
+}
+
 
 

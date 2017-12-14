@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 
 
@@ -13,9 +13,9 @@ import { Component, OnInit } from '@angular/core'
 } )
 
 
-export class SubjectComponent implements OnInit {
+export class SubjectComponent {
 	
-	subject: string
+	private subject: string
 	
 
 	constructor( ) {
@@ -23,13 +23,11 @@ export class SubjectComponent implements OnInit {
 			this.subject = 'Subject'
 		}
 		else {
-			
+			// Will test subject clicked identification here
 		}
 	}
 
-	
-	ngOnInit( ) {  }
-
 }
+
 
 

@@ -3,6 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
 import { UrlService } from '../../transit/url.service'
@@ -18,26 +19,27 @@ import { UrlService } from '../../transit/url.service'
 	
 export class ProfileComponent implements OnInit {
 
-	title: string = 'Your Profile'
-	prior: string
+	private title: string = 'Your Profile'
+	private prior: string
 
 
-	constructor( private _back: Router, private _url: UrlService ) {
+	constructor( private _title: Title, private _back: Router, private _url: UrlService ) {
 		this.prior = _url.priorUrl
 	}
 	
 
+	ngOnInit( ) {
+		this._title.setTitle( 'Xambda | ' + this.title )
+	}
+
 	exit( ) {
-		if ( this.prior != undefined ) {
+		if ( this.prior !== undefined ) {
 			this._back.navigate( [ this.prior ] )
 		}
 		else {
 			this._back.navigate( [ '/' ] )
 		}
 	}
-
-
-	ngOnInit( ) {  }
 
 }
 

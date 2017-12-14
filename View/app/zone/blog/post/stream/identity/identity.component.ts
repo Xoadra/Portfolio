@@ -2,24 +2,18 @@
 
 
 
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 
 
 @Component( {
-  selector: 'identity',
-  templateUrl: './identity.component.html',
-  styleUrls: [ './identity.component.css' ]
+	selector: 'identity',
+	templateUrl: './identity.component.html',
+	styleUrls: [ './identity.component.css' ]
 } )
 
 
-export class IdentityComponent implements OnInit {
+export class IdentityComponent {  }
 
-  constructor( ) {  }
-
-  
-  ngOnInit( ) {  }
-
-}
 
 

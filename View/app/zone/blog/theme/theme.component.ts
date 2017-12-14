@@ -2,7 +2,7 @@
 
 
 
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { animate, state, style, transition, trigger } from '@angular/animations'
 
 
@@ -20,17 +20,22 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 			/* transition( 'void => *', [ animate( 200, style( { opacity: '0' } ) ) ] ), */
 			/* transition( '* => void', [ animate( 200, style( { opacity: '0' } ) ) ] ), */
 			/* transition( 'one <=> void', [ animate( 200 ) ] ), */
-			transition( ':enter', [ style( { opacity: '0' } ), animate( 250 ) ] ),
-			transition( ':leave', [ animate( 250, style( { opacity: '0' } ) ) ] ),
+			transition( ':enter', [
+				style( { opacity: '0' } ),
+				animate( 250 )
+			] ),
+			transition( ':leave', [
+				animate( 250, style( { opacity: '0' } ) ) 
+			] ),
 		] )
 	]
 } )
 
 
-export class ThemeComponent implements OnInit {
+export class ThemeComponent {
 	
-	view: string = 'void'
-	subject: boolean = false
+	private view: string = 'void'
+	private subject: boolean = false
 	
 	// Placeholder component activation triggers
 	/* industry: boolean = false
@@ -59,9 +64,6 @@ export class ThemeComponent implements OnInit {
 			this.industry = false
 		}
 	} */
-
-	
-	ngOnInit( ) {  }
 
 }
 

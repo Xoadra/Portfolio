@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 import { UrlService } from '../../transit/url.service'
 
@@ -15,25 +15,17 @@ import { UrlService } from '../../transit/url.service'
 } )
 
 
-export class RouteComponent implements OnInit {
+export class RouteComponent {
 
-	online: boolean = false // Temporary Switch Between Guest and User Panels
+	private online: boolean = false // Temporary switch between guest and user panels
 	
 
-	constructor( private _url: UrlService ) {  } // Pull in service to begin tracking route changes.
+	constructor( private _url: UrlService ) {  } // Pull in service to begin tracking route changes
 	
 
 	swapStatus( ) {
-		if ( this.online === false ) {
-			this.online = true // Temporary Switch Between Guest and User Panels
-		}
-		else {
-			this.online = false // Temporary Switch Between Guest and User Panels
-		}
+		this.online = this.online === true ? false : true // Temporary switch between guest and user panels
 	}
-	
-
-	ngOnInit( ) {  }
 
 }
 

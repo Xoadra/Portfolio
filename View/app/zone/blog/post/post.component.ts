@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core'
 
 
 
@@ -13,15 +13,11 @@ import { Component, OnInit, Input } from '@angular/core';
 } )
 
 	
-export class PostComponent implements OnInit {
+export class PostComponent {
 
 	@Input( ) section
 
-
-	constructor( ) {  }
-
-	ngOnInit( ) {  }
-
 }
+
 
 

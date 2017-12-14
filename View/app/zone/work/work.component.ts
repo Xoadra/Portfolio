@@ -3,6 +3,8 @@
 
 
 import { Component, OnInit } from '@angular/core'
+import { Title } from '@angular/platform-browser'
+import { Router } from '@angular/router'
 
 
 
@@ -14,13 +16,17 @@ import { Component, OnInit } from '@angular/core'
 	
 export class WorkComponent implements OnInit {
 
-	title: string = 'Software Portfolio'
+	private title: string = 'Software Portfolio'
 
 
-	constructor( ) {  }
+	constructor( private _title: Title, private _route: Router ) {  }
 
 	
-	ngOnInit( ) {  }
+	ngOnInit( ) {
+		if ( this._route.url === '/work' ) {
+			this._title.setTitle( 'Xambda | ' + this.title )
+		}
+	}
 
 }
 

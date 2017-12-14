@@ -2,7 +2,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 
 
@@ -13,13 +13,7 @@ import { Component, OnInit } from '@angular/core'
 } )
 
 
-export class StreamComponent implements OnInit {
+export class StreamComponent {  }
 
-	constructor( ) {  }
-
-	
-	ngOnInit( ) {  }
-
-}
 
 
