@@ -5,14 +5,14 @@
 section {
 	position: fixed;
     display: inline-block;
-    z-index: 40;
+    z-index: 50;
     text-align: center;
     background-color: #ffb020;
     top: 20%;
     min-height: 25em;
     width: 50vw;
     min-width: 20em;
-    margin: 0 25% 0;
+	margin: 0 25% 0;
 }
 
 h2 {
