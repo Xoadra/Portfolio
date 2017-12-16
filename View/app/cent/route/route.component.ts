@@ -4,7 +4,7 @@
 
 import { Component } from '@angular/core'
 
-import { UrlService } from '../../transit/url.service'
+import { UrlService } from '../../relay/url.service'
 
 
 

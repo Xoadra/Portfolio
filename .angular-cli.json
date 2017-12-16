@@ -1,4 +1,3 @@
-
 {
 	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
 	"project": {
@@ -22,7 +21,8 @@
 		"prefix": "app",
 		"styles": [
 			"styles.css",
-			"media.css"
+			"media.css",
+			"trans.css"
 		],
 		"scripts": [ ],
 		"environmentSource": "environments/environment.ts",

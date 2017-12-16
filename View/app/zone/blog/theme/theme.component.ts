@@ -13,8 +13,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 	styleUrls: [ './theme.component.css' ],
 	animations: [
 		trigger( 'viewSeries', [
-			state( 'open', style( {  } ) ),
-			/* state( '', style( {  } ) ), */
+			/* state( 'open', style( {  } ) ), */
+			/* state( 'close', style( {  } ) ), */
 			/* transition( 'void => *', [ animate( '200ms ease-out' ) ] ), */
 			/* transition( '* => void', [ animate( '200ms ease-out' ) ] ), */
 			/* transition( 'void => *', [ animate( 200, style( { opacity: '0' } ) ) ] ), */
@@ -34,9 +34,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 export class ThemeComponent {
 	
+	private subject: string
 	private open: string = 'void'
 	private view: boolean = false
-	private subject: string
 
 
 	constructor( ) {  }
@@ -48,8 +48,8 @@ export class ThemeComponent {
 	}
 	
 	changeState( ) {
-		this.open = this.open === 'view' ? 'void' : 'view'
 		this.view = this.view === true ? false : true
+		this.open = this.open === 'view' ? 'void' : 'view'
 	}
 
 }

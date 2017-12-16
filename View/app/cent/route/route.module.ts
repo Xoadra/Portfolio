@@ -43,12 +43,15 @@ import { HackComponent } from '../../zone/hack/hack.component'
 	import { IssueComponent } from '../../zone/hack/issue/issue.component'
 
 // Partial popup components
-import { JoinComponent } from '../../social/join/join.component'
-import { ProfileComponent } from '../../social/profile/profile.component'
-import { LoginComponent } from '../../social/login/login.component'
-import { MailComponent } from '../../social/mail/mail.component'
-import { ResumeComponent } from '../../social/resume/resume.component'
+import { JoinComponent } from '../../pop/join/join.component'
+import { ProfileComponent } from '../../pop/profile/profile.component'
+import { LoginComponent } from '../../pop/login/login.component'
+import { MailComponent } from '../../pop/mail/mail.component'
+import { ResumeComponent } from '../../pop/resume/resume.component'
 // UserComponent
+
+// Custom structural directives
+import { FadeDirective } from '../../act/fade.directive'
 
 
 
@@ -75,6 +78,7 @@ const routes: Routes = [
 
 @NgModule( {
 	declarations: [
+		// Route declarations
 		LoginComponent,
 		JoinComponent,
 		ProfileComponent,
@@ -109,6 +113,8 @@ const routes: Routes = [
 			//ChallengeComponent,
 			//ArchiveComponent,
 			//IssueComponent
+		// Directive declarations
+		FadeDirective
 	],
 	imports: [
 		CommonModule,

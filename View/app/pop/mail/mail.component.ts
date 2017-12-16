@@ -6,27 +6,27 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
-import { UrlService } from '../../transit/url.service'
+import { UrlService } from '../../relay/url.service'
 
 
 
 @Component( {
-	selector: 'resume',
-	templateUrl: './resume.component.html',
-	styleUrls: [ './resume.component.css' ]
+	selector: 'mail',
+	templateUrl: './mail.component.html',
+	styleUrls: [ './mail.component.css' ]
 } )
 
 
-export class ResumeComponent implements OnInit {
+export class MailComponent implements OnInit {
 
-	private title: string = 'Ian\'s Tech Resume'
+	private title: string = 'Send Me Your Robots!'
 	private prior: string
 
 
 	constructor( private _title: Title, private _back: Router, private _url: UrlService ) {
 		this.prior = _url.priorUrl
 	}
-
+	
 	
 	ngOnInit( ) {
 		this._title.setTitle( 'Xambda | ' + this.title )

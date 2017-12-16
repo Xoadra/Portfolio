@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
-import { UrlService } from '../../transit/url.service'
+import { UrlService } from '../../relay/url.service'
 
 
 
@@ -20,9 +20,10 @@ import { UrlService } from '../../transit/url.service'
 export class JoinComponent implements OnInit {
 
 	private title: string = 'Join Us...'
+	private fade: boolean = true
 	private prior: string
-
-
+	
+	
 	constructor( private _title: Title, private _back: Router, private _url: UrlService ) {
 		this.prior = _url.priorUrl
 	}
@@ -33,14 +34,17 @@ export class JoinComponent implements OnInit {
 	}
 
 	exit( ) {
-		if ( this.prior !== undefined ) {
-			this._back.navigate( [ this.prior ] )
-		}
-		else {
-			this._back.navigate( [ '/' ] )
-		}
+		this.fade = false
+		setTimeout( temporal => {
+			if ( this.prior !== undefined ) {
+				this._back.navigate( [ this.prior ] )
+			}
+			else {
+				this._back.navigate( [ '/' ] )
+			}
+		}, 1000 )
 	}
-
+ 
 }
 
 

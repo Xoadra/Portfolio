@@ -6,20 +6,20 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
-import { UrlService } from '../../transit/url.service'
+import { UrlService } from '../../relay/url.service'
 
 
 
 @Component( {
-	selector: 'profile',
-	templateUrl: './profile.component.html',
-	styleUrls: [ './profile.component.css' ]
+	selector: 'login',
+	templateUrl: './login.component.html',
+	styleUrls: [ './login.component.css' ]
 } )
 
 	
-export class ProfileComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
-	private title: string = 'Your Profile'
+	private title: string = 'Login Here!'
 	private prior: string
 
 
@@ -27,7 +27,7 @@ export class ProfileComponent implements OnInit {
 		this.prior = _url.priorUrl
 	}
 	
-
+	
 	ngOnInit( ) {
 		this._title.setTitle( 'Xambda | ' + this.title )
 	}
