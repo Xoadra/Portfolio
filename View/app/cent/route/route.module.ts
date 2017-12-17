@@ -50,9 +50,6 @@ import { MailComponent } from '../../pop/mail/mail.component'
 import { ResumeComponent } from '../../pop/resume/resume.component'
 // UserComponent
 
-// Custom structural directives
-import { FadeDirective } from '../../act/fade.directive'
-
 
 
 // Routing directives of each page
@@ -113,8 +110,6 @@ const routes: Routes = [
 			//ChallengeComponent,
 			//ArchiveComponent,
 			//IssueComponent
-		// Directive declarations
-		FadeDirective
 	],
 	imports: [
 		CommonModule,
@@ -127,5 +122,6 @@ const routes: Routes = [
 
 
 export class RouteModule {  }
+
 
 

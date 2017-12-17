@@ -11,11 +11,11 @@
 </div>
 
 
-<div id="fade" class="darken" *xamFade="fade" (click)="exit( )"></div>
-<div id="fade" class="brighten" *xamFade="!fade" (click)="exit( )"></div>
+<div id="fade" *ngIf="fade" (click)="exit( )" [@fade]="fade"></div>
 <section id="modal">
 	<h2> Signup </h2>
 	<button (click)="exit( )"><h3> Close </h3></button>
 </section>
+
 
 

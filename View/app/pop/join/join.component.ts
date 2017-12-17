@@ -8,17 +8,20 @@ import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
 
+import { FadeAnimation } from '../../act/fade.animation'
+
 
 
 @Component( {
 	selector: 'join',
 	templateUrl: './join.component.html',
-	styleUrls: [ './join.component.css' ]
+	styleUrls: [ './join.component.css' ],
+	animations: [ FadeAnimation ]
 } )
 
 	
 export class JoinComponent implements OnInit {
-
+	
 	private title: string = 'Join Us...'
 	private fade: boolean = true
 	private prior: string
@@ -46,6 +49,5 @@ export class JoinComponent implements OnInit {
 	}
  
 }
-
 
 
