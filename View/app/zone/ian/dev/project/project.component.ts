@@ -6,18 +6,22 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
+import { FadeAnimation } from '../../../../act/fade.animation'
+
 
 
 @Component( {
 	selector: 'project',
 	templateUrl: './project.component.html',
-	styleUrls: [ './project.component.css' ]
+	styleUrls: [ './project.component.css' ],
+	animations: [ FadeAnimation ]
 } )
 
 	
 export class ProjectComponent implements OnInit {
 	
 	private title: string = 'A Software App!'
+	private fade: boolean = true
 	private before: string
 
 
@@ -30,10 +34,14 @@ export class ProjectComponent implements OnInit {
 	}
 	
 	back( ) {
-		this._back.navigate( [ '/' ] )
-		this._title.setTitle( this.before )
+		this.fade = false
+		setTimeout( temporal => {
+			this._back.navigate( [ '/' ] )
+			this._title.setTitle( this.before )
+		}, 1000 )
 	}
 
 }
+
 
 

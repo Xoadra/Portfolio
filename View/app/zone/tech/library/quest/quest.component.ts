@@ -6,18 +6,22 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
+import { FadeAnimation } from '../../../../act/fade.animation'
+
 
 
 @Component( {
 	selector: 'quest',
 	templateUrl: './quest.component.html',
-	styleUrls: [ './quest.component.css' ]
+	styleUrls: [ './quest.component.css' ],
+	animations: [ FadeAnimation ]
 } )
 
 
 export class QuestComponent implements OnInit {
 
 	private title: string = 'What Do You Want To Learn?'
+	private fade: boolean = true
 	private before: string
 
 
@@ -30,10 +34,14 @@ export class QuestComponent implements OnInit {
 	}
 	
 	back( ) {
-		this._back.navigate( [ '/tech' ] )
-		this._title.setTitle( this.before )
+		this.fade = false
+		setTimeout( temporal => {
+			this._back.navigate( [ '/tech' ] )
+			this._title.setTitle( this.before )
+		}, 1000 )
 	}
 
 }
+
 
 

@@ -8,18 +8,22 @@ import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
 
+import { FadeAnimation } from '../../act/fade.animation'
+
 
 
 @Component( {
 	selector: 'mail',
 	templateUrl: './mail.component.html',
-	styleUrls: [ './mail.component.css' ]
+	styleUrls: [ './mail.component.css' ],
+	animations: [ FadeAnimation ]
 } )
 
 
 export class MailComponent implements OnInit {
 
 	private title: string = 'Send Me Your Robots!'
+	private fade: boolean = true
 	private prior: string
 
 
@@ -33,15 +37,17 @@ export class MailComponent implements OnInit {
 	}
 
 	exit( ) {
-		if ( this.prior !== undefined ) {
-			this._back.navigate( [ this.prior ] )
-		}
-		else {
-			this._back.navigate( [ '/' ] )
-		}
+		this.fade = false
+		setTimeout( temporal => {
+			if ( this.prior !== undefined ) {
+				this._back.navigate( [ this.prior ] )
+			}
+			else {
+				this._back.navigate( [ '/' ] )
+			}
+		}, 1000 )
 	}
 
 }
-
 
 

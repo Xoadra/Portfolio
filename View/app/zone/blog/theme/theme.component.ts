@@ -22,7 +22,7 @@ import { animate, style, transition, trigger } from '@angular/animations'
 			/* transition( 'one <=> void', [ animate( 200 ) ] ), */
 			transition( ':enter', [
 				style( { opacity: '0' } ),
-				animate( 200 )
+				animate( 300 )
 			] ),
 			transition( ':leave', [
 				animate( 150, style( { opacity: '0' } ) ) 

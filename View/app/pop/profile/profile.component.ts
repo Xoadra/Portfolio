@@ -8,18 +8,22 @@ import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
 
+import { FadeAnimation } from '../../act/fade.animation'
+
 
 
 @Component( {
 	selector: 'profile',
 	templateUrl: './profile.component.html',
-	styleUrls: [ './profile.component.css' ]
+	styleUrls: [ './profile.component.css' ],
+	animations: [ FadeAnimation ]
 } )
 
 	
 export class ProfileComponent implements OnInit {
 
 	private title: string = 'Your Profile'
+	private fade: boolean = true
 	private prior: string
 
 
@@ -33,15 +37,17 @@ export class ProfileComponent implements OnInit {
 	}
 
 	exit( ) {
-		if ( this.prior !== undefined ) {
-			this._back.navigate( [ this.prior ] )
-		}
-		else {
-			this._back.navigate( [ '/' ] )
-		}
+		this.fade = false
+		setTimeout( temporal => {
+			if ( this.prior !== undefined ) {
+				this._back.navigate( [ this.prior ] )
+			}
+			else {
+				this._back.navigate( [ '/' ] )
+			}
+		}, 1000 )
 	}
 
 }
-
 
 
