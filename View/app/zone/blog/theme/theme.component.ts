@@ -3,55 +3,55 @@
 
 
 import { Component, Input } from '@angular/core'
-import { animate, style, transition, trigger } from '@angular/animations'
+import { Router } from '@angular/router'
+
+import { UrlService } from '../../../relay/url.service'
 
 
 
 @Component( {
 	selector: 'theme',
 	templateUrl: './theme.component.html',
-	styleUrls: [ './theme.component.css' ],
-	animations: [
-		trigger( 'viewSeries', [
-			/* state( 'open', style( {  } ) ), */
-			/* state( 'close', style( {  } ) ), */
-			/* transition( 'void => *', [ animate( '200ms ease-out' ) ] ), */
-			/* transition( '* => void', [ animate( '200ms ease-out' ) ] ), */
-			/* transition( 'void => *', [ animate( 200, style( { opacity: '0' } ) ) ] ), */
-			/* transition( '* => void', [ animate( 200, style( { opacity: '0' } ) ) ] ), */
-			/* transition( 'one <=> void', [ animate( 200 ) ] ), */
-			transition( ':enter', [
-				style( { opacity: '0' } ),
-				animate( 300 )
-			] ),
-			transition( ':leave', [
-				animate( 150, style( { opacity: '0' } ) ) 
-			] ),
-		] )
-	]
+	styleUrls: [ './theme.component.css' ]
 } )
 
 
 export class ThemeComponent {
 	
+	private browse: boolean = false
 	private subject: string
-	private open: string = 'void'
-	private view: boolean = false
 
 
-	constructor( ) {  }
+	constructor( private _route: Router, private _url: UrlService ) {
+		if ( this._route.url !== '/blog' && this._url.wasActive ) {
+			this.browse = true
+			this.subject = this._url.itemVessel
+			this.changeState( true )
+		}
+	}
 	
 	
 	selectSubject( subject: string ) {
 		this.subject = subject
-		this.changeState( )
+		this._url.itemVessel = this.subject
+		this.changeState( true )
 	}
 	
-	changeState( ) {
-		this.view = this.view === true ? false : true
-		this.open = this.open === 'view' ? 'void' : 'view'
+	changeState( view: boolean ) {
+		if ( !view ) {
+			setTimeout( temporal => {
+				this.browse = view
+				this._url.wasActive = this.browse
+				this._url.itemVessel = undefined
+			}, 150 )
+		}
+		else {
+			this.browse = view
+			this._url.wasActive = this.browse
+		}
 	}
 
 }
+
 
 

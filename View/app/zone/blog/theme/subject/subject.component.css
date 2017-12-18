@@ -3,6 +3,7 @@
 
 
 #fade {
+	z-index: 20;
 	background-color: transparent;
 }
 
@@ -36,6 +37,5 @@ button {
     bottom: 7.5%;
     margin: auto;
 }
-
 
 
