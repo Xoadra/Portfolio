@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
 
-import { FadeAnimation } from '../../act/fade.animation'
+import { ShadeAnimation } from '../../act/shade.animation'
 
 
 
@@ -16,14 +16,14 @@ import { FadeAnimation } from '../../act/fade.animation'
 	selector: 'login',
 	templateUrl: './login.component.html',
 	styleUrls: [ './login.component.css' ],
-	animations: [ FadeAnimation ]
+	animations: [ ShadeAnimation ]
 } )
 
 	
 export class LoginComponent implements OnInit {
 
 	private title: string = 'Login Here!'
-	private fade: boolean = true
+	private shade: boolean = true
 	private prior: string
 
 
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
 	}
 
 	exit( ) {
-		this.fade = false
+		this.shade = false
 		setTimeout( temporal => {
 			if ( this.prior !== undefined ) {
 				this._back.navigate( [ this.prior ] )

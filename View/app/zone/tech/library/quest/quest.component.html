@@ -2,8 +2,8 @@
 
 
 
-<div id="fade" *ngIf="fade" (click)="back( )" [@darkenFade]="fade"></div>
-<section id="modal">
+<div id="shade" *ngIf="shade" (click)="back( )" [@darkenShade]="shade"></div>
+<section *ngIf="shade" [@fallThrough]="shade">
 	<h2> Question </h2>
 	<button (click)="back( )"><h3> Close </h3></button>
 </section>

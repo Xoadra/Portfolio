@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core'
 import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
-import { FadeAnimation } from '../../../../act/fade.animation'
+import { ShadeAnimation } from '../../../../act/shade.animation'
 
 
 
@@ -14,14 +14,14 @@ import { FadeAnimation } from '../../../../act/fade.animation'
 	selector: 'project',
 	templateUrl: './project.component.html',
 	styleUrls: [ './project.component.css' ],
-	animations: [ FadeAnimation ]
+	animations: [ ShadeAnimation ]
 } )
 
 	
 export class ProjectComponent implements OnInit {
 	
 	private title: string = 'A Software App!'
-	private fade: boolean = true
+	private shade: boolean = true
 	private before: string
 
 
@@ -34,7 +34,7 @@ export class ProjectComponent implements OnInit {
 	}
 	
 	back( ) {
-		this.fade = false
+		this.shade = false
 		setTimeout( temporal => {
 			this._back.navigate( [ '/' ] )
 			this._title.setTitle( this.before )

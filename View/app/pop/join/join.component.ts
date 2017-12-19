@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
 
-import { FadeAnimation } from '../../act/fade.animation'
+import { ShadeAnimation } from '../../act/shade.animation'
 
 
 
@@ -16,14 +16,14 @@ import { FadeAnimation } from '../../act/fade.animation'
 	selector: 'join',
 	templateUrl: './join.component.html',
 	styleUrls: [ './join.component.css' ],
-	animations: [ FadeAnimation ]
+	animations: [ ShadeAnimation ]
 } )
 
 	
 export class JoinComponent implements OnInit {
 	
 	private title: string = 'Join Us...'
-	private fade: boolean = true
+	private shade: boolean = true
 	private prior: string
 	
 	
@@ -37,7 +37,7 @@ export class JoinComponent implements OnInit {
 	}
 
 	exit( ) {
-		this.fade = false
+		this.shade = false
 		setTimeout( temporal => {
 			if ( this.prior !== undefined ) {
 				this._back.navigate( [ this.prior ] )
