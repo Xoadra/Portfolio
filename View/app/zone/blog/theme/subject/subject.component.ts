@@ -16,13 +16,13 @@ import { UrlService } from '../../../../relay/url.service'
 	styleUrls: [ './subject.component.css' ],
 	animations: [
 		trigger( 'viewSeries', [
-			state( 'active', style( { opacity: '1' } ) ),
-			state( 'inactive', style( { opacity: '1' } ) ),
-			transition( '* => active', [
+			state( 'browse', style( { opacity: '1' } ) ),
+			state( 'foreign', style( { opacity: '1' } ) ),
+			transition( '* => browse', [
 				style( { opacity: '0' } ),
 				animate( 300 )
 			] ),
-			transition( '* => inactive', [
+			transition( '* => foreign', [
 				style( { opacity: '0' } ),
 				animate( 0 )
 			] ),
@@ -47,17 +47,17 @@ export class SubjectComponent {
 	constructor( private _route: Router, private _url: UrlService ) {
 		this._url.wasActive = this.browse
 		if ( this._route.url !== '/blog' && this._url.wasActive ) {
-			this.view = 'inactive'
+			this.view = 'foreign'
 			this.subject = this._url.itemVessel
-			this.goBack( )
+			this.terminateBrowse( )
 		}
 		else {
-			this.view = 'active'
+			this.view = 'browse'
 		}
 	}
 	
 	
-	goBack( ) {
+	terminateBrowse( ) {
 		if ( this._route.url !== '/blog' ) {
 			setTimeout( temporal => {
 				this.browse = false

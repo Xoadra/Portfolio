@@ -21,8 +21,7 @@
 		"prefix": "app",
 		"styles": [
 			"styles.css",
-			"media.css",
-			"trans.css"
+			"media.css"
 		],
 		"scripts": [ ],
 		"environmentSource": "environments/environment.ts",

@@ -7,7 +7,9 @@ import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 
 import { UrlService } from '../../relay/url.service'
+import { WatchService } from '../../relay/watch.service'
 
+import { FallAnimation } from '../../act/fall.animation'
 import { ShadeAnimation } from '../../act/shade.animation'
 
 
@@ -16,7 +18,7 @@ import { ShadeAnimation } from '../../act/shade.animation'
 	selector: 'resume',
 	templateUrl: './resume.component.html',
 	styleUrls: [ './resume.component.css' ],
-	animations: [ ShadeAnimation ]
+	animations: [ FallAnimation, ShadeAnimation ]
 } )
 
 
@@ -27,8 +29,9 @@ export class ResumeComponent implements OnInit {
 	private prior: string
 
 
-	constructor( private _title: Title, private _back: Router, private _url: UrlService ) {
-		this.prior = _url.priorUrl
+	constructor( private _title: Title, private _back: Router, private _url: UrlService, private _watch: WatchService ) {
+		this.prior = _url.priorUrl // Memorize previously visited route for proper background display and redirects
+		this._watch.setWatch( ) // Begin tracking time for enter-to-leave animation smoothing
 	}
 
 	
@@ -36,16 +39,21 @@ export class ResumeComponent implements OnInit {
 		this._title.setTitle( 'Xambda | ' + this.title )
 	}
 
-	exit( ) {
-		this.shade = false
-		setTimeout( temporal => {
-			if ( this.prior !== undefined ) {
-				this._back.navigate( [ this.prior ] )
-			}
-			else {
-				this._back.navigate( [ '/' ] )
-			}
-		}, 1000 )
+	exitView( ) {
+		if ( this._watch.isTimeMachine( this._watch.getElapsed( 750 ) ) ) { // Set page load offset time
+			return // Delay page exit and leave animation if enough time hasn't elapsed
+		}
+		else {
+			this.shade = false
+			setTimeout( temporal => {
+				if ( this.prior !== undefined ) {
+					this._back.navigate( [ this.prior ] )
+				}
+				else {
+					this._back.navigate( [ '/' ] )
+				}
+			}, 1500 )
+		}
 	}
 
 }

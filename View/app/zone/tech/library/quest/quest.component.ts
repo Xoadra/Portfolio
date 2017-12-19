@@ -34,7 +34,7 @@ export class QuestComponent implements OnInit {
 
 
 	ngOnInit( ) {
-		this.before = this._title.getTitle( )
+		this.before = this._title.getTitle( ) // Store parent page's title so it can remember until redirecting back
 		this._title.setTitle( 'Xambda | ' + this.title )
 	}
 	

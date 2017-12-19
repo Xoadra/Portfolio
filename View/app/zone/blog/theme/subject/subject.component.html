@@ -2,10 +2,10 @@
 
 
 
-<div id="shade" (click)="goBack( $event )"></div>
-<section *ngIf="browse" [@viewSeries]="view">
+<!-- <div id="shade" (click)="terminateBrowse( $event )"></div> -->
+<section *ngIf="browse" (click)="resetAuto( true )" [@viewSeries]="view">
 	<h3> {{ subject }} </h3>
-	<button (click)="goBack( $event )"><h4> Go Back </h4></button>
+	<button (click)="terminateBrowse( $event )"><h4> Go Back </h4></button>
 </section>
 
 

@@ -11,10 +11,10 @@
 </div>
 
 
-<div id="shade" *ngIf="shade" (click)="exit( )" [@darkenShade]="shade"></div>
-<section id="modal">
+<div id="shade" *ngIf="shade" (click)="exitView( )" [@darkenShade]="shade"></div>
+<section *ngIf="shade" [@fallThrough]="shade">
 	<h2> Contact </h2>
-	<button (click)="exit( )"><h3> Close </h3></button>
+	<button (click)="exitView( )"><h3> Close </h3></button>
 </section>
 
 
