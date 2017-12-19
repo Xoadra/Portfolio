@@ -2,10 +2,10 @@
 
 
 
-<div id="shade" *ngIf="shade" (click)="back( )" [@darkenShade]="shade"></div>
+<div id="shade" *ngIf="shade" (click)="goBack( )" [@darkenShade]="shade"></div>
 <section *ngIf="shade" [@fallThrough]="shade">
 	<h2> Question </h2>
-	<button (click)="back( )"><h3> Close </h3></button>
+	<button (click)="goBack( )"><h3> Close </h3></button>
 </section>
 
 

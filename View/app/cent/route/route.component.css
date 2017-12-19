@@ -103,7 +103,7 @@ h4 {
 }
 
 
-/* Responsive Breakpoint Settings */
+/* Responsive breakpoint settings */
 @media ( max-width: 475px ) {
 	button { padding: 2% 6%; }
 	/* button { padding: 1.5% 4%; } */
