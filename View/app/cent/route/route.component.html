@@ -4,14 +4,14 @@
 
 <section>
 	<nav class="auth" *ngIf="!online">
-		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'login' ]"><h6> LOGIN </h6></a>
+		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'login' ]"> LOGIN </a>
 		<h6> | </h6>
-		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'join' ]"><h6> REGISTER </h6></a>
+		<a class="user" (click)="swapStatus( )" [routerLink]="[ 'join' ]"> REGISTER </a>
 	</nav>
 	<nav class="auth" *ngIf="online">
 		<a class="user" [routerLink]="[ 'profile' ]">
-			<img id="avatar" src="" alt="">
-			<h6> PROFILE </h6>
+			<img src="" alt="">
+			PROFILE
 		</a>
 		<h6> | </h6>
 		<h6 class="user"> SCORE </h6>
@@ -34,13 +34,13 @@
 	-->
 	<nav id="route">
 		<div class="left">
-			<a [routerLink]="[ 'resume' ]"><button><h3> RESUME </h3></button></a>
-			<a [routerLink]="[ 'tech' ]"><button><h3> TECH </h3></button></a>
+			<button [routerLink]="[ 'resume' ]"> RESUME </button>
+			<button [routerLink]="[ 'tech' ]"> TECH </button>
 		</div>
-		<a [routerLink]="[ '' ]"><button id="ian"><h3> IAN </h3></button></a>
+		<button id="ian" [routerLink]="[ '' ]"> IAN </button>
 		<div class="right">
-			<a [routerLink]="[ 'blog' ]"><button><h3> BLOG </h3></button></a>
-			<a [routerLink]="[ 'mail' ]"><button><h3> CONTACT </h3></button></a>
+			<button [routerLink]="[ 'blog' ]"> BLOG </button>
+			<button [routerLink]="[ 'mail' ]"> CONTACT </button>
 		</div>
 	</nav>
 </section>

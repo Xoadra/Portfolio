@@ -45,12 +45,16 @@ a {
 }
 
 h1 {
+	position: absolute;
 	font-family: Iceland;
 	font-size: 16em;
 	font-weight: normal;
 	box-sizing: content-box;
 	color: #e02a38;
-	padding: 0.5em 0 0.5em;
+	top: 12.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 #x {
@@ -60,26 +64,29 @@ h1 {
 }
 
 h2 {
+	position: absolute;
 	font-family: Orbitron;
 	font-size: 3.5em;
 	font-weight: bold;
 	color: #50a7e8;
-	margin: -3.7em 0 0 3.91em;
-    transform: scale( 0.9925, 1.25 );
-}
-
-#sub {
-	position: relative;
-	display: block;
-	font-family: Iceland;
-	text-align: center;
-	top: 16%;
-	margin: 1em 0 0 0;
+	top: 50%;
+    left: 0;
+    right: 0;
+	margin: -0.1em 0 0 3.91em;
+	transform: scale( 0.994, 1.25 );
 }
 
 h3 {
+	position: absolute;
+	display: block;
+	font-family: Iceland;
 	font-size: 4.75em;
+	text-align: center;
 	color: #60cc60;
+	top: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .iter {
@@ -96,9 +103,12 @@ h3 {
 	h2 {
 		font-size: 2.725em;
 		transform: scale( 0.98, 1.25 );
-		margin: -3.7em 0 0 3.9em;
+		margin: 0.15em 0 0 3.93em;
 	}
-	h3 { font-size: 3.75em; }
+	h3 {
+		font-size: 3.75em;
+    	top: 72.5%;
+	}
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 12.5 ); }
 }
 
@@ -108,7 +118,7 @@ h3 {
 	h2 {
 		font-size: 2.25em;
 		transform: scale( 0.9675, 1.15 );
-		margin: -3.6em 0 0 3.775em;
+		margin: 0.3em 0 0 3.775em;
 	}
 	h3 { font-size: 3em; }
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 10.5 ); }
@@ -116,23 +126,31 @@ h3 {
 
 @media ( max-width: 768px ) {
 	header { height: 27.5em; }
-	h1 { font-size: 7.5em; }
+	h1 {
+		font-size: 7.5em;
+    	top: 15%;
+	}
 	h2 {
 		font-size: 1.675em;
-		transform: scale( 0.96, 1.15 );
-		margin: -3.6em 0 0 3.75em;
+		transform: scale( 0.959, 1.15 );
+		margin: 0.05em 0 0 3.75em;
+		top: 52.55%;
 	}
 	h3 { font-size: 2.25em; }
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 8 ); }
 }
 
 @media ( max-width: 580px ) {
-	header { height: 21em; }
-	h1 { font-size: 5em; }
+	header { height: 20em; }
+	h1 {
+		font-size: 5em;
+    	top: 18%;
+	}
 	h2 {
 		font-size: 1.115em;
-		transform: scale( 0.9999, 1.15 );
-		margin: -3.6em 0 0 3.75em;
+		transform: scale( 1, 1.15 );
+		margin: -0.35em 0 0 3.7825em;
+		top: 55%;
 	}
 	h3 { font-size: 1.5em; }
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 5 ); }
@@ -140,25 +158,29 @@ h3 {
 
 @media ( max-width: 425px ) {
 	header { height: 17em; }
-	h1 { font-size: 3.75em; }
+	h1 {
+		font-size: 4em;
+		top: 20%;
+	}
 	h2 {
 		font-size: 0.85em;
-		transform: scale( 0.925, 1.15 );
-		margin: -3.5em 0 0 3.725em;
+    	transform: scale( 0.985, 1.15 );
+    	margin: -0.9em 0 0 3.95em;
+    	top: 57.5%;
 	}
-	h3 { font-size: 1.125em; }
+	h3 { font-size: 1.25em; }
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 3.5 ); }
 }
 
 @media ( max-width: 320px ) {
 	header { height: 13.9em; }
-	h1 { font-size: 3em; }
+	h1 { font-size: 3.25em; }
 	h2 {
-		font-size: 0.67em;
-		transform: scale( 0.935, 1.15 );
-		margin: -3.5em 0 0 3.85em;
+		font-size: 0.7em;
+    	transform: scale( 0.985, 1.15 );
+    	margin: -1em 0 0 3.975em;
 	}
-	h3 { font-size: 0.9em; }
+	h3 { font-size: 1em; }
 	.iter { transform: matrix( 1.25, 0, 0, 1.25, 0, 3 ); }
 }
 

@@ -4,23 +4,21 @@
 
 <section>
 	<div id="pop">
-		<div id="bar">
+		<nav>
 			<h4> PAGE </h4>
 			<!-- Placeholder routes until interpage navigation is implemented -->
-			<nav>
-				<h5>
-					<a [routerLink]="['']"><span class="warp"> MID(3) </span></a>
-					<span class="iter"> | </span>
-					<a [routerLink]="['']"><span class="warp"> BOT(5) </span></a>
-					<span class="iter"> | </span>
-					<a [routerLink]="['']"><span class="warp"> TOP(1) </span></a>
-					<span class="iter"> | </span>
-					<a [routerLink]="['']"><span class="warp"> UP(2) </span></a>
-					<span class="iter"> | </span>
-					<a [routerLink]="['']"><span class="warp"> LOW(4) </span></a>
-				</h5>
-			</nav>
-		</div>
+			<ul>
+				<li><a [routerLink]="['']"><h5> MID(3) </h5></a></li>
+				<li><h6> | </h6></li>
+				<li><a [routerLink]="['']"><h5> BOT(5) </h5></a></li>
+				<li><h6> | </h6></li>
+				<li><a [routerLink]="['']"><h5> TOP(1) </h5></a></li>
+				<li><h6> | </h6></li>
+				<li><a [routerLink]="['']"><h5> UP(2) </h5></a></li>
+				<li><h6> | </h6></li>
+				<li><a [routerLink]="['']"><h5> LOW(4) </h5></a></li>
+			</ul>
+		</nav>
 	</div>
 </section>
 

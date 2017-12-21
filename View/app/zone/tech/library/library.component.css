@@ -16,25 +16,32 @@ h1 {
 
 nav {
 	display: inline-block;
+	height: 60%;
 	width: 80%;
-	margin: 0.5em 0 0;
+	margin: 1em 0 0;
 }
 
 .column	{
 	display: inline-block;
+	text-align: center;
+	height: 100%;
 	width: 30%;
-	margin: 0 -0.5%;
+	margin: 0 0;
 }
 
 .subject {
+	position: relative;
 	display: inline-block;
+	text-align: center;
 	background-color: transparent;
+	height: 50%;
 	width: 90%;
-	margin: 0.5em 0 0;
+	margin: 0 0;
 	transition: transform 0.25s;
 }
 
 .subject:hover {
+	z-index: 25;
 	transform: scale( 1.05, 1.05 );
 }
 
@@ -43,8 +50,10 @@ h2 {
 }
 
 .iter {
+	position: relative;
 	vertical-align: top;
 	color: rgba( 0, 0, 0, 0.25 );
+	margin: -0.5%;
 	transform: matrix( 1, 0, 0, 10, 0, 140 );
 }
 
@@ -55,9 +64,8 @@ button {
 	border: 0 solid transparent;
 	border-radius: 50%;
 	height: 4em;
-	width: 50em;
+	width: 30%;
 	margin: 1em 0 0;
 }
-
 
 
