@@ -17,9 +17,9 @@
 		<div class="column">
 			<div class="subject">
 				<h2> PROGRAMMING </h2>
-				<volume [field]="fields[ 0 ]"></volume>
+				<volume [field]="fields[ 0 ]" (click)="shroudVolume( 'Programming' )"></volume>
 			</div>
-			<div class="subject">
+			<div class="subject" *ngIf="trans[ 0 ]" [@shroudVolume]="trans[ 0 ]">
 				<h2> INTERNET </h2>
 				<volume [field]="fields[ 1 ]"></volume>
 			</div>
@@ -28,9 +28,9 @@
 		<div class="column">
 			<div class="subject">
 				<h2> LANGUAGES </h2>
-				<volume [field]="fields[ 2 ]"></volume>
+				<volume [field]="fields[ 2 ]" (click)="shroudVolume( 'Languages' )"></volume>
 			</div>
-			<div class="subject">
+			<div class="subject" *ngIf="trans[ 1 ]" [@shroudVolume]="trans[ 1 ]">
 				<h2> DATABASES </h2>
 				<volume [field]="fields[ 3 ]"></volume>
 			</div>
@@ -39,9 +39,9 @@
 		<div class="column">
 			<div class="subject">
 				<h2> ALGORITHMS </h2>
-				<volume [field]="fields[ 4 ]"></volume>
+				<volume [field]="fields[ 4 ]" (click)="shroudVolume( 'Algorithms' )"></volume>
 			</div>
-			<div class="subject">
+			<div class="subject" *ngIf="trans[ 2 ]" [@shroudVolume]="trans[ 2 ]">
 				<h2> FRAMEWORKS </h2>
 				<volume [field]="fields[ 5 ]"></volume>
 			</div>

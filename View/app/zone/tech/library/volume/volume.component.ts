@@ -13,8 +13,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 	styleUrls: [ './volume.component.css' ],
 	animations: [
 		trigger( 'codeScroll', [
-			state( 'hide', style( {
-			} ) ),
+			state( 'hide', style( {  } ) ),
 			state( 'scroll', style( {
 				zIndex: '30',
 				height: '36em',
@@ -57,5 +56,6 @@ export class VolumeComponent {
 	}
 	
 }
+
 
 
