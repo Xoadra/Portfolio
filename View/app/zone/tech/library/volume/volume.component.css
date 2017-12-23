@@ -4,24 +4,34 @@
 
 section {
 	position: absolute;
-	vertical-align: top;
 	cursor: pointer;
 	background-color: #359025;
 	border-radius: 1em;
+	left: 0;
+	right: 0;
 	height: 6em;
-	width: 100%;
-	margin: 0 0;
-	transition: height 0.25s, transform 0.25s;
+	width: 90%;
+	margin: 0 auto;
 }
 
-section:hover {
-	height: 70%;
-	transform: scale( 1.025, 1 );
+h3 {
+    margin: 0.5em 0 0;
 }
 
-section:active {
-	height: 15em;
-	transition: height 0.5s;
+button {
+    position: absolute;
+    display: block;
+    font-weight: bolder;
+    background-color: #128037;
+	border: 0 solid transparent;
+	border-radius: 1em;
+    height: 2.5em;
+    width: 10em;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+    margin: auto;
 }
+
 
 

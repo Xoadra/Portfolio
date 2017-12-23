@@ -13,7 +13,11 @@ import { Component } from '@angular/core'
 } )
 
 	
-export class LibraryComponent {  }
+export class LibraryComponent {
+	
+	fields: Array<string> = [ 'Programming', 'Internet', 'Languages', 'Databases', 'Algorithms', 'Frameworks' ]
+	
+}
 
 
 
