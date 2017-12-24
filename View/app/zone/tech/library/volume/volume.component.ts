@@ -12,20 +12,19 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 	templateUrl: './volume.component.html',
 	styleUrls: [ './volume.component.css' ],
 	animations: [
-		trigger( 'codeScroll', [
-			state( 'hide', style( {  } ) ),
-			state( 'scroll', style( {
-				zIndex: '30',
+		trigger( 'scrollForm', [
+			state( 'shroud', style( {  } ) ),
+			state( 'exhibit', style( {
 				height: '36em',
 				transform: 'scale( 1.05, 1 )'
 			} ) ),
-			transition( 'hide => scroll', [
-				style( { zIndex: '30' } ),
-				animate( 400, style( { zIndex: '30', height: '36em', transform: 'scale( 1.05, 1 )' } ) )
+			transition( 'shroud => exhibit', [
+				style( { transform: 'scale( 1.05, 1 )' } ),
+				animate( 400 )
 			] ),
-			transition( 'scroll => hide', [
-				style( { zIndex: '30' } ),
-				animate( 250, style( { height: '6em', transform: 'scale( 1, 1 )' } ) )
+			transition( 'exhibit => shroud', [
+				style( { transform: 'scale( 1.05, 1 )' } ),
+				animate( 250, style( { height: '6em', transform: 'scale( 1.05, 1 )' } ) )
 			] )
 		] )
 	]
@@ -37,18 +36,23 @@ export class VolumeComponent {
 	@Input( ) field
 	
 	
-	volume: string = 'hide'
-	form: string = 'Roll'
+	volume: string = 'shroud'
+	form: string = 'roll'
 	insight: boolean = false
 	
 	
 	rollScroll( ) {
-		this.volume = this.volume === 'scroll' ? 'hide' : 'scroll'
-		this.form = this.form === 'Wrap' ? 'Roll' : 'Wrap'
-		if ( this.volume === 'scroll' ) {
+		this.volume = this.volume === 'exhibit' ? 'shroud' : 'exhibit'
+		if ( this.volume === 'exhibit' ) {
 			this.insight = true
+			setTimeout( temporal => {
+				this.form = 'wrap'
+			}, 400 )
 		}
 		else {
+			setTimeout( temporal => {
+				this.form = 'roll'
+			}, 250 )
 			setTimeout( temporal => {
 				this.insight =  false
 			}, 500 )

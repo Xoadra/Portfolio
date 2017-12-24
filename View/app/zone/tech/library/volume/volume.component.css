@@ -12,16 +12,24 @@ section {
 	height: 6em;
 	width: 90%;
 	margin: 0 auto;
+	transform: matrix( 1, 0, 0, 1, 0, 0 );
+	transition: transform 0.5s;
+}
+
+section:hover {
+	transform: matrix( 1.05, 0, 0, 1.05, 0, 2.5 );
 }
 
 h3 {
+	text-transform: capitalize;
     margin: 0.5em 0 0;
 }
 
 button {
     position: absolute;
     display: block;
-    font-weight: bolder;
+	font-weight: bolder;
+	text-transform: capitalize;
     background-color: #128037;
 	border: 0 solid transparent;
 	border-radius: 1em;

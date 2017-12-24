@@ -29,10 +29,9 @@ nav {
 	margin: 0 0;
 }
 
-.subject {
+.upper, .lower {
 	position: relative;
 	display: inline-block;
-	z-index: 25;
 	background-color: transparent;
 	height: 50%;
 	width: 100%;
@@ -40,13 +39,21 @@ nav {
 	transition: transform 0.25s;
 }
 
-.subject:hover {
+.upper {
 	z-index: 30;
+}
+
+.lower {
+	z-index: 25;
+}
+
+.upper:hover, .lower:hover {
 	transform: scale( 1.05, 1.05 );
 }
 
 h2 {
 	display: inline-block;
+	text-transform: uppercase;
 }
 
 .iter {
@@ -67,5 +74,6 @@ button {
 	width: 30%;
 	margin: 1em 0 0;
 }
+
 
 

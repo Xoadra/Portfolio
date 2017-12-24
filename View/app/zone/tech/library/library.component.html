@@ -2,10 +2,6 @@
 
 
 
-<!-- Implement downward verticle expansion of 'VolumeComponent' on click -->
-
-
-
 <router-outlet></router-outlet>
 
 
@@ -15,34 +11,34 @@
 	<button [routerLink]="[ 'question' ]"><h2> Request A Subject </h2></button>
 	<nav>
 		<div class="column">
-			<div class="subject">
-				<h2> PROGRAMMING </h2>
-				<volume [field]="fields[ 0 ]" (click)="shroudVolume( 'Programming' )"></volume>
+			<div class="upper">
+				<h2> {{ fields[ 0 ] }} </h2>
+				<volume [field]="fields[ 0 ]"></volume>
 			</div>
-			<div class="subject" *ngIf="trans[ 0 ]" [@shroudVolume]="trans[ 0 ]">
-				<h2> INTERNET </h2>
+			<div class="lower">
+				<h2> {{ fields[ 1 ] }} </h2>
 				<volume [field]="fields[ 1 ]"></volume>
 			</div>
 		</div>
 		<h2 class="iter"> | </h2>
 		<div class="column">
-			<div class="subject">
-				<h2> LANGUAGES </h2>
-				<volume [field]="fields[ 2 ]" (click)="shroudVolume( 'Languages' )"></volume>
+			<div class="upper">
+				<h2> {{ fields[ 2 ] }} </h2>
+				<volume [field]="fields[ 2 ]"></volume>
 			</div>
-			<div class="subject" *ngIf="trans[ 1 ]" [@shroudVolume]="trans[ 1 ]">
-				<h2> DATABASES </h2>
+			<div class="lower">
+				<h2> {{ fields[ 3 ] }} </h2>
 				<volume [field]="fields[ 3 ]"></volume>
 			</div>
 		</div>
 		<h2 class="iter"> | </h2>
 		<div class="column">
-			<div class="subject">
-				<h2> ALGORITHMS </h2>
-				<volume [field]="fields[ 4 ]" (click)="shroudVolume( 'Algorithms' )"></volume>
+			<div class="upper">
+				<h2> {{ fields[ 4 ] }} </h2>
+				<volume [field]="fields[ 4 ]"></volume>
 			</div>
-			<div class="subject" *ngIf="trans[ 2 ]" [@shroudVolume]="trans[ 2 ]">
-				<h2> FRAMEWORKS </h2>
+			<div class="lower">
+				<h2> {{ fields[ 5 ] }} </h2>
 				<volume [field]="fields[ 5 ]"></volume>
 			</div>
 		</div>
