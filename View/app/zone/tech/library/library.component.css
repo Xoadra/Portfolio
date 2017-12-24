@@ -14,6 +14,21 @@ h1 {
 	padding: 0.25em 0 0;
 }
 
+button {
+	letter-spacing: 0.25em;
+	background-color: #50bf3b;
+	color: #064016;
+	border: 0 solid transparent;
+	border-radius: 50%;
+	height: 4em;
+	width: 30%;
+	margin: 1em 0 0;
+}
+
+button h2 {
+	text-transform: capitalize;
+}
+
 nav {
 	display: inline-block;
 	height: 60%;
@@ -62,17 +77,6 @@ h2 {
 	color: rgba( 0, 0, 0, 0.25 );
 	margin: -0.5%;
 	transform: matrix( 1, 0, 0, 10, 0, 140 );
-}
-
-button {
-	letter-spacing: 0.25em;
-	background-color: #50bf3b;
-	color: #064016;
-	border: 0 solid transparent;
-	border-radius: 50%;
-	height: 4em;
-	width: 30%;
-	margin: 1em 0 0;
 }
 
 

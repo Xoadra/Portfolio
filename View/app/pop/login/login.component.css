@@ -5,7 +5,7 @@
 section {
 	position: fixed;
 	display: inline-block;
-    z-index: 50;
+    z-index: 75;
     text-align: center;
 	/* background-color: #14a04a; */
 	background-color: #0e0a0b;

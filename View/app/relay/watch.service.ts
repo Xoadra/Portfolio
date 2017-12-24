@@ -19,9 +19,6 @@ export class WatchService {
 	private offsetValue: boolean
 	
 	
-	constructor( ) {  }
-	
-	
 	setWatch( ) {
 		this.initialDate = new Date( )
 		this.gunShot = ( // Initial time snapshot
@@ -61,5 +58,6 @@ export class WatchService {
 	}
 	
 }
+
 
 

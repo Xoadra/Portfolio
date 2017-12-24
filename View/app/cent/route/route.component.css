@@ -4,7 +4,7 @@
 
 section {
 	position: sticky;
-	z-index: 30;
+	z-index: 40;
 	/* opacity: 0.25; */
 	background-color: #0d0b1b;
 	top: 0vh;
