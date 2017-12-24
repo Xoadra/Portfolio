@@ -1,0 +1,21 @@
+
+
+
+
+section {
+	background-color: rgba( 0, 0, 0, 0.25 );
+	border-radius: 1em;
+	left: 0;
+	right: 0;
+	min-height: max-content;
+	width: 98%;
+	padding: 0 0 0.5em;
+	margin: 90% auto 1em;
+}
+
+h3 {
+	margin: 0.25em 0 0.5em;
+}
+
+
+
