@@ -13,7 +13,11 @@ import { Component } from '@angular/core'
 } )
 
 
-export class StreamComponent {  }
-
+export class StreamComponent {
+	
+	private chronos: Array<number> = [ 1, 2, 3 ]
+	private offset: number = this.chronos[ this.chronos.length - 1 ] + 1
+	
+}
 
 

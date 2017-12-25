@@ -2,16 +2,20 @@
 
 
 
-<!-- Will need to generate separate 'note' div at the end of the stream for post comments -->
-
-
-
 <dialog open>
 	<div id="user">
 		<h4> User </h4>
+		<a><img alt="Avatar"></a>
 	</div>
-	<div id="note">
+	<div id="note" *ngIf="chrono">
 		<h4> Comment </h4>
+	</div>
+	<div id="note" *ngIf="offset">
+		<h4> Comment </h4>
+		<form>
+			<textarea></textarea>
+			<button><h4> Post </h4></button>
+		</form>
 	</div>
 </dialog>
 

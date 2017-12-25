@@ -15,7 +15,7 @@ import { Component, Input } from '@angular/core'
 	
 export class PostComponent {
 
-	@Input( ) section
+	@Input( ) section: string
 
 }
 

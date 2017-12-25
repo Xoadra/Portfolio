@@ -4,10 +4,8 @@
 
 <section>
 	<h3> Responses Stream </h3>
-	<comment></comment>
-	<comment></comment>
-	<comment></comment>
+	<comment *ngFor="let chrono of chronos" [chrono]="chronos[ chrono - 1 ]"></comment>
+	<comment *ngIf="offset" [offset]="offset"></comment>
 </section>
-
 
 

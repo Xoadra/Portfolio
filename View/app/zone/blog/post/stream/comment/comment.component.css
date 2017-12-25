@@ -21,10 +21,12 @@ dialog:hover {
 }
 
 div {
-	position: relative;
 	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
 	border-radius: 1em;
 	min-height: 15em;
+	padding: 0 0 1em;
 	margin: 0 auto;
 }
 
@@ -33,13 +35,55 @@ div {
 	width: 26%;
 }
 
+img {
+	display: inline-block;
+	line-height: 4.5em;
+	background-color: rgba( 0, 0, 0, 0.5 );
+	border: 0 solid transparent;
+	border-radius: 0.5em;
+	height: 5em;
+	width: 6em;
+	margin: 1em 0 0;
+}
+
 #note {
 	background-color: rgba( 236, 60, 60, 0.1 );
 	width: 70%;
 }
 
 h4 {
+	display: block;
 	margin: 0.5em 0 0;
+}
+
+textarea {
+	resize: vertical;
+	outline: none;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+	background-color: rgba( 8, 2, 2, 0.15 );
+	color: white;
+	border: 0 solid #5a0d10;
+	border-radius: 0.5em;
+	min-height: 10em;
+	width: 80%;
+	padding: 1em;
+	margin: 4em 0 0;
+}
+
+button {
+	display: block;
+	background-color: rgba( 226, 52, 82, 0.2 );
+	color: white;
+	border: 0 solid transparent;
+	border-radius: 0.5em;
+    height: 2.5em;
+	width: 10em;
+    margin: 0.5em auto 0;
+}
+
+button h4 {
+	margin: 0;
 }
 
 
