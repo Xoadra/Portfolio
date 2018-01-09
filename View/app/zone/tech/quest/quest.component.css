@@ -1,0 +1,69 @@
+
+
+
+
+section {
+	text-align: center;
+	background-color: #066528;
+    width: 100%;
+	padding: 1em 0 3em;
+}
+
+h2 {
+	letter-spacing: 0.5em;
+}
+
+h1 {
+	letter-spacing: 0.2em;
+	padding: 0.2em 0 0;
+	transform: scale( 1, 1.5 );
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+hr {
+	background-color: #033318;
+	border: none;
+    border-radius: 45%;
+    height: 1em;
+	width: 60%;
+	margin: 0.5em auto 0;
+}
+
+#banner {
+	background-color: #065020;
+	border-radius: 5em;
+	width: fit-content;
+	padding: 1em 4em 2em;
+	margin: 2em auto 0;
+}
+
+#preamble {
+	position: relative;
+	text-align: left;
+	box-sizing: border-box;
+	background-color: #1fd04d;
+	border-radius: 2em;
+	height: 30em;
+	width: 60%;
+	margin: 1.5em auto 0;
+	padding: 2em 4em;
+}
+
+h3 {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 1.5em;
+	margin: 0 auto;
+}
+
+h5 {
+	text-indent: 4em;
+}
+
+
+
