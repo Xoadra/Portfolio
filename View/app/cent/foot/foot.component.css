@@ -13,6 +13,7 @@ address {
 	position: relative;
 	text-align: center;
 	font-style: normal;
+	user-select: none;
 	top: 16%;
 }
 
@@ -44,6 +45,5 @@ a {
 	width: 100%;
 	margin: 0em 1em;
 }
-
 
 

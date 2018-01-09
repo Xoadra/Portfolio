@@ -23,9 +23,18 @@ body {
 	width: 100%;
 }
 
+a {
+	user-select: none;
+}
+
 button {
 	outline: none;
 	cursor: pointer;
+	user-select: none;
+}
+
+nav {
+	user-select: none;
 }
 
 #top {
@@ -126,6 +135,5 @@ p {
 	line-height: 1.5em;
 	margin: 0 0 0;
 }
-
 
 

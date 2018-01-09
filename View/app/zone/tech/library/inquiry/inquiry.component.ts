@@ -14,14 +14,14 @@ import { ShadeAnimation } from '../../../../act/shade.animation'
 
 
 @Component( {
-	selector: 'quest',
-	templateUrl: './quest.component.html',
-	styleUrls: [ './quest.component.css' ],
+	selector: 'inquiry',
+	templateUrl: './inquiry.component.html',
+	styleUrls: [ './inquiry.component.css' ],
 	animations: [ FallAnimation, ShadeAnimation ]
 } )
 
 
-export class QuestComponent implements OnInit {
+export class InquiryComponent implements OnInit {
 
 	private title: string = 'What Do You Want To Learn?'
 	private shade: boolean = true

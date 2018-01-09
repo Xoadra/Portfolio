@@ -31,7 +31,7 @@ import { BlogComponent } from '../../zone/blog/blog.component'
 // Tech page components
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
-		import { QuestComponent } from '../../zone/tech/library/quest/quest.component'
+		import { InquiryComponent } from '../../zone/tech/library/inquiry/inquiry.component'
 		import { VolumeComponent } from '../../zone/tech/library/volume/volume.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
 		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
@@ -60,7 +60,7 @@ const routes: Routes = [
 	] },
 	{ path: 'blog', pathMatch: 'full', component: BlogComponent, children: [ ] },
 	{ path: 'tech', component: TechComponent, children: [
-		{ path: 'question', component: QuestComponent }
+		{ path: 'inquire', component: InquiryComponent }
 	] },
 	//{ path: 'work', pathMatch: 'full', component: WorkComponent, children: [ ] },
 	//{ path: 'hack', pathMatch: 'full', component: HackComponent, children: [ ] },
@@ -100,7 +100,7 @@ const routes: Routes = [
 					CommentComponent,
 		TechComponent,
 			LibraryComponent,
-				QuestComponent,
+				InquiryComponent,
 				VolumeComponent,
 			GuideComponent,
 				LessonComponent,
