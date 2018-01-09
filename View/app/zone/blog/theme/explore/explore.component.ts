@@ -11,9 +11,9 @@ import { UrlService } from '../../../../relay/url.service'
 
 
 @Component( {
-	selector: 'subject',
-	templateUrl: './subject.component.html',
-	styleUrls: [ './subject.component.css' ],
+	selector: 'explore',
+	templateUrl: './explore.component.html',
+	styleUrls: [ './explore.component.css' ],
 	animations: [
 		trigger( 'viewSeries', [
 			state( 'browse', style( { opacity: '1' } ) ),
@@ -34,7 +34,7 @@ import { UrlService } from '../../../../relay/url.service'
 } )
 
 
-export class SubjectComponent {
+export class ExploreComponent {
 	
 	@Input( ) subject: string
 	@Output( ) delete = new EventEmitter( )

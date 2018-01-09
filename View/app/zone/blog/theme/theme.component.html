@@ -4,7 +4,7 @@
 
 <section>
 	<h1 class="main"> Blog Topics </h1>
-	<subject *ngIf="browse" [subject]="subject" (delete)="changeState( $event )"></subject>
+	<explore *ngIf="browse" [subject]="subject" (delete)="changeState( $event )"></explore>
 	<nav id="upper">
 		<h2 (click)="selectSubject( 'Industry' )"> INDUSTRY </h2>
 		<h2 class="iter"> | </h2>

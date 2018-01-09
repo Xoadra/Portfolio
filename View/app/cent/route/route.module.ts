@@ -21,7 +21,7 @@ import { WorkComponent } from '../../zone/work/work.component'
 // Blog page components
 import { BlogComponent } from '../../zone/blog/blog.component'
 	import { ThemeComponent } from '../../zone/blog/theme/theme.component'
-		import { SubjectComponent } from '../../zone/blog/theme/subject/subject.component'
+		import { ExploreComponent } from '../../zone/blog/theme/explore/explore.component'
 	import { NewComponent } from '../../zone/blog/new/new.component'
 	import { ForumComponent } from '../../zone/blog/forum/forum.component'
 	import { PostComponent } from '../../zone/blog/post/post.component'
@@ -91,7 +91,7 @@ const routes: Routes = [
 				ProjectComponent,
 		BlogComponent,
 			ThemeComponent,
-				SubjectComponent,
+				ExploreComponent,
 			NewComponent,
 			ForumComponent,
 			PostComponent,
