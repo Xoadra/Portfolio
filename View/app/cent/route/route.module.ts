@@ -33,6 +33,7 @@ import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
 		import { InquiryComponent } from '../../zone/tech/library/inquiry/inquiry.component'
 		import { VolumeComponent } from '../../zone/tech/library/volume/volume.component'
+	import { QuestComponent } from '../../zone/tech/quest/quest.component'
 	import { GuideComponent } from '../../zone/tech/guide/guide.component'
 		import { LessonComponent } from '../../zone/tech/guide/lesson/lesson.component'
 			import { CodeComponent } from '../../zone/tech/guide/lesson/code/code.component'
@@ -102,6 +103,7 @@ const routes: Routes = [
 			LibraryComponent,
 				InquiryComponent,
 				VolumeComponent,
+			QuestComponent,
 			GuideComponent,
 				LessonComponent,
 					CodeComponent,
