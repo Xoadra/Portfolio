@@ -4,7 +4,8 @@
 
 section {
 	text-align: center;
-	background-color: #06d04e;
+	/* background-color: #06d04e; */
+	background-color: #0db74a;
     width: 100%;
 	padding: 1em 0 3em;
 }
@@ -45,7 +46,8 @@ hr {
 	position: relative;
 	text-align: left;
 	box-sizing: border-box;
-	background-color: #30fd5c;
+	/* background-color: #30fd5c; */
+	background-color: #15d04f;
 	border-radius: 1em;
 	height: 30em;
 	width: 60%;
