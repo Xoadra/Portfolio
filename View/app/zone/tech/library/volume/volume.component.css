@@ -5,7 +5,7 @@
 section {
 	position: absolute;
 	cursor: pointer;
-	background-color: #359025;
+	background-color: #17e84e;
 	border-radius: 1em;
 	left: 0;
 	right: 0;
@@ -30,7 +30,7 @@ button {
     display: block;
 	font-weight: bolder;
 	text-transform: capitalize;
-    background-color: #248027;
+    background-color: #4afd60;
 	border: 0 solid transparent;
 	border-radius: 1em;
     height: 2em;

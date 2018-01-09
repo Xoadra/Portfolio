@@ -4,17 +4,18 @@
 
 section {
 	text-align: center;
-	background-color: #066528;
+	background-color: #06d04e;
     width: 100%;
 	padding: 1em 0 3em;
 }
 
 h2 {
+	font-weight: bolder;
 	letter-spacing: 0.5em;
 }
 
 h1 {
-	letter-spacing: 0.2em;
+	letter-spacing: 0.15em;
 	padding: 0.2em 0 0;
 	transform: scale( 1, 1.5 );
 }
@@ -24,7 +25,7 @@ h1, h2 {
 }
 
 hr {
-	background-color: #033318;
+	background-color: #0e8e2f;
 	border: none;
     border-radius: 45%;
     height: 1em;
@@ -33,7 +34,7 @@ hr {
 }
 
 #banner {
-	background-color: #065020;
+	/* background-color: #06af3a; */
 	border-radius: 5em;
 	width: fit-content;
 	padding: 1em 4em 2em;
@@ -44,11 +45,11 @@ hr {
 	position: relative;
 	text-align: left;
 	box-sizing: border-box;
-	background-color: #1fd04d;
-	border-radius: 2em;
+	background-color: #30fd5c;
+	border-radius: 1em;
 	height: 30em;
 	width: 60%;
-	margin: 1.5em auto 0;
+	margin: 1em auto 0;
 	padding: 2em 4em;
 }
 
@@ -64,6 +65,5 @@ h3 {
 h5 {
 	text-indent: 4em;
 }
-
 
 

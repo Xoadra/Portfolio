@@ -17,6 +17,7 @@ import { Router } from '@angular/router'
 export class TechComponent implements OnInit {
 
 	private title: string = 'Programming Explained'
+	private prime: boolean = true
 
 
 	constructor( private _title: Title, private _route: Router ) {  }
@@ -29,5 +30,6 @@ export class TechComponent implements OnInit {
 	}
 
 }
+
 
 
