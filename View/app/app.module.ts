@@ -23,7 +23,7 @@ import { FootComponent } from './cent/foot/foot.component'
 
 // Services used
 import { UrlService } from './relay/url.service'
-import { WatchService } from './relay/watch.service';
+import { WatchService } from './relay/watch.service'
 
 
 

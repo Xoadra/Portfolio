@@ -28,6 +28,7 @@ import { BlogComponent } from '../../zone/blog/blog.component'
 		import { StreamComponent } from '../../zone/blog/post/stream/stream.component'
 			import { IdentityComponent } from '../../zone/blog/post/stream/identity/identity.component'
 			import { CommentComponent } from '../../zone/blog/post/stream/comment/comment.component'
+				import { ReplyComponent } from '../../zone/blog/post/stream/comment/reply/reply.component'
 // Tech page components
 import { TechComponent } from '../../zone/tech/tech.component'
 	import { LibraryComponent } from '../../zone/tech/library/library.component'
@@ -99,6 +100,7 @@ const routes: Routes = [
 				StreamComponent,
 					IdentityComponent,
 					CommentComponent,
+						ReplyComponent,
 		TechComponent,
 			LibraryComponent,
 				InquiryComponent,
