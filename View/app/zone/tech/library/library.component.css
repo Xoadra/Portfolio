@@ -4,7 +4,7 @@
 
 section {
 	text-align: center;
-	background-color: #31ff54;
+	background-color: #34d04e;
     height: 30em;
 	width: 100%;
 }
@@ -16,8 +16,8 @@ h1 {
 
 button {
 	letter-spacing: 0.25em;
-	background-color: #02da4e;
-	color: #064016;
+	background-color: #0fbd4d;
+	color: #0e653e;
 	border: 0 solid transparent;
 	border-radius: 50%;
 	height: 4em;
