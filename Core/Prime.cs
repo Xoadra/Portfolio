@@ -13,7 +13,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Xambda.Core {
 	public class Prime : Controller {
-
+		
+		// Vessel for database operations
+		private readonly Database _database;
+		
+		// Prime controller constructor injecting database access
+		public Prime( Database data ) { _database = data; }
+		
 		/* [ HttpGet ]
 		[ Route( "prime" ) ]
 		public IEnumerable<string> Welcome( ) {
@@ -27,18 +33,18 @@ namespace Xambda.Core {
 			};
 			return Welcome;
 		} */
-
+		
 		/* [ HttpGet ]
 		[ Route( "" ) ]
 		public IActionResult Index( ) {
 			return View( );
 		} */
-
+		
 		/* public IActionResult Error( ) {
 			ViewData[ "RequestId" ] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
 			return View( );
 		} */
-
+		
 	}
 }
 

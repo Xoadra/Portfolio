@@ -4,33 +4,25 @@
 
 using System.Collections.Generic;
 using System.Data;
+using Microsoft.Extensions.Options;
 //using MySql.Data.MySqlClient;
 
 
 namespace Xambda {
 	public class Database {
 		
-		static string server = "localhost";
-		static string data = "database"; // Schema or database name
-		static string port = "5432";
-		static string user = "root"; // Temporary boilerplate user
-		static string pass = "root"; // Not connection password
+		// Variable for hosting database authentication information
+		private readonly IOptions<Key> _Key;
 		
-		internal static IDbConnection Access {
-			get {
-				// Will be moved to separate, hidden json file once configuration is ready
-				// Using different database, not MySQL, but templating database access info for future use
-				// May need to remove whitespace for functional operation but set for formatting purposes
-				return new MySqlConnection(
-					$"Server = { server };" +
-					$"Port = { port };" +
-					$"Database = { data };" +
-					$"UserID = { user };" +
-					$"Password = { pass };" +
-					$"SslMode = None"
-				);
-			}
+		// Sources attribute within key object possessing connection requirements
+		internal IDbConnection Access {
+			// May need to be moved below constructor if placement in code presents issues
+			// Using different database instead of MySQL, but using template until proper database library is imported
+			get { return new MySqlConnection( _Key.Value.Keycode ); }
 		}
+		
+		// Database class constructor for using database access parameters
+		public Database( IOptions<Key> source ) { _Key = source; }
 		
 		// Pulls data into a list of dictionaries for application uses
 		public static List<Dictionary<string, object>> Query( string query ) {
@@ -42,12 +34,12 @@ namespace Xambda {
 					var data = new List<Dictionary<string, object>>( );
 					using( IDataReader scope = exe.ExecuteReader( ) ) {
 						while( scope.Read( ) ) {
-							// Insert database tuples one-by-one into data vessel
-							var object = new Dictionary<string, object>( );
+							// Inject database tuples one-by-one into data vessel
+							var obj = new Dictionary<string, object>( );
 							for( int idx = 0; idx < scope.FieldCount; idx++ ) {
-								object.Add( scope.GetName( idx ), scope.GetValue( idx ) );
+								obj.Add( scope.GetName( idx ), scope.GetValue( idx ) );
 							}
-							data.Add( object );
+							data.Add( obj );
 						}
 						return data;
 					}

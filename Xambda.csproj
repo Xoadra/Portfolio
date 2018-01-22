@@ -18,10 +18,16 @@
 	<ItemGroup>
 		<!-- ASP.NET Core specific libraries -->
 		<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.0" />
+		<!-- Npgsql dependencies for ASP.NET Core PostgreSQL database provider -->
+		<PackageReference Include="Npgsql" Version="3.2.6" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.1" />
 	</ItemGroup>
 	<ItemGroup>
-		<!-- Outputs application status and behavior in terminal -->
+		<!-- Command line interfacing tools and behavior in terminal -->
 		<DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
 	</ItemGroup>
 	<Target Name="AngularBuild" AfterTargets="Build">
 		<!-- Unknown purpose for the time being -->
