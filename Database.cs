@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using Microsoft.Extensions.Options;
 //using MySql.Data.MySqlClient;
+using Npgsql;
 
 
 namespace Xambda {
@@ -18,14 +19,14 @@ namespace Xambda {
 		internal IDbConnection Access {
 			// May need to be moved below constructor if placement in code presents issues
 			// Using different database instead of MySQL, but using template until proper database library is imported
-			get { return new MySqlConnection( _Key.Value.Keycode ); }
+			get { return new NpgsqlConnection( _Key.Value.Keycode ); }
 		}
 		
 		// Database class constructor for using database access parameters
 		public Database( IOptions<Key> source ) { _Key = source; }
 		
 		// Pulls data into a list of dictionaries for application uses
-		public static List<Dictionary<string, object>> Query( string query ) {
+		public List<Dictionary<string, object>> Query( string query ) {
 			using( IDbConnection via = Access ) {
 				using( IDbCommand exe = via.CreateCommand( ) ) {
 					exe.CommandText = query;
@@ -48,8 +49,8 @@ namespace Xambda {
 		}
 		
 		// Queries for internal database executions excusively
-		public static void Execute( string query ) {
-			using ( DbConnection via = Access ) {
+		public void Execute( string query ) {
+			using ( IDbConnection via = Access ) {
 				using( IDbCommand exe = via.CreateCommand( ) ) {
 					exe.CommandText = query;
 					via.Open( );
@@ -60,6 +61,5 @@ namespace Xambda {
 		
 	}
 }
-
 
 

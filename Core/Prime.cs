@@ -20,6 +20,12 @@ namespace Xambda.Core {
 		// Prime controller constructor injecting database access
 		public Prime( Database data ) { _database = data; }
 		
+		[ HttpGet ]
+        [ Route( "" ) ]
+        public void Index( ) {
+            List<Dictionary<string, object>> Hackers = _database.Query( "SELECT * FROM users" );
+        }
+		
 		/* [ HttpGet ]
 		[ Route( "prime" ) ]
 		public IEnumerable<string> Welcome( ) {
