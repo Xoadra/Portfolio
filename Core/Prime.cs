@@ -20,23 +20,19 @@ namespace Xambda.Core {
 		// Prime controller constructor injecting database access material
 		public Prime( Database data ) { _database = data; }
 		
-		/* [ HttpGet ]
-		[ Route( "prime" ) ]
-		public IEnumerable<string> Welcome( ) {
-			// Testing an api call from Angular to display on the main page
-			String[ ] Welcome = {
-				"Welcome to my portfolio website!",
-				"I am a software developer based out of the Seattle area.",
-				"My projects are on display for your viewing!",
-				"Join me on my programming journey...",
-				"...and let us learn technology together!"
-			};
-			return Welcome;
-		} */
+		[ HttpGet ]
+		[ Route( "quote" ) ]
+		public Dictionary<string, object> Quotes( ) {
+			// Display a quote through an api call from Angular on the main page
+			Dictionary<string, object> Quotes = new Dictionary<string, object>( );
+			Quotes.Add( "Author", "Ian Peterson" );
+			Quotes.Add( "Quote", "I am great!" );
+			return Quotes;
+		}
 		
 		[ HttpGet ]
         [ Route( "users" ) ]
-        public void Index( ) {
+        public IEnumerable<Dictionary<string, object>> Hacker( ) {
 			// Vessel for database entries returned from querying
             List<Dictionary<string, object>> Hackers = _database.Query( "SELECT * FROM users" );
 			// Sort through 'Hackers' data to verify database access
@@ -45,6 +41,8 @@ namespace Xambda.Core {
 				foreach ( var item in hacker ) { Console.WriteLine( item.Key + ": " + item.Value ); }
 				Console.WriteLine( );
 			}
+			// Move query result to the frontend for client-side inspection
+			return Hackers;
         }
 		
 		/* [ HttpGet ]

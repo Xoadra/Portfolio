@@ -16,15 +16,21 @@ import { HttpClient } from '@angular/common/http'
 	
 export class BioComponent implements OnInit {
 	
-	private quotes: string[ ] = [ ]
+	// Quote information grabbed from the backend
+	private quote: string
+	private author: string
 	
 	
 	constructor( private _httpService: HttpClient ) {  }
 
 
 	ngOnInit( ) {
-		/* this._httpService.get( 'prime' ).subscribe( phrases => {
-			this.quotes = phrases.json( ) as string[ ]
+		this._httpService.get<object>( '/quote' ).subscribe( quotes => {
+			this.quote = quotes[ "Quote" ]
+			this.author = quotes[ "Author" ]
+		} )
+		/* this._httpService.get<object[ ]>( '/users' ).subscribe( users => {
+			console.log( users )
 		} ) */
 	}
 
