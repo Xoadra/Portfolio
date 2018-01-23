@@ -5,7 +5,6 @@
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Extensions.Options;
-//using MySql.Data.MySqlClient;
 using Npgsql;
 
 
@@ -16,11 +15,7 @@ namespace Xambda {
 		private readonly IOptions<Key> _Key;
 		
 		// Sources attribute within key object possessing connection requirements
-		internal IDbConnection Access {
-			// May need to be moved below constructor if placement in code presents issues
-			// Using different database instead of MySQL, but using template until proper database library is imported
-			get { return new NpgsqlConnection( _Key.Value.Keycode ); }
-		}
+		internal IDbConnection Access { get { return new NpgsqlConnection( _Key.Value.Keycode ); } }
 		
 		// Database class constructor for using database access parameters
 		public Database( IOptions<Key> source ) { _Key = source; }
@@ -61,5 +56,6 @@ namespace Xambda {
 		
 	}
 }
+
 
 

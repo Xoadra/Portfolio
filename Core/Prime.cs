@@ -14,17 +14,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace Xambda.Core {
 	public class Prime : Controller {
 		
-		// Vessel for database operations
+		// Hosts database operation parameters
 		private readonly Database _database;
 		
-		// Prime controller constructor injecting database access
+		// Prime controller constructor injecting database access material
 		public Prime( Database data ) { _database = data; }
-		
-		[ HttpGet ]
-        [ Route( "" ) ]
-        public void Index( ) {
-            List<Dictionary<string, object>> Hackers = _database.Query( "SELECT * FROM users" );
-        }
 		
 		/* [ HttpGet ]
 		[ Route( "prime" ) ]
@@ -40,6 +34,19 @@ namespace Xambda.Core {
 			return Welcome;
 		} */
 		
+		[ HttpGet ]
+        [ Route( "users" ) ]
+        public void Index( ) {
+			// Vessel for database entries returned from querying
+            List<Dictionary<string, object>> Hackers = _database.Query( "SELECT * FROM users" );
+			// Sort through 'Hackers' data to verify database access
+			foreach ( var hacker in Hackers ) {
+				Console.WriteLine( );
+				foreach ( var item in hacker ) { Console.WriteLine( item.Key + ": " + item.Value ); }
+				Console.WriteLine( );
+			}
+        }
+		
 		/* [ HttpGet ]
 		[ Route( "" ) ]
 		public IActionResult Index( ) {
@@ -53,5 +60,6 @@ namespace Xambda.Core {
 		
 	}
 }
+
 
 
