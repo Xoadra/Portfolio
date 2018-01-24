@@ -21,7 +21,7 @@ import { ShadeAnimation } from '../../act/shade.animation'
 	animations: [ FallAnimation, ShadeAnimation ]
 } )
 
-	
+
 export class ProfileComponent implements OnInit {
 
 	private title: string = 'Your Profile'

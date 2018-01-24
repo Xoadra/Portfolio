@@ -28,7 +28,6 @@ namespace Xambda {
 		}
 		
 		// Declaration and implementation of services executed upon runtime
-		/* For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940 */
 		public void ConfigureServices( IServiceCollection ops ) {
 			ops.AddMvc( );
 			ops.AddSession( );
@@ -44,8 +43,6 @@ namespace Xambda {
 			if ( zone.IsDevelopment( ) ) { soft.UseDeveloperExceptionPage( ); }
 			// Yup, it's empty...
 			else {  }
-			// Unsure of the purpose for the below commented-out line of code
-			/* soft.Run( async ( context ) => { await context.Response.WriteAsync( "Hahaha you can't see anything! " ); } ); */
 			soft.UseDefaultFiles( );  // Apparently important to integrate Angular into an ASP.NET Core project
 			soft.UseStaticFiles( );
 			soft.UseSession( );
@@ -54,6 +51,5 @@ namespace Xambda {
 	
 	}
 }
-
 
 

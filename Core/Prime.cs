@@ -33,15 +33,23 @@ namespace Xambda.Core {
 		[ HttpGet ]
         [ Route( "users" ) ]
         public IEnumerable<Dictionary<string, object>> Hacker( ) {
-			// Vessel for database entries returned from querying
-            List<Dictionary<string, object>> Hackers = _database.Query( "SELECT * FROM users" );
-			// Sort through 'Hackers' data to verify database access
-			foreach ( var hacker in Hackers ) {
-				Console.WriteLine( );
-				foreach ( var item in hacker ) { Console.WriteLine( item.Key + ": " + item.Value ); }
-				Console.WriteLine( );
+			// Vessels for database entries returned from querying
+            List<Dictionary<string, object>> Query = _database.Query( "SELECT * FROM users" );
+			List<Dictionary<string, object>> Hackers = new List<Dictionary<string, object>>( );
+			// Sort through queried data to verify value status
+			for ( int idx = 0; idx < Query.Count; idx++ ) {
+				// Generate dictionaries to add to a new list with parse-tolerant values
+				Hackers.Add( new Dictionary<string, object>( ) );
+				foreach ( var item in Query[ idx ] ) {
+					// Add fields to each new dictionary and replace empty fields with parsable data
+					if ( item.Value.GetType( ) == typeof( DBNull ) || item.Value.ToString( ) == "" ) {
+						Hackers[ idx ].Add( item.Key, "!!!" );
+					}
+					else {
+						Hackers[ idx ].Add( item.Key, item.Value );
+					}
+				}
 			}
-			// Move query result to the frontend for client-side inspection
 			return Hackers;
         }
 		

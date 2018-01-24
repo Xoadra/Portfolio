@@ -21,17 +21,19 @@ export class BioComponent implements OnInit {
 	private author: string
 	
 	
-	constructor( private _httpService: HttpClient ) {  }
+	constructor( private _http: HttpClient ) {  }
 
 
 	ngOnInit( ) {
-		this._httpService.get<object>( '/quote' ).subscribe( quotes => {
+		// Get values from backend to display on page as a quote
+		this._http.get<object>( '/quote' ).subscribe( quotes => {
 			this.quote = quotes[ "Quote" ]
 			this.author = quotes[ "Author" ]
 		} )
-		/* this._httpService.get<object[ ]>( '/users' ).subscribe( users => {
+		// Parse and log data sent by the backend from database
+		this._http.get( '/users' ).subscribe( users => {
 			console.log( users )
-		} ) */
+		} )
 	}
 
 }
