@@ -3,6 +3,7 @@
 
 
 import { Injectable } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 import { Router } from '@angular/router'
 //import { filter } from 'rxjs/operators'
 
@@ -18,11 +19,28 @@ export class UrlService {
 	itemVessel: string
 	
 
-	constructor( private _route: Router ) {
+	constructor( private _title: Title, private _route: Router ) {
 		//.pipe( filter( o => o instanceof NavigationStart ) )
 		_route.events.subscribe( url => {
 			this.priorUrl = _route.url
 		 } )
+	}
+	
+	
+	viewUrl( ) {
+		return this._route.url
+	}
+	
+	getTitle( ) {
+		return this._title.getTitle( )
+	}
+	
+	setTitle( title: string ) {
+		this._title.setTitle( title )
+	}
+	
+	navigate( url: string ) {
+		this._route.navigate( [ url ] )
 	}
 
 }

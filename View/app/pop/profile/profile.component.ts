@@ -3,8 +3,7 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { Title } from '@angular/platform-browser'
-import { Router } from '@angular/router'
+import { HttpClient } from '@angular/common/http'
 
 import { UrlService } from '../../relay/url.service'
 import { WatchService } from '../../relay/watch.service'
@@ -29,14 +28,18 @@ export class ProfileComponent implements OnInit {
 	private prior: string
 
 
-	constructor( private _title: Title, private _back: Router, private _url: UrlService, private _watch: WatchService ) {
+	constructor( private _http: HttpClient, private _url: UrlService, private _watch: WatchService ) {
 		this.prior = _url.priorUrl // Memorize previously visited route for proper background display and redirects
 		this._watch.setWatch( ) // Begin tracking time for enter-to-leave animation smoothing
 	}
 	
 
 	ngOnInit( ) {
-		this._title.setTitle( 'Xambda | ' + this.title )
+		// Parse and log data sent by the backend from database
+		this._http.get<object[ ]>( '/data' ).subscribe( users => {
+			console.log( users )
+		} )
+		this._url.setTitle( 'Xambda | ' + this.title )
 	}
 
 	exitView( ) {
@@ -47,15 +50,16 @@ export class ProfileComponent implements OnInit {
 			this.shade = false
 			setTimeout( temporal => {
 				if ( this.prior !== undefined ) {
-					this._back.navigate( [ this.prior ] )
+					this._url.navigate( this.prior )
 				}
 				else {
-					this._back.navigate( [ '/' ] )
+					this._url.navigate( '/' )
 				}
 			}, 1500 )
 		}
 	}
 
 }
+
 
 

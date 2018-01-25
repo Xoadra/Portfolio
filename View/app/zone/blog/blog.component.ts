@@ -3,8 +3,8 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { Title } from '@angular/platform-browser'
-import { Router } from '@angular/router'
+
+import { UrlService } from '../../relay/url.service'
 
 
 
@@ -19,12 +19,12 @@ export class BlogComponent implements OnInit {
 	private title: string = 'Technology: Now & Ahead'
 
 
-	constructor( private _title: Title, private _route: Router ) {  }
+	constructor( private _url: UrlService ) {  }
 	
 	
 	ngOnInit( ) {
-		if ( this._route.url === '/blog' ) {
-			this._title.setTitle( 'Xambda | ' + this.title )
+		if ( this._url.viewUrl( ) === '/blog' ) {
+			this._url.setTitle( 'Xambda | ' + this.title )
 		}
 	}
 

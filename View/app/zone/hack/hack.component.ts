@@ -3,8 +3,8 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { Title } from '@angular/platform-browser'
-import { Router } from '@angular/router'
+
+import { UrlService } from '../../relay/url.service'
 
 
 
@@ -19,12 +19,12 @@ export class HackComponent implements OnInit {
 	private title: string = 'Up Your Hackery'
 
 
-	constructor( private _title: Title, private _route: Router ) {  }
+	constructor( private _url: UrlService ) {  }
 
 	
 	ngOnInit( ) {
-		if ( this._route.url === '/hack' ) {
-			this._title.setTitle( 'Xambda | ' + this.title )
+		if ( this._url.viewUrl( ) === '/hack' ) {
+			this._url.setTitle( 'Xambda | ' + this.title )
 		}
 	}
 

@@ -3,9 +3,8 @@
 
 
 import { Component, OnInit } from '@angular/core'
-import { Title } from '@angular/platform-browser'
-import { Router } from '@angular/router'
 
+import { UrlService } from '../../../../relay/url.service'
 import { WatchService } from '../../../../relay/watch.service'
 
 import { FallAnimation } from '../../../../act/fall.animation'
@@ -28,14 +27,14 @@ export class ProjectComponent implements OnInit {
 	private before: string
 
 
-	constructor( private _title: Title, private _back: Router, private _watch: WatchService ) {
+	constructor( private _url: UrlService, private _watch: WatchService ) {
 		this._watch.setWatch( ) // Begin tracking time for enter-to-leave animation smoothing
 	}
 
 
 	ngOnInit( ) {
-		this.before = this._title.getTitle( ) // Store parent page's title so it can remember until redirecting back
-		this._title.setTitle( 'Xambda | ' + this.title )
+		this.before = this._url.getTitle( ) // Store parent page's title so it can remember until redirecting back
+		this._url.setTitle( 'Xambda | ' + this.title )
 	}
 	
 	goBack( ) {
@@ -45,13 +44,12 @@ export class ProjectComponent implements OnInit {
 		else {
 			this.shade = false
 			setTimeout( temporal => {
-				this._back.navigate( [ '/' ] )
-				this._title.setTitle( this.before )
+				this._url.navigate( '/' )
+				this._url.setTitle( this.before )
 			}, 1500 )
 		}
 	}
 
 }
-
 
 
