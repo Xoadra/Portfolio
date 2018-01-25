@@ -5,6 +5,7 @@
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Extensions.Options;
+using System.Net;
 using Npgsql;
 
 
@@ -31,11 +32,22 @@ namespace Xambda {
 					using( IDataReader scope = exe.ExecuteReader( ) ) {
 						while( scope.Read( ) ) {
 							// Inject database tuples one-by-one into data vessel
-							var obj = new Dictionary<string, object>( );
+							var mote = new Dictionary<string, object>( );
 							for( int idx = 0; idx < scope.FieldCount; idx++ ) {
-								obj.Add( scope.GetName( idx ), scope.GetValue( idx ) );
+								// Convert DBNull type values into json-tolerant null values
+								if ( scope.IsDBNull( idx ) ) {
+									mote.Add( scope.GetName( idx ), null );
+								}
+								// Transform IPAddress type values to be parsable strings
+								else if ( scope.GetValue( idx ).GetType( ) == typeof( IPAddress ) ) {
+									mote.Add( scope.GetName( idx ), scope.GetString( idx ) );
+								}
+								// Otherwise, just return value without modification
+								else {
+									mote.Add( scope.GetName( idx ), scope.GetValue( idx ) );
+								}
 							}
-							data.Add( obj );
+							data.Add( mote );
 						}
 						return data;
 					}
