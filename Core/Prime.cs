@@ -20,7 +20,7 @@ namespace Xambda.Core {
 		public Prime( Database data ) { _database = data; }
 		
 		[ HttpGet ]
-		[ Route( "quote" ) ]
+		[ Route( "/core/quote" ) ]
 		public Dictionary<string, object> Quotes( ) {
 			// Display a quote through an api call from Angular on the main page
 			Dictionary<string, object> Quotes = new Dictionary<string, object>( );
@@ -30,7 +30,7 @@ namespace Xambda.Core {
 		}
 		
 		[ HttpGet ]
-        [ Route( "data" ) ]
+        [ Route( "/core/data" ) ]
         public List<Dictionary<string, object>> Data( ) {
 			// Vessels for database entries returned from querying
             List<Dictionary<string, object>> Data = _database.Query( "SELECT * FROM users" );

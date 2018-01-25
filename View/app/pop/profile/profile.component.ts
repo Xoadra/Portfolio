@@ -36,7 +36,7 @@ export class ProfileComponent implements OnInit {
 
 	ngOnInit( ) {
 		// Parse and log data sent by the backend from database
-		this._http.get<object[ ]>( '/data' ).subscribe( users => {
+		this._http.get<object[ ]>( '/core/data' ).subscribe( users => {
 			console.log( users )
 		} )
 		this._url.setTitle( 'Xambda | ' + this.title )

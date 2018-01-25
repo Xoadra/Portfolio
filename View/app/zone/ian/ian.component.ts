@@ -26,8 +26,12 @@ export class IanComponent implements OnInit {
 		if ( this._url.viewUrl( ) === '/' ) {
 			this._url.setTitle( 'Xambda | ' + this.title )
 		}
+		else {
+			this._url.titleBefore = 'Xambda | ' + this.title
+		}
 	}
 
 }
+
 
 

@@ -26,7 +26,7 @@ export class BioComponent implements OnInit {
 
 	ngOnInit( ) {
 		// Get values from backend to display on page as a quote
-		this._http.get<object>( '/quote' ).subscribe( quotes => {
+		this._http.get<object>( '/core/quote' ).subscribe( quotes => {
 			this.quote = quotes[ 'quote' ]
 			this.author = quotes[ 'author' ]
 		} )
