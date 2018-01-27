@@ -18,6 +18,7 @@
 	<ItemGroup>
 		<!-- ASP.NET Core specific libraries -->
 		<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.2" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.0" />
 		<!-- Npgsql dependencies for ASP.NET Core PostgreSQL database provider -->
@@ -29,11 +30,10 @@
 		<DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
 		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
 	</ItemGroup>
-	<Target Name="AngularBuild" AfterTargets="Build">
-		<!-- Unknown purpose for the time being -->
-		<Exec Command="npm run build" />
-	</Target>
+	<!-- <Target Name="AngularBuild" AfterTargets="Build">
+			Unknown purpose for the time being
+			<Exec Command="npm run build" />
+	</Target> -->
 </Project>
-
 
 

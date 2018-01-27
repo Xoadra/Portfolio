@@ -30,7 +30,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 export class VolumeComponent {
 	
-	@Input( ) field
+	@Input( ) field: string
 	
 	
 	volume: string = 'shroud'
