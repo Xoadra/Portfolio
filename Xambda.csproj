@@ -14,6 +14,7 @@
 	<ItemGroup>
 		<!-- Base application folder name -->
 		<Folder Include="Root\" />
+		<Folder Include="View\" />
 	</ItemGroup>
 	<ItemGroup>
 		<!-- ASP.NET Core specific libraries -->
@@ -31,9 +32,10 @@
 		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
 	</ItemGroup>
 	<!-- <Target Name="AngularBuild" AfterTargets="Build">
-			Unknown purpose for the time being
+			May be used for synchronizing Angular and ASP.NET Core restart on changes in either
 			<Exec Command="npm run build" />
 	</Target> -->
 </Project>
+
 
 

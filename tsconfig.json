@@ -1,0 +1,35 @@
+
+
+
+
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"declaration": false,
+		"diagnostics": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"listFiles": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"outDir": "Root",
+		"removeComments": false,
+		"rootDir": "View",
+		"sourceMap": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"target": "es5",
+		"typeRoots": [
+			"node_modules/@types"
+		],
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
+
+
