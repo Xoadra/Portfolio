@@ -2,7 +2,6 @@
 
 
 
-using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
@@ -14,12 +13,13 @@ namespace Xambda {
 		
         public static IWebHost BuildWebHost( string[ ] args ) =>
             WebHost.CreateDefaultBuilder( args )
-				.UseWebRoot( "Root" )
 				.UseUrls( "http://localhost:7700" )
+				.UseWebRoot( "Root" )
                 .UseStartup<Startup>( )
                 .Build( );
 		
     }
 }
+
 
 
