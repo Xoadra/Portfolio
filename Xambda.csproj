@@ -12,11 +12,6 @@
 		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
 	</PropertyGroup>
 	<ItemGroup>
-		<!-- Base application folder name -->
-		<Folder Include="Root\" />
-		<Folder Include="View\" />
-	</ItemGroup>
-	<ItemGroup>
 		<!-- ASP.NET Core specific libraries -->
 		<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.2" />
@@ -36,6 +31,5 @@
 			<Exec Command="npm run build" />
 	</Target> -->
 </Project>
-
 
 

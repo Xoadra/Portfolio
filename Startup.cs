@@ -38,14 +38,16 @@ namespace Xambda {
 			if ( zone.IsDevelopment( ) ) { soft.UseDeveloperExceptionPage( ); }
 			// Yup, it's empty...
 			else {  }
-			soft.UseDefaultFiles( );  // Apparently important to integrate Angular into an ASP.NET Core project
+			// Allows files to be incorporated from outside of ASP.NET Core's scope
+			soft.UseDefaultFiles( );  
 			soft.UseStaticFiles( );
 			soft.UseSession( );
-			soft.UseMvc( );
+			// Targets frontend routing after backend routing fails
+			soft.UseMvc( view => { view.MapSpaFallbackRoute( "view", new { controller = "View", action = "Meta" } );
+			} );
 		}
 	
 	}
 }
-
 
 

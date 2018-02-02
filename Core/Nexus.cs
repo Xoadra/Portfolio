@@ -7,16 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 
 
 namespace Xambda.Core {
-	public class Prime : Controller {
+	public class Nexus : Controller {
 		
 		// Hosts database operation parameters
 		private readonly Database _database;
 		
-		// Prime controller constructor injecting database access material
-		public Prime( Database data ) { _database = data; }
+		// Nexus controller constructor injecting database access material
+		public Nexus( Database data ) { _database = data; }
 		
 		[ HttpGet ]
-		[ Route( "/core/quote" ) ]
+		[ Route( "core/quote" ) ]
 		public Dictionary<string, object> Quotes( ) {
 			// Display a quote through an api call from Angular on the main page
 			Dictionary<string, object> Quotes = new Dictionary<string, object>( );
@@ -26,20 +26,14 @@ namespace Xambda.Core {
 		}
 		
 		[ HttpGet ]
-        [ Route( "/core/data" ) ]
+        [ Route( "core/data" ) ]
         public List<Dictionary<string, object>> Data( ) {
 			// Vessels for database entries returned from querying
             List<Dictionary<string, object>> Data = _database.Query( "SELECT * FROM users" );
 			return Data;
         }
 		
-		/* public IActionResult Error( ) {
-			ViewData[ "RequestId" ] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-			return View( );
-		} */
-		
 	}
 }
-
 
 
