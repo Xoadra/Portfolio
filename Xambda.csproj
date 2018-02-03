@@ -26,10 +26,10 @@
 		<DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
 		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
 	</ItemGroup>
-	<!-- <Target Name="AngularBuild" AfterTargets="Build">
-			May be used for synchronizing Angular and ASP.NET Core restart on changes in either
-			<Exec Command="npm run build" />
-	</Target> -->
+	<Target Name="AngularBuild" AfterTargets="Build">
+		<!-- Synchronizes builds between Angular and ASP.NET Core -->
+		<Exec Command="npm run build" />
+	</Target>
 </Project>
 
 
