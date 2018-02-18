@@ -16,17 +16,17 @@ import { UrlService } from '../../relay/url.service'
 
 
 export class RouteComponent {
-
+	
 	private online: boolean = false // Temporary switch between guest and user panels
 	
-
+	
 	constructor( private _url: UrlService ) {  } // Pull in service to begin tracking route changes
 	
-
+	
 	swapStatus( ) {
 		this.online = this.online === true ? false : true // Temporary switch between guest and user panels
 	}
-
+	
 }
 
 

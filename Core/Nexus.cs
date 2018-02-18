@@ -26,8 +26,8 @@ namespace Xambda.Core {
 		}
 		
 		[ HttpGet ]
-        [ Route( "core/data" ) ]
-        public List<Dictionary<string, object>> Data( ) {
+		[ Route( "core/data" ) ]
+		public List<Dictionary<string, object>> Data( ) {
 			// Vessels for database entries returned from querying
             List<Dictionary<string, object>> Data = _database.Query( "SELECT * FROM users" );
 			return Data;
