@@ -1,8 +1,8 @@
 # Xambda
-### Tech Blog & Portfolio Website
+### Tech Blog & Eventual Portfolio Website
 
 
-#### This project has been temporarily suspended.
+#### This project has been temporarily suspended.  Work will resume sometime in the future.
 
 While this app will be the home of my software development portfolio, this website will achieve a far greater scope.  In it, I will include a technical blog detailing my insights and experiences as an engineer within the tech industry.  Most importantly however will be the innovative educational platform geared towards newer developers where I will share my accrued knowledge throughout my career through a series of internally developed, highly interactive interfaces that will allow users to learn technical concepts swiftly and easily.
 
